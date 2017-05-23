@@ -17,8 +17,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback{
 
     private GoogleMap mMap;
-    private Local [] mLocals = new Local[]{
-            new Local(R.string.local1_title,new LatLng(-8.082626,-34.891044))
+    private static Local [] mLocals = new Local[]{
+            new Local(R.string.local1_title,R.string.local1_description,
+                    R.drawable.img_local1,new LatLng(-8.082626,-34.891044))
     };
 
     @Override
@@ -55,9 +56,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         }
 
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                Intent intent = new Intent(MapsActivity.this,ImageActivity.class);
+                startActivity(intent);
+                return true;
+            }
+        });
+
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(local,15));
 
     }
 
+    public static Local[] getLocals() {
+        return mLocals;
+    }
 }

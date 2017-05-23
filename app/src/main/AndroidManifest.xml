@@ -42,6 +42,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ImageActivity">
+        </activity>
+        <activity android:name=".InfoWindowActivity"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert">
+        </activity>
     </application>
 
 </manifest>
