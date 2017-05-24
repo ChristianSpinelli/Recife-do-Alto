@@ -9,14 +9,15 @@ import com.google.android.gms.maps.model.LatLng;
 
 public class Local {
 
-    private int mTitle, mDescription, mImage;
+    private int mTitle, mDescription, mImage, mImageMap;
     private LatLng mPosition;
 
-    public Local(int title, int description, int image, LatLng position){
+    public Local(int title, int description, int image, int imageMap, LatLng position){
         mTitle = title;
         mPosition = position;
         mDescription = description;
         mImage = image;
+        mImageMap = imageMap;
     }
 
     public int getTitle() {
@@ -49,5 +50,13 @@ public class Local {
 
     public void setImage(int image) {
         mImage = image;
+    }
+
+    public int getImageMap() {
+        return mImageMap;
+    }
+
+    public void setImageMap(int imageMap) {
+        mImageMap = imageMap;
     }
 }

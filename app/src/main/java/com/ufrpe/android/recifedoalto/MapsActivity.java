@@ -12,15 +12,13 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.ArrayList;
 
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback{
 
     private GoogleMap mMap;
-    private static Local [] mLocals = new Local[]{
-            new Local(R.string.local1_title,R.string.local1_description,
-                    R.drawable.img_local1,new LatLng(-8.082626,-34.891044))
-    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,22 +43,30 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        LocalLab localLab = LocalLab.get();
+        final ArrayList<Local> locals = localLab.getLocals();
+
         // Add a marker in Sydney and move the camera
-        Marker marker;
         LatLng local = new LatLng(-8.082626,-34.891044);
         int title;
-        for (int i = 0; i <mLocals.length ; i++) {
-            local = mLocals[i].getPosition();
-            title = mLocals[i].getTitle();
-            marker = mMap.addMarker(new MarkerOptions().position(local).title(getString(title)));
+        for (int i = 0; i <locals.size() ; i++) {
+            local = locals.get(i).getPosition();
+            title = locals.get(i).getTitle();
+            mMap.addMarker(new MarkerOptions().position(local).title(getString(title)));
 
         }
 
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                Intent intent = new Intent(MapsActivity.this,ImageActivity.class);
-                startActivity(intent);
+                for(int i=0; i<locals.size(); i++){
+                    if(marker.getTitle().equals(getString(locals.get(i).getTitle()))){
+                        Intent intent = new Intent(MapsActivity.this,ImageActivity.class);
+                        intent.putExtra("image",locals.get(i).getImageMap());
+                        startActivity(intent);
+                    }
+                }
+
                 return true;
             }
         });
@@ -70,7 +76,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-    public static Local[] getLocals() {
-        return mLocals;
-    }
+
 }

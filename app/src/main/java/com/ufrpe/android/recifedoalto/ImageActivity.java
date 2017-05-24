@@ -19,6 +19,7 @@ public class ImageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_image);
 
         mImgLocal = (ImageView) findViewById(R.id.img_local);
+        mImgLocal.setImageResource(getIntent().getIntExtra("image",R.drawable.riomar));
         mImgLocal.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -27,7 +28,7 @@ public class ImageActivity extends AppCompatActivity {
                     if((event.getY()>=1120 && event.getY()<=1180) ||
                             (event.getX()>=1530 && event.getX()<=1730 &&
                                     (event.getY()>=560 && event.getY()<=1180) )){
-                        Local local = MapsActivity.getLocals()[0];
+                        Local local = LocalLab.get().getLocals().get(0);
                         Intent intent = new Intent(ImageActivity.this,InfoWindowActivity.class);
                         intent.putExtra("title",local.getTitle());
                         intent.putExtra("description",local.getDescription());
