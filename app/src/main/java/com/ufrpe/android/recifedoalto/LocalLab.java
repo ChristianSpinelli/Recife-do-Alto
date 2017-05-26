@@ -18,6 +18,8 @@ public class LocalLab {
         mLocals = new ArrayList<>();
         mLocals.add(new Local(R.string.local1_title,R.string.local1_description,
                 R.drawable.img_local1,R.drawable.riomar,new LatLng(-8.082626,-34.891044)));
+        mLocals.add(new Local(R.string.local2_title,R.string.local2_description,
+                R.drawable.forte_das_cinco_pontas,R.drawable.riomar,new LatLng(-8.071743,-34.880880)));
     }
 
     public static LocalLab get(){
