@@ -8,11 +8,17 @@
     android:orientation="vertical"
     tools:context="com.ufrpe.android.recifedoalto.MenuActivity">
 
-    <ListView
-        android:id="@+id/menu_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </ListView>
+    <GridView
+        android:id="@+id/menu_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="-100dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+    </GridView>
 
 </LinearLayout>

@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
+
 /**
  * Created by Christian Spinelli on 31/05/2017.
  */
@@ -41,18 +42,10 @@ public class MenuAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = mActivity.getLayoutInflater().inflate(R.layout.fragment_menu,parent,false);
         int image = mMenuImages.get(position);
-        int image2 = mMenuImages.get(position);
-        if(position+1 <= mMenuImages.size()-1) {
-            image2 = mMenuImages.get(position + 1);
-        }
 
+        final ImageView img = (ImageView) view.findViewById(R.id.menu_img);
 
-        final ImageView img1 = (ImageView) view.findViewById(R.id.menu_img1);
-        final ImageView img2 = (ImageView) view.findViewById(R.id.menu_img2);
-
-        img1.setImageResource(image);
-        img2.setImageResource(image2);
-
+        img.setImageResource(image);
 
 
         return view;

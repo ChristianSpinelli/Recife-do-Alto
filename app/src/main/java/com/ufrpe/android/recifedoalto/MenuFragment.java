@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 
 public class MenuFragment extends Fragment {
 
-    private ListView mMenuList;
+    private GridView mMenuGrid;
     private MenuAdapter mMenuAdapter;
 
     @Override
@@ -28,13 +29,19 @@ public class MenuFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        mMenuList = (ListView) view.findViewById(R.id.menu_list);
+        mMenuGrid = (GridView) view.findViewById(R.id.menu_grid);
         ArrayList<Integer> menuImages = new ArrayList<Integer>();
-        menuImages.add(R.drawable.riomar);
+        menuImages.add(R.drawable.img_local1);
+        menuImages.add(R.drawable.img_local1);
+        menuImages.add(R.drawable.img_local1);
+        menuImages.add(R.drawable.img_local1);
+        menuImages.add(R.drawable.img_local1);
+        menuImages.add(R.drawable.img_local1);
+        menuImages.add(R.drawable.img_local1);
         menuImages.add(R.drawable.img_local1);
 
         mMenuAdapter = new MenuAdapter(menuImages,this.getActivity());
-        mMenuList.setAdapter(mMenuAdapter);
+        mMenuGrid.setAdapter(mMenuAdapter);
 
 
     }
