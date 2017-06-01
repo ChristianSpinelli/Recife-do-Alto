@@ -22,7 +22,7 @@ public class LocalLab {
         Local local1 = new Local(R.string.local1_title,R.string.local1_description,
                 R.drawable.img_local1,R.drawable.img_map1,new LatLng(-8.082839,-34.891022));
         Local local2 = new Local(R.string.local2_title,R.string.local2_description,
-                R.drawable.forte_das_cinco_pontas,R.drawable.img_map1,new LatLng(-8.071743,-34.880880));
+                R.drawable.img_local2,R.drawable.forte_das_cinco_pontas,new LatLng(-8.071743,-34.880880));
         area1.getLocals().add(local1);
         area1.getLocals().add(local2);
         mLocals.add(local1);

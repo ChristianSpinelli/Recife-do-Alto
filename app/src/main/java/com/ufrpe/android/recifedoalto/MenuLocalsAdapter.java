@@ -8,29 +8,28 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
-
 /**
- * Created by Christian Spinelli on 31/05/2017.
+ * Created by Christian Spinelli on 01/06/2017.
  */
 
-public class MenuAdapter extends BaseAdapter {
+public class MenuLocalsAdapter extends BaseAdapter {
 
-    private final ArrayList<Area> mMenuImages;
     private final Activity mActivity;
+    private final ArrayList<Local> mLocals;
 
-    public MenuAdapter(ArrayList<Area> menuImages, Activity activity) {
-        mMenuImages = menuImages;
+    public MenuLocalsAdapter( ArrayList<Local> locals, Activity activity) {
         mActivity = activity;
+        mLocals = locals;
     }
 
     @Override
     public int getCount() {
-        return mMenuImages.size();
+        return mLocals.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return mMenuImages.get(position);
+        return mLocals.get(position);
     }
 
     @Override
@@ -40,14 +39,13 @@ public class MenuAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        int image = mMenuImages.get(position).getImg();
+        int image = mLocals.get(position).getImageMap();
 
         ImageView img = new ImageView(mActivity);
-
         img.setImageResource(image);
         img.setAdjustViewBounds(true);
 
 
-        return img;
+        return img ;
     }
 }

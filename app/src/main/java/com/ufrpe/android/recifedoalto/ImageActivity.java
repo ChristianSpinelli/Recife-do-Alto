@@ -26,18 +26,36 @@ public class ImageActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_DOWN){
-                    if(image == R.drawable.riomar){
+                    if(image == R.drawable.riomar) {
                         Local local;
-                        if((event.getY()>=1120 && event.getY()<=1180) ||
-                                (event.getX()>=1530 && event.getX()<=1730 &&
-                                        (event.getY()>=560 && event.getY()<=1180) )){
+                        if ((event.getY() >= 1120 && event.getY() <= 1180) ||
+                                (event.getX() >= 1530 && event.getX() <= 1730 &&
+                                        (event.getY() >= 560 && event.getY() <= 1180))) {
                             local = LocalLab.get().getLocals().get(0);
                             openInfoActivity(local);
 
-                        }if((event.getX()>=470 && event.getX()<=540) && (event.getY()<=1060 && event.getY()>=1020)){
+                        }
+                        if ((event.getX() >= 470 && event.getX() <= 540) && (event.getY() <= 1060 && event.getY() >= 1020)) {
                             local = LocalLab.get().getLocals().get(1);
                             openInfoActivity(local);
 
+                        }
+
+                    }if(image == R.drawable.img_map1){
+                        Local local;
+                        if((event.getY()>=1120 && event.getY() <= 1150) ||
+                                (event.getX()>=640 && event.getX()<=860) &&
+                                        (event.getY()>=560 && event.getY()<=1170)){
+                            local = LocalLab.get().getLocals().get(0);
+                            openInfoActivity(local);
+
+                        }
+                    }if(image == R.drawable.forte_das_cinco_pontas){
+                        Local local;
+                        if( (event.getX()>=310 && event.getX()<=790) &&
+                                (event.getY()>=420 && event.getY()<=940 ) ){
+                            local = LocalLab.get().getLocals().get(1);
+                            openInfoActivity(local);
                         }
 
                     }
