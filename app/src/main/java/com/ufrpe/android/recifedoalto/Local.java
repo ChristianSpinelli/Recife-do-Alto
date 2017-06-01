@@ -18,6 +18,7 @@ public class Local {
         mDescription = description;
         mImage = image;
         mImageMap = imageMap;
+
     }
 
     public int getTitle() {
@@ -55,6 +56,7 @@ public class Local {
     public int getImageMap() {
         return mImageMap;
     }
+
 
     public void setImageMap(int imageMap) {
         mImageMap = imageMap;

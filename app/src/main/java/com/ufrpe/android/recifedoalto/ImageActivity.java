@@ -34,7 +34,7 @@ public class ImageActivity extends AppCompatActivity {
                             local = LocalLab.get().getLocals().get(0);
                             openInfoActivity(local);
 
-                        }if((event.getX()>=470 && event.getX()<=540) && (event.getY()<=1060 && event.getY()>=1020) ){
+                        }if((event.getX()>=470 && event.getX()<=540) && (event.getY()<=1060 && event.getY()>=1020)){
                             local = LocalLab.get().getLocals().get(1);
                             openInfoActivity(local);
 

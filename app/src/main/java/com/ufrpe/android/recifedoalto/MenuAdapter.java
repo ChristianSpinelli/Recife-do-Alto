@@ -40,14 +40,14 @@ public class MenuAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view = mActivity.getLayoutInflater().inflate(R.layout.fragment_menu,parent,false);
         int image = mMenuImages.get(position);
 
-        final ImageView img = (ImageView) view.findViewById(R.id.menu_img);
+        ImageView img = new ImageView(mActivity);
 
         img.setImageResource(image);
+        img.setAdjustViewBounds(true);
 
 
-        return view;
+        return img;
     }
 }
