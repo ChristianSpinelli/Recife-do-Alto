@@ -2,6 +2,7 @@
 <resources>
     <string name="local1_title">Ponte Paulo Guerra</string>
     <string name="local1_description">Inaugurada em 1978 em homenagem ao político Paulo Guerra</string>
+    <string name="local1_description2">É a maior ponte da cidade do Recife.</string>
     <string name="local2_title">Museu da Cidade do Recife - Forte das Cinco Pontas</string>
     <string name="local2_description">Foi construído em Fevereiro de 1630 por mando do coronel holandês
         Diederick van Waerdenburch. E ainda em obras resistiu com sucesso a um ataque das forças portuguesas

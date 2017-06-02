@@ -1,7 +1,12 @@
 package com.ufrpe.android.recifedoalto;
 
 
+import android.content.Intent;
+import android.media.Image;
+
 import com.google.android.gms.maps.model.LatLng;
+
+import java.util.ArrayList;
 
 /**
  * Created by Christian Spinelli on 19/05/2017.
@@ -9,24 +14,15 @@ import com.google.android.gms.maps.model.LatLng;
 
 public class Local {
 
-    private int mTitle, mDescription, mImage, mImageMap;
+    private int  mImageMap;
+    private ArrayList<InfoImage> mInfoImages;
     private LatLng mPosition;
 
-    public Local(int title, int description, int image, int imageMap, LatLng position){
-        mTitle = title;
+    public Local( ArrayList<InfoImage> images, int imageMap, LatLng position){
         mPosition = position;
-        mDescription = description;
-        mImage = image;
+        mInfoImages = images;
         mImageMap = imageMap;
 
-    }
-
-    public int getTitle() {
-        return mTitle;
-    }
-
-    public void setTitle(int title) {
-        mTitle = title;
     }
 
     public LatLng getPosition() {
@@ -37,20 +33,12 @@ public class Local {
         mPosition = position;
     }
 
-    public int getDescription() {
-        return mDescription;
+    public ArrayList<InfoImage> getInfoImages() {
+        return mInfoImages;
     }
 
-    public void setDescription(int description) {
-        mDescription = description;
-    }
-
-    public int getImage() {
-        return mImage;
-    }
-
-    public void setImage(int image) {
-        mImage = image;
+    public void setInfoImages(ArrayList<InfoImage> infoImages) {
+        mInfoImages = infoImages;
     }
 
     public int getImageMap() {

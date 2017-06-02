@@ -51,7 +51,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         int title;
         for (int i = 0; i <locals.size() ; i++) {
             local = locals.get(i).getPosition();
-            title = locals.get(i).getTitle();
+            title = locals.get(i).getInfoImages().get(0).getTitle();
             mMap.addMarker(new MarkerOptions().position(local).title(getString(title)));
 
         }
@@ -60,7 +60,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public boolean onMarkerClick(Marker marker) {
                 for(int i=0; i<locals.size(); i++){
-                    if(marker.getTitle().equals(getString(locals.get(i).getTitle()))){
+                    if(marker.getTitle().equals(getString(locals.get(i).getInfoImages().get(0).getTitle()))){
                         Intent intent = new Intent(MapsActivity.this,ImageActivity.class);
                         intent.putExtra("image",locals.get(i).getImageMap());
                         startActivity(intent);

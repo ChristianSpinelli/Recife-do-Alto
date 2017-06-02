@@ -18,13 +18,23 @@ public class LocalLab {
     public LocalLab(){
         mLocals = new ArrayList<Local>();
         mAreas = new ArrayList<Area>();
+
+        InfoImage infoImage1_1 = new InfoImage(R.drawable.img_local1,R.string.local1_title,R.string.local1_description);
+        InfoImage infoImage1_2 = new InfoImage(R.drawable.img_local1_2,R.string.local1_title,R.string.local1_description2);
+        ArrayList<InfoImage> infoImages1 = new ArrayList<InfoImage>();
+        infoImages1.add(infoImage1_1);
+        infoImages1.add(infoImage1_2);
+        Local local1 = new Local(infoImages1,R.drawable.img_map1,new LatLng(-8.082839,-34.891022));
+
+        InfoImage infoImage2_1 = new InfoImage(R.drawable.img_local2,R.string.local2_title,R.string.local2_description);
+        ArrayList<InfoImage> infoImages2 = new ArrayList<InfoImage>();
+        infoImages2.add(infoImage2_1);
+        Local local2 = new Local(infoImages2,R.drawable.forte_das_cinco_pontas,new LatLng(-8.071743,-34.880880));
+
         Area area1 = new Area(R.string.area_title,R.drawable.riomar);
-        Local local1 = new Local(R.string.local1_title,R.string.local1_description,
-                R.drawable.img_local1,R.drawable.img_map1,new LatLng(-8.082839,-34.891022));
-        Local local2 = new Local(R.string.local2_title,R.string.local2_description,
-                R.drawable.img_local2,R.drawable.forte_das_cinco_pontas,new LatLng(-8.071743,-34.880880));
         area1.getLocals().add(local1);
         area1.getLocals().add(local2);
+
         mLocals.add(local1);
         mLocals.add(local2);
         mAreas.add(area1);

@@ -72,9 +72,7 @@ public class ImageActivity extends AppCompatActivity {
 
     private void openInfoActivity(Local local){
         Intent intent = new Intent(ImageActivity.this,InfoWindowActivity.class);
-        intent.putExtra("title",local.getTitle());
-        intent.putExtra("description",local.getDescription());
-        intent.putExtra("image",local.getImage());
+        intent.putExtra("images",local.getInfoImages());
         startActivity(intent);
     }
 }
