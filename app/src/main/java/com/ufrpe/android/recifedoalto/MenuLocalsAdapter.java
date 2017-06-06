@@ -44,6 +44,8 @@ public class MenuLocalsAdapter extends BaseAdapter {
         ImageView img = new ImageView(mActivity);
         img.setImageResource(image);
         img.setAdjustViewBounds(true);
+        img.setMaxHeight(300);
+        img.setScaleType(ImageView.ScaleType.FIT_XY);
 
 
         return img ;

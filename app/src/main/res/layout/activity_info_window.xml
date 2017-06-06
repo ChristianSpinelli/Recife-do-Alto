@@ -4,20 +4,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="350dp"
     android:orientation="vertical"
     tools:context="com.ufrpe.android.recifedoalto.InfoWindowActivity">
 
+    <TextView
+        android:id="@+id/txt_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/local1_title"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorText"/>
+
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/info_list"
         android:scrollbars="horizontal"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </android.support.v7.widget.RecyclerView>
 
-
+</LinearLayout>
 
 
 

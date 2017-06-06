@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -21,6 +22,7 @@ public class InfoWindowFragment extends Fragment {
     private RecyclerView mInfoList;
     private InfoWindowAdapter mInfoAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+    private TextView mTitleInfo;
 
 
     @Override
@@ -34,8 +36,10 @@ public class InfoWindowFragment extends Fragment {
         mInfoList = (RecyclerView) this.getActivity().findViewById(R.id.info_list);
         Intent intent = this.getActivity().getIntent();
         ArrayList<InfoImage> infoImages = (ArrayList<InfoImage>) intent.getSerializableExtra("images");
+        String title = getString(infoImages.get(0).getTitle());
 
-
+        mTitleInfo = (TextView) this.getActivity().findViewById(R.id.txt_info_title);
+        mTitleInfo.setText(title);
 
         mLayoutManager = new LinearLayoutManager(this.getActivity(),LinearLayoutManager.HORIZONTAL,true);
         mInfoList.setLayoutManager(mLayoutManager);

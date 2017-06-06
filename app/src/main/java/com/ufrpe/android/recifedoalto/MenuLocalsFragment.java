@@ -30,6 +30,7 @@ public class MenuLocalsFragment extends Fragment {
     @Override
     public void onViewCreated(View view,Bundle savedInstanceState) {
        mMenuLocalsGrid = (GridView) view.findViewById(R.id.menu_locals_grid);
+
         LocalLab localLab = LocalLab.get();
         Intent intent = this.getActivity().getIntent();
         ArrayList<Area> areas = localLab.getAreas();
@@ -44,6 +45,7 @@ public class MenuLocalsFragment extends Fragment {
         mMenuLocalsAdapter = new MenuLocalsAdapter(mLocals,this.getActivity());
         mMenuLocalsGrid.setAdapter(mMenuLocalsAdapter);
 
+
         mMenuLocalsGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -54,4 +56,5 @@ public class MenuLocalsFragment extends Fragment {
         });
 
     }
+
 }

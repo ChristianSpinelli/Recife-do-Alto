@@ -46,6 +46,8 @@ public class MenuAdapter extends BaseAdapter {
 
         img.setImageResource(image);
         img.setAdjustViewBounds(true);
+        img.setMaxHeight(500);
+        img.setScaleType(ImageView.ScaleType.FIT_XY);
 
 
         return img;

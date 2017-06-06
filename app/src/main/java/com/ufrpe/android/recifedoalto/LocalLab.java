@@ -31,13 +31,18 @@ public class LocalLab {
         infoImages2.add(infoImage2_1);
         Local local2 = new Local(infoImages2,R.drawable.forte_das_cinco_pontas,new LatLng(-8.071743,-34.880880));
 
+
+        mLocals.add(local1);
+        mLocals.add(local2);
+
+
         Area area1 = new Area(R.string.area_title,R.drawable.riomar);
         area1.getLocals().add(local1);
         area1.getLocals().add(local2);
 
-        mLocals.add(local1);
-        mLocals.add(local2);
+
         mAreas.add(area1);
+
 
 
     }

@@ -47,15 +47,13 @@ public class InfoWindowAdapter extends RecyclerView.Adapter<InfoWindowAdapter.Vi
     public void onBindViewHolder(InfoWindowAdapter.ViewHolder holder, int position) {
         int image = mImages.get(position).getImage();
         String description = mActivity.getString(mImages.get(position).getDescription());
-        String title = mActivity.getString(mImages.get(position).getTitle());
 
         ImageView imageView = (ImageView) holder.mView.findViewById(R.id.img_info);
         TextView descriptionView = (TextView) holder.mView.findViewById(R.id.txt_info_description);
-        TextView titleView = (TextView) holder.mView.findViewById(R.id.txt_info_title);
 
         imageView.setImageResource(image);
         descriptionView.setText(description);
-        titleView.setText(title);
+
     }
 
     @Override
