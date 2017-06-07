@@ -3,7 +3,6 @@ package com.ufrpe.android.recifedoalto;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +39,7 @@ public class MenuFragment extends Fragment {
         mMenuGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MenuFragment.this.getActivity(),MenuLocalsActivity.class);
+                Intent intent = MenuLocalsFragmentActivity.newIntent(getActivity());
                 intent.putExtra("area",mAreas.get(position).getTitle());
                 startActivity(intent);
             }

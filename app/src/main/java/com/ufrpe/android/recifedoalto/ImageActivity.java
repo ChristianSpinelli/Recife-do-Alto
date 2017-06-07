@@ -1,5 +1,6 @@
 package com.ufrpe.android.recifedoalto;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -71,8 +72,13 @@ public class ImageActivity extends AppCompatActivity {
     }
 
     private void openInfoActivity(Local local){
-        Intent intent = new Intent(ImageActivity.this,InfoWindowActivity.class);
+        Intent intent = InfoWindowFragmentActivity.newIntent(this);
         intent.putExtra("images",local.getInfoImages());
         startActivity(intent);
+    }
+
+    public static Intent newIntent(Context context) {
+        Intent intent = new Intent(context,ImageActivity.class);
+        return intent;
     }
 }

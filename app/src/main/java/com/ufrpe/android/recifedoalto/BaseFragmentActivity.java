@@ -1,19 +1,19 @@
 package com.ufrpe.android.recifedoalto;
 
-
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.TextView;
 
+/**
+ * Created by Christian Spinelli on 07/06/2017.
+ */
 
-public class InfoWindowActivity extends AppCompatActivity {
+public abstract class BaseFragmentActivity extends AppCompatActivity {
 
-    private TextView mTxtTitle, mTxtDescription;
-    private ImageView mImgLocal;
-
+    protected abstract Fragment createFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +23,10 @@ public class InfoWindowActivity extends AppCompatActivity {
         Fragment fragment = fm.findFragmentById(R.id.fragment_container);
 
         if(fragment == null){
-            fragment = new InfoWindowFragment();
+            fragment = createFragment();
             fm.beginTransaction().add(R.id.fragment_container, fragment).commit();
         }
 
-
     }
+
 }

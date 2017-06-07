@@ -49,7 +49,7 @@ public class MenuLocalsFragment extends Fragment {
         mMenuLocalsGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MenuLocalsFragment.this.getActivity(),ImageActivity.class);
+                Intent intent = ImageActivity.newIntent(getActivity());
                 intent.putExtra("image",mLocals.get(position).getImageMap());
                 startActivity(intent);
             }

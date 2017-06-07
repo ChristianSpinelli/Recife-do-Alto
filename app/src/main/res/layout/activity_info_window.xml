@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="350dp"
     android:orientation="vertical"
-    tools:context="com.ufrpe.android.recifedoalto.InfoWindowActivity">
+    tools:context="com.ufrpe.android.recifedoalto.InfoWindowFragmentActivity">
 
     <TextView
         android:id="@+id/txt_info_title"
