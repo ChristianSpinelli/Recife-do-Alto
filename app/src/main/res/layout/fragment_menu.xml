@@ -20,7 +20,7 @@
                 android:text="@string/area_title"
                 android:paddingTop="12dp"
                 android:paddingLeft="24dp"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="@color/colorPrimaryDark"/>
 
             <ImageView

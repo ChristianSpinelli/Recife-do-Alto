@@ -3,6 +3,8 @@ package com.ufrpe.android.recifedoalto;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,9 +19,10 @@ import java.util.ArrayList;
 
 public class MenuLocalsFragment extends Fragment {
 
-    private GridView mMenuLocalsGrid;
+    private RecyclerView mMenuLocalsGrid;
     private MenuLocalsAdapter mMenuLocalsAdapter;
     private ArrayList<Local> mLocals;
+    private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
@@ -29,7 +32,7 @@ public class MenuLocalsFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view,Bundle savedInstanceState) {
-       mMenuLocalsGrid = (GridView) view.findViewById(R.id.menu_locals_grid);
+       mMenuLocalsGrid = (RecyclerView) view.findViewById(R.id.menu_locals_grid);
 
         LocalLab localLab = LocalLab.get();
         Intent intent = this.getActivity().getIntent();
@@ -42,18 +45,12 @@ public class MenuLocalsFragment extends Fragment {
             }
         }
 
+        mLayoutManager = new LinearLayoutManager(this.getActivity(),LinearLayoutManager.VERTICAL,false);
+        mMenuLocalsGrid.setLayoutManager(mLayoutManager);
+
         mMenuLocalsAdapter = new MenuLocalsAdapter(mLocals,this.getActivity());
         mMenuLocalsGrid.setAdapter(mMenuLocalsAdapter);
 
-
-        mMenuLocalsGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = ImageActivity.newIntent(getActivity());
-                intent.putExtra("image",mLocals.get(position).getImageMap());
-                startActivity(intent);
-            }
-        });
 
     }
 
