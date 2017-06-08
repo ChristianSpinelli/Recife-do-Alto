@@ -3,6 +3,8 @@ package com.ufrpe.android.recifedoalto;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,8 +19,9 @@ import java.util.ArrayList;
 
 public class MenuFragment extends Fragment {
 
-    private GridView mMenuGrid;
+    private RecyclerView mMenuRecyclerView;
     private MenuAdapter mMenuAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
     private ArrayList<Area> mAreas = new ArrayList<Area>();
 
     @Override
@@ -29,21 +32,16 @@ public class MenuFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        mMenuGrid = (GridView) view.findViewById(R.id.menu_grid);
+        mMenuRecyclerView = (RecyclerView) view.findViewById(R.id.menu_grid);
         LocalLab localLab = LocalLab.get();
         mAreas = localLab.getAreas();
 
-        mMenuAdapter = new MenuAdapter(mAreas,this.getActivity());
-        mMenuGrid.setAdapter(mMenuAdapter);
+        mLayoutManager = new LinearLayoutManager(this.getActivity(),LinearLayoutManager.VERTICAL,false);
+        mMenuRecyclerView.setLayoutManager(mLayoutManager);
 
-        mMenuGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = MenuLocalsFragmentActivity.newIntent(getActivity());
-                intent.putExtra("area",mAreas.get(position).getTitle());
-                startActivity(intent);
-            }
-        });
+        mMenuAdapter = new MenuAdapter(mAreas,this.getActivity());
+        mMenuRecyclerView.setAdapter(mMenuAdapter);
+
 
     }
 }

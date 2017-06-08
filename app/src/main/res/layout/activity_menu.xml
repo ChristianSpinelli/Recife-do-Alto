@@ -9,15 +9,14 @@
     tools:context="com.ufrpe.android.recifedoalto.MenuFragmentActivity">
 
 
-    <GridView
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/menu_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:numColumns="1"
-        android:horizontalSpacing="10dp"
-        android:verticalSpacing="10dp"
-        android:layout_margin="24dp">
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/fragment_menu">
 
-    </GridView>
+    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

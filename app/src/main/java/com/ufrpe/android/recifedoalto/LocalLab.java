@@ -45,7 +45,6 @@ public class LocalLab {
         mAreas.add(area1);
 
 
-
     }
 
     public static LocalLab get(){

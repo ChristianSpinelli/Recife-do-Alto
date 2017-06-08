@@ -41,7 +41,7 @@ public class InfoWindowFragment extends Fragment {
         mTitleInfo = (TextView) this.getActivity().findViewById(R.id.txt_info_title);
         mTitleInfo.setText(title);
 
-        mLayoutManager = new LinearLayoutManager(this.getActivity(),LinearLayoutManager.HORIZONTAL,true);
+        mLayoutManager = new LinearLayoutManager(this.getActivity(),LinearLayoutManager.HORIZONTAL,false);
         mInfoList.setLayoutManager(mLayoutManager);
 
         mInfoAdapter = new InfoWindowAdapter(this.getActivity(),infoImages);

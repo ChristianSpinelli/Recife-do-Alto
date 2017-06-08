@@ -1,10 +1,15 @@
 package com.ufrpe.android.recifedoalto;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.support.v7.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -13,24 +18,59 @@ import java.util.ArrayList;
  * Created by Christian Spinelli on 31/05/2017.
  */
 
-public class MenuAdapter extends BaseAdapter {
+public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 
-    private final ArrayList<Area> mMenuImages;
+    private final ArrayList<Area> mAreas;
     private final Activity mActivity;
 
     public MenuAdapter(ArrayList<Area> menuImages, Activity activity) {
-        mMenuImages = menuImages;
+        mAreas = menuImages;
         mActivity = activity;
     }
 
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+
+        public View mView;
+        public int mPosition;
+        public ViewHolder(View v) {
+            super(v);
+            mView = v;
+        }
+    }
+
+
     @Override
-    public int getCount() {
-        return mMenuImages.size();
+    public MenuAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = mActivity.getLayoutInflater().inflate(R.layout.fragment_menu,parent,false);
+
+        ViewHolder vh = new ViewHolder(view);
+
+        return vh;
     }
 
     @Override
-    public Object getItem(int position) {
-        return mMenuImages.get(position);
+    public void onBindViewHolder(final MenuAdapter.ViewHolder holder, int position) {
+        holder.mPosition = position;
+        int image = mAreas.get(position).getImg();
+        String title = mActivity.getString(mAreas.get(position).getTitle());
+
+        ImageView img = (ImageView) holder.mView.findViewById(R.id.menu_img);
+        img.setImageResource(image);
+
+        TextView titleView = (TextView) holder.mView.findViewById(R.id.menu_title);
+        titleView.setText(title);
+
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = MenuLocalsFragmentActivity.newIntent(mActivity);
+                intent.putExtra("area",mAreas.get(holder.mPosition).getTitle());
+                Log.d("POSITION MENU IMAGE: ",""+holder.mPosition);
+                mActivity.startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -39,17 +79,8 @@ public class MenuAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        int image = mMenuImages.get(position).getImg();
-
-        ImageView img = new ImageView(mActivity);
-
-        img.setImageResource(image);
-        img.setAdjustViewBounds(true);
-        img.setMaxHeight(500);
-        img.setScaleType(ImageView.ScaleType.FIT_XY);
-
-
-        return img;
+    public int getItemCount() {
+        return mAreas.size();
     }
+
 }
