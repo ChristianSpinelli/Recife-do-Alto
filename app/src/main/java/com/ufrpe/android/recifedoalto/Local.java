@@ -3,9 +3,11 @@ package com.ufrpe.android.recifedoalto;
 
 import android.content.Intent;
 import android.media.Image;
+import android.os.Parcelable;
 
 import com.google.android.gms.maps.model.LatLng;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**

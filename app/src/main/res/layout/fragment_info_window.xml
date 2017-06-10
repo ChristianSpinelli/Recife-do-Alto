@@ -40,11 +40,21 @@
                         android:paddingLeft="24dp"
                         android:paddingRight="24dp"
                         android:paddingBottom="34dp"
+                        android:textSize="14sp"
                         android:textColor="@color/colorText"/>
 
                 </LinearLayout>
 
             </ScrollView>
+
+            <TextView
+                android:id="@+id/txt_more_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info"
+                android:paddingLeft="24dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"/>
 
         </LinearLayout>
 

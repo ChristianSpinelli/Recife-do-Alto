@@ -9,12 +9,13 @@ import java.io.Serializable;
 
 public class InfoImage implements Serializable {
 
-    private int mImage, mDescription, mTitle;
+    private int mImage, mDescription, mTitle, mLocalPosition;
 
-    public InfoImage(int image, int title, int description){
+    public InfoImage(int image, int title, int description, int localPosition){
         mImage =image;
         mDescription = description;
         mTitle = title;
+        mLocalPosition = localPosition;
     }
 
     public int getImage() {
@@ -39,5 +40,13 @@ public class InfoImage implements Serializable {
 
     public void setTitle(int title) {
         mTitle = title;
+    }
+
+    public int getLocalPosition() {
+        return mLocalPosition;
+    }
+
+    public void setLocalPosition(int localPosition) {
+        mLocalPosition = localPosition;
     }
 }

@@ -1,6 +1,8 @@
 package com.ufrpe.android.recifedoalto;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -44,15 +47,27 @@ public class InfoWindowAdapter extends RecyclerView.Adapter<InfoWindowAdapter.Vi
     }
 
     @Override
-    public void onBindViewHolder(InfoWindowAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final InfoWindowAdapter.ViewHolder holder, int position) {
         int image = mImages.get(position).getImage();
         String description = mActivity.getString(mImages.get(position).getDescription());
 
+
         ImageView imageView = (ImageView) holder.mView.findViewById(R.id.img_info);
         TextView descriptionView = (TextView) holder.mView.findViewById(R.id.txt_info_description);
+        TextView moreInfoView = (TextView) holder.mView.findViewById(R.id.txt_more_info);
 
         imageView.setImageResource(image);
         descriptionView.setText(description);
+
+        moreInfoView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int position = mImages.get(0).getLocalPosition();
+                Intent intent = MapsActivity.newIntent(mActivity);
+                intent.putExtra("position",position);
+                mActivity.startActivity(intent);
+            }
+        });
 
     }
 

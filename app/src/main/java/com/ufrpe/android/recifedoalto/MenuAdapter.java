@@ -66,7 +66,6 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
             public void onClick(View v) {
                 Intent intent = MenuLocalsFragmentActivity.newIntent(mActivity);
                 intent.putExtra("area",mAreas.get(holder.mPosition).getTitle());
-                Log.d("POSITION MENU IMAGE: ",""+holder.mPosition);
                 mActivity.startActivity(intent);
             }
         });
