@@ -51,7 +51,7 @@
                 android:id="@+id/txt_more_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/info"
+                android:text="@string/route"
                 android:paddingLeft="24dp"
                 android:textSize="16sp"
                 android:textColor="@color/colorPrimary"/>
