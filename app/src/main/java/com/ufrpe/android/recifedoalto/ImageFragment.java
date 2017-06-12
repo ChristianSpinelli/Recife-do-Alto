@@ -1,33 +1,45 @@
 package com.ufrpe.android.recifedoalto;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 
+/**
+ * Created by Christian Spinelli on 12/06/2017.
+ */
 
-public class ImageActivity extends AppCompatActivity {
+public class ImageFragment extends Fragment {
 
     private ImageView mImgLocal;
+    private final int mImage;
+
+    public ImageFragment(int image) {
+        mImage = image;
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_image,container,false);
+        return view;
+    }
 
-        final int image = getIntent().getIntExtra("image",R.drawable.riomar);
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
 
-        mImgLocal = (ImageView) findViewById(R.id.img_local);
-        mImgLocal.setImageResource(image);
+        mImgLocal = (ImageView) view.findViewById(R.id.img_local);
+        mImgLocal.setImageResource(mImage);
         mImgLocal.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_DOWN){
-                    if(image == R.drawable.riomar) {
+                    if(mImage == R.drawable.riomar) {
                         Local local;
                         if ((event.getY() >= 1120 && event.getY() <= 1180) ||
                                 (event.getX() >= 1530 && event.getX() <= 1730 &&
@@ -42,7 +54,7 @@ public class ImageActivity extends AppCompatActivity {
 
                         }
 
-                    }if(image == R.drawable.img_map1){
+                    }if(mImage == R.drawable.img_map1){
                         Local local;
                         if((event.getY()>=1120 && event.getY() <= 1150) ||
                                 (event.getX()>=640 && event.getX()<=860) &&
@@ -51,7 +63,7 @@ public class ImageActivity extends AppCompatActivity {
                             openInfoActivity(local);
 
                         }
-                    }if(image == R.drawable.forte_das_cinco_pontas){
+                    }if(mImage == R.drawable.forte_das_cinco_pontas){
                         Local local;
                         if( (event.getX()>=310 && event.getX()<=790) &&
                                 (event.getY()>=420 && event.getY()<=940 ) ){
@@ -68,17 +80,12 @@ public class ImageActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void openInfoActivity(Local local){
-        Intent intent = InfoWindowFragmentActivity.newIntent(this);
+        Intent intent = InfoWindowFragmentActivity.newIntent(getActivity());
         intent.putExtra("images",local.getInfoImages());
         startActivity(intent);
     }
 
-    public static Intent newIntent(Context context) {
-        Intent intent = new Intent(context,ImageActivity.class);
-        return intent;
-    }
 }

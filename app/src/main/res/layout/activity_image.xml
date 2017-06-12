@@ -6,20 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ufrpe.android.recifedoalto.ImageActivity">
+    tools:context="com.ufrpe.android.recifedoalto.LocalsPagerActivity">
 
-    <HorizontalScrollView
+
+    <ImageView
+        android:id="@+id/img_local"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:scaleType="fitXY"
+        android:src="@drawable/img_local1"/>
 
-        <ImageView
-            android:id="@+id/img_local"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            android:src="@drawable/img_local1"/>
-    </HorizontalScrollView>
 
 
 </LinearLayout>

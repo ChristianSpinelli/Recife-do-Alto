@@ -8,6 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -37,7 +38,7 @@
             android:name=".MapsActivity"
             android:label="@string/app_name">
         </activity>
-        <activity android:name=".ImageActivity">
+        <activity android:name=".LocalsPagerActivity">
         </activity>
         <activity android:name=".MenuLocalsFragmentActivity">
         </activity>

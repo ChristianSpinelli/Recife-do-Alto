@@ -19,11 +19,13 @@ public class Local {
     private int  mImageMap;
     private ArrayList<InfoImage> mInfoImages;
     private LatLng mPosition;
+    private int mId;
 
-    public Local( ArrayList<InfoImage> images, int imageMap, LatLng position){
+    public Local( ArrayList<InfoImage> images, int imageMap, LatLng position,int id){
         mPosition = position;
         mInfoImages = images;
         mImageMap = imageMap;
+        mId = id;
 
     }
 
@@ -51,4 +53,10 @@ public class Local {
     public void setImageMap(int imageMap) {
         mImageMap = imageMap;
     }
+
+    public int getId() {
+        return mId;
+    }
+
+
 }

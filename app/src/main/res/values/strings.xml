@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Recife do Alto</string>
     <string name="route">Como chegar?</string>
+    <string name="you_are_here">Você está aqui.</string>
 </resources>

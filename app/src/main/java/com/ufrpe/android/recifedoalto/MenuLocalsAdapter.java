@@ -3,6 +3,7 @@ package com.ufrpe.android.recifedoalto;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -59,8 +60,8 @@ public class MenuLocalsAdapter extends RecyclerView.Adapter<MenuLocalsAdapter.Vi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = ImageActivity.newIntent(mActivity);
-                intent.putExtra("image",mLocals.get(holder.mPostion).getImageMap());
+                Intent intent = LocalsPagerActivity.newIntent(mActivity);
+                intent.putExtra("position",holder.mPostion);
                 mActivity.startActivity(intent);
             }
         });
