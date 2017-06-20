@@ -37,7 +37,7 @@ public class LocalLab {
         mLocals.add(local2);
 
 
-        Area area1 = new Area(R.string.area_title,R.drawable.riomar);
+        Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
         area1.getLocals().add(local1);
         area1.getLocals().add(local2);
 

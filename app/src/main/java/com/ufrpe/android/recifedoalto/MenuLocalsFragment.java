@@ -5,7 +5,11 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -26,6 +30,7 @@ public class MenuLocalsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
         View view = inflater.inflate(R.layout.activity_locals_menu,container,false);
         return view;
     }
@@ -52,6 +57,23 @@ public class MenuLocalsFragment extends Fragment {
         mMenuLocalsGrid.setAdapter(mMenuLocalsAdapter);
 
 
+    }
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.toolbar_menu, menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.map_menu:
+                Intent currentIntent = this.getActivity().getIntent();
+                Intent intent = new Intent(getActivity(), MapsActivity.class);
+                String areaTitleMenu=getString(currentIntent.getIntExtra("area",0));
+                intent.putExtra("areaTitleMenu",areaTitleMenu);
+                startActivity(intent);
+                return true;
+        }
+        return onOptionsItemSelected(item);
     }
 
 }

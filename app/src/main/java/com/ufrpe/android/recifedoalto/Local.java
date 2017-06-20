@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * Created by Christian Spinelli on 19/05/2017.
  */
 
-public class Local {
+public class Local implements Serializable{
 
     private int  mImageMap;
     private ArrayList<InfoImage> mInfoImages;

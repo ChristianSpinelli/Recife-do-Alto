@@ -1,11 +1,17 @@
 package com.ufrpe.android.recifedoalto;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -26,6 +32,7 @@ public class MenuFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
         View view = inflater.inflate(R.layout.activity_menu,container,false);
         return view;
     }
@@ -41,7 +48,21 @@ public class MenuFragment extends Fragment {
 
         mMenuAdapter = new MenuAdapter(mAreas,this.getActivity());
         mMenuRecyclerView.setAdapter(mMenuAdapter);
+    }
 
-
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.toolbar_menu, menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.map_menu:
+                Intent intent = new Intent(getActivity(), MapsActivity.class);
+                intent.putExtra("areas",1);
+                startActivity(intent);
+                return true;
+        }
+        return onOptionsItemSelected(item);
     }
 }

@@ -1,5 +1,7 @@
 package com.ufrpe.android.recifedoalto;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import java.util.ArrayList;
 
 /**
@@ -11,7 +13,14 @@ public class Area {
     private int mTitle, mImg;
     private ArrayList<Local> mLocals;
 
-    public Area(int title, int img){
+    public LatLng getPosition() {
+        return mPosition;
+    }
+
+    private LatLng mPosition;
+
+    public Area(int title, int img,LatLng position){
+        mPosition=position;
         mTitle = title;
         mImg = img;
         mLocals = new ArrayList<Local>();

@@ -34,15 +34,42 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
         LocalLab localLab = LocalLab.get();
         ArrayList<Local> locals = localLab.getLocals();
+        ArrayList<Area> areas = localLab.getAreas();
         int position = getIntent().getIntExtra("position", 0);
-        final Local local = locals.get(position);
+        int areaBundle=getIntent().getIntExtra("areas",0);
+        String areaTitle=getIntent().getStringExtra("areaTitleMenu");
+        LatLng recife= new LatLng(-8.059451, -34.886507);
+        if(areaBundle==1){
+            for (Area area:localLab.getAreas()) {
+                mMap.addMarker(new MarkerOptions().position(area.getPosition()));
+            }
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(recife,11));
 
-        final LatLng localPosition = local.getPosition();
-        int title = local.getInfoImages().get(0).getTitle();
-        mMap.addMarker(new MarkerOptions().position(localPosition).title(getString(title)));
+        }
+        else if(areaTitle!=null){
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(localPosition, 13));
-        mMap.setMinZoomPreference(13);
+            for (int i = 0; i < areas.size() ; i++) {
+                if (areaTitle.equals(getString(areas.get(i).getTitle()))) {
+                    for (Local local : areas.get(i).getLocals()) {
+                        int title = local.getInfoImages().get(0).getTitle();
+                        mMap.addMarker(new MarkerOptions().position(local.getPosition()).title(getString(title)));
+                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(local.getPosition(), 13));
+                    }
+                    break;
+                }
+            }
+
+
+        }
+        else {
+            final Local local = locals.get(position);
+
+            final LatLng localPosition = local.getPosition();
+            int title = local.getInfoImages().get(0).getTitle();
+            mMap.addMarker(new MarkerOptions().position(localPosition).title(getString(title)));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(localPosition, 13));
+        }
+        mMap.setMinZoomPreference(11);
         mMap.setMaxZoomPreference(15);
 
     }
