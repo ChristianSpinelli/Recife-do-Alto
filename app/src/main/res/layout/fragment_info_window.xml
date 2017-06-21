@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         card_view:cardElevation="10dp"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         card_view:cardCornerRadius="5dp">
 
@@ -18,14 +18,17 @@
                 android:id="@+id/img_info"
                 android:layout_width="300dp"
                 android:layout_height="200dp"
-                android:padding="24dp"
+                android:paddingTop="24dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="12dp"
                 android:layout_gravity="center_horizontal"
                 android:scaleType="fitXY"
                 android:src="@drawable/img_local1"/>
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -38,8 +41,7 @@
                         android:layout_height="match_parent"
                         android:text="@string/local1_description"
                         android:paddingLeft="24dp"
-                        android:paddingRight="24dp"
-                        android:paddingBottom="34dp"
+                        android:paddingBottom="24dp"
                         android:textSize="14sp"
                         android:textColor="@color/colorText"/>
 
