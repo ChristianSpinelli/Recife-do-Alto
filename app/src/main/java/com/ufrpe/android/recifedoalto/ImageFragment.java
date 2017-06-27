@@ -83,7 +83,7 @@ public class ImageFragment extends Fragment {
     }
 
     private void openInfoActivity(Local local){
-        Intent intent = InfoWindowFragmentActivity.newIntent(getActivity());
+        Intent intent = InfoPagerActivity.newIntent(this.getActivity());
         intent.putExtra("images",local.getInfoImages());
         startActivity(intent);
     }

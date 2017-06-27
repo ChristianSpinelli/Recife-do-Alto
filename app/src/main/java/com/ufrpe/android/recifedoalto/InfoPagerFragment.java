@@ -12,32 +12,26 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 /**
- * Created by Christian Spinelli on 21/06/2017.
+ * Created by Christian Spinelli on 27/06/2017.
  */
 
-public class LocalsPagerFragment extends Fragment {
+public class InfoPagerFragment extends Fragment {
 
     private ViewPager mViewPager;
-    private LocalsPagerAdapter mAdapter;
+    private InfoPagerAdapter mAdapter;
 
     @Override
-    public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_pager,container,false);
         return view;
     }
 
     @Override
-    public void onViewCreated(View view,Bundle savedInstanceState) {
-
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         mViewPager = (ViewPager) view.findViewById(R.id.pager);
         FragmentManager fm = getFragmentManager();
-        ArrayList<Local> locals = LocalLab.get().getLocals();
-        mAdapter = new LocalsPagerAdapter(fm,locals,this.getActivity());
+        ArrayList<InfoImage> infoImages = (ArrayList<InfoImage>) this.getActivity().getIntent().getSerializableExtra("images");
+        mAdapter = new InfoPagerAdapter(fm,infoImages,this.getActivity());
         mViewPager.setAdapter(mAdapter);
-
-        Intent intent = this.getActivity().getIntent();
-        int position = intent.getIntExtra("position",0);
-
-        mViewPager.setCurrentItem(position);
     }
 }

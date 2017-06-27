@@ -14,10 +14,11 @@
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/logo_recife_do_alto">
 
         <!--
-       android:icon="@mipmap/ic_launcher"
+
        android:roundIcon="@mipmap/ic_launcher_round"
         -->
 
@@ -45,7 +46,7 @@
         <activity android:name=".MenuLocalsFragmentActivity">
         </activity>
         <activity
-            android:name=".InfoWindowFragmentActivity">
+            android:name=".InfoPagerActivity">
         </activity>
         <activity
             android:name=".SplashScreen">
