@@ -46,7 +46,8 @@
         <activity android:name=".MenuLocalsFragmentActivity">
         </activity>
         <activity
-            android:name=".InfoPagerActivity">
+            android:name=".InfoPagerActivity"
+            android:configChanges="orientation|screenSize">
         </activity>
         <activity
             android:name=".SplashScreen">
