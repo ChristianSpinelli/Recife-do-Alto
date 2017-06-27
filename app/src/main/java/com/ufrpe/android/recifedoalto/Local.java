@@ -16,16 +16,17 @@ import java.util.ArrayList;
 
 public class Local implements Serializable{
 
-    private int  mImageMap;
+    private int  mImageMap, mAddress;
     private ArrayList<InfoImage> mInfoImages;
     private LatLng mPosition;
-    private int mId;
 
-    public Local( ArrayList<InfoImage> images, int imageMap, LatLng position,int id){
+
+    public Local( ArrayList<InfoImage> images, int imageMap, LatLng position, int address){
         mPosition = position;
         mInfoImages = images;
         mImageMap = imageMap;
-        mId = id;
+        mAddress = address;
+
 
     }
 
@@ -54,9 +55,11 @@ public class Local implements Serializable{
         mImageMap = imageMap;
     }
 
-    public int getId() {
-        return mId;
+    public int getAddress() {
+        return mAddress;
     }
 
-
+    public void setAddress(int address) {
+        mAddress = address;
+    }
 }

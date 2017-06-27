@@ -3,6 +3,7 @@
     <string name="local1_title">Ponte Paulo Guerra</string>
     <string name="local1_description">Inaugurada em 1978 em homenagem ao político Paulo Guerra</string>
     <string name="local1_description2">É a maior ponte da cidade do Recife.</string>
+    <string name="local1_address">Rua Paulo Guerra - Caxangá, Recife - PE, 50800-200</string>
 
     <string name="local2_title">Museu da Cidade do Recife - Forte das Cinco Pontas</string>
     <string name="local2_description">Foi construído em Fevereiro de 1630 por mando do coronel holandês
@@ -12,6 +13,7 @@
         Pentagonal (com cinco extremidades), em forma de estrela. E mesmo após a reforma, quando
         se transformou em uma estrutura de apenas quatro pontas, continuou a fortaleza sendo chamada
         pelo seu codinome original.</string>
+    <string name="local2_address">Praça das Cinco Pontas, s/n - São José, Recife - PE, 50020-500</string>
 
     <string name="area_title">Vista do Shopping Riomar</string>
 </resources>

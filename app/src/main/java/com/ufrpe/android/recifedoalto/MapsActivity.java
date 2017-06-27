@@ -52,7 +52,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 if (areaTitle.equals(getString(areas.get(i).getTitle()))) {
                     for (Local local : areas.get(i).getLocals()) {
                         int title = local.getInfoImages().get(0).getTitle();
-                        mMap.addMarker(new MarkerOptions().position(local.getPosition()).title(getString(title)));
+                        int address = local.getAddress();
+                        mMap.addMarker(new MarkerOptions().snippet(getString(address)).position(local.getPosition()).title(getString(title)));
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(local.getPosition(), 13));
                     }
                     break;
@@ -65,8 +66,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             final Local local = locals.get(position);
 
             final LatLng localPosition = local.getPosition();
+            int address = local.getAddress();
             int title = local.getInfoImages().get(0).getTitle();
-            mMap.addMarker(new MarkerOptions().position(localPosition).title(getString(title)));
+            mMap.addMarker(new MarkerOptions().snippet(getString(address)).position(localPosition).title(getString(title)));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(localPosition, 13));
         }
         mMap.setMinZoomPreference(11);
