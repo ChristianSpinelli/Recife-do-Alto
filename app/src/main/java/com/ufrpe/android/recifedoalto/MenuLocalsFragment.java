@@ -21,7 +21,7 @@ import java.util.ArrayList;
  * Created by Christian Spinelli on 01/06/2017.
  */
 
-public class MenuLocalsFragment extends Fragment {
+public class MenuLocalsFragment extends BaseFragmentMenu{
 
     private RecyclerView mMenuLocalsGrid;
     private MenuLocalsAdapter mMenuLocalsAdapter;
@@ -58,22 +58,14 @@ public class MenuLocalsFragment extends Fragment {
 
 
     }
+
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.toolbar_menu, menu);
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.map_menu:
-                Intent currentIntent = this.getActivity().getIntent();
-                Intent intent = new Intent(getActivity(), MapsActivity.class);
-                String areaTitleMenu=getString(currentIntent.getIntExtra("area",0));
-                intent.putExtra("areaTitleMenu",areaTitleMenu);
-                startActivity(intent);
-                return true;
-        }
-        return onOptionsItemSelected(item);
+    protected Intent createIntent() {
+        Intent currentIntent = this.getActivity().getIntent();
+        Intent intent = new Intent(getActivity(), MapsActivity.class);
+        String areaTitleMenu=getString(currentIntent.getIntExtra("area",0));
+        intent.putExtra("areaTitleMenu",areaTitleMenu);
+        return intent;
     }
 
 }

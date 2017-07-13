@@ -23,7 +23,7 @@ import java.util.ArrayList;
  * Created by Christian Spinelli on 31/05/2017.
  */
 
-public class MenuFragment extends Fragment {
+public class MenuFragment extends BaseFragmentMenu {
 
     private RecyclerView mMenuRecyclerView;
     private MenuAdapter mMenuAdapter;
@@ -50,19 +50,11 @@ public class MenuFragment extends Fragment {
         mMenuRecyclerView.setAdapter(mMenuAdapter);
     }
 
+
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.toolbar_menu, menu);
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.map_menu:
-                Intent intent = new Intent(getActivity(), MapsActivity.class);
-                intent.putExtra("areas",1);
-                startActivity(intent);
-                return true;
-        }
-        return onOptionsItemSelected(item);
+    protected Intent createIntent() {
+        Intent intent = MapsActivity.newIntent(this.getActivity());
+        intent.putExtra("areas",1);
+        return intent;
     }
 }

@@ -45,6 +45,8 @@
         </activity>
         <activity android:name=".MenuLocalsFragmentActivity">
         </activity>
+        <activity android:name=".ExpandableLocalsListActivity">
+        </activity>
         <activity
             android:name=".InfoPagerActivity"
             android:configChanges="orientation|screenSize">
