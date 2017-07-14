@@ -2,6 +2,6 @@
     <string name="app_name">Recife do Alto</string>
     <string name="route">Como chegar?</string>
     <string name="you_are_here">Você está aqui.</string>
-    <string name="ver_mapa">Ver no mapa</string>
+    <string name="ver_mapa">Ver mapa</string>
     <string name="locals_items">Lista de locais</string>
 </resources>

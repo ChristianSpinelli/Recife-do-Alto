@@ -35,7 +35,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LocalLab localLab = LocalLab.get();
         ArrayList<Local> locals = localLab.getLocals();
         ArrayList<Area> areas = localLab.getAreas();
-        int position = getIntent().getIntExtra("position", 0);
+        int position = getIntent().getIntExtra("position", -1);
         int areaBundle=getIntent().getIntExtra("areas",0);
         String areaTitle=getIntent().getStringExtra("areaTitleMenu");
         LatLng recife= new LatLng(-8.059451, -34.886507);
@@ -62,7 +62,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
         }
-        else {
+        else if(position != -1) {
             final Local local = locals.get(position);
 
             final LatLng localPosition = local.getPosition();
@@ -70,6 +70,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             int title = local.getInfoImages().get(0).getTitle();
             mMap.addMarker(new MarkerOptions().snippet(getString(address)).position(localPosition).title(getString(title)));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(localPosition, 13));
+        }else{
+            for (int i = 0; i <locals.size() ; i++) {
+                Local local = locals.get(i);
+                mMap.addMarker(new MarkerOptions().snippet(getString(local.getAddress()))
+                        .position(local.getPosition()).title(getString(local.getInfoImages().get(0).getTitle())));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(local.getPosition(), 13));
+            }
+            for (int i = 0; i <areas.size() ; i++) {
+                Area area = areas.get(i);
+                mMap.addMarker(new MarkerOptions().position(area.getPosition())
+                        .title(getString(area.getTitle())));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(area.getPosition(), 13));
+            }
         }
         mMap.setMinZoomPreference(11);
         mMap.setMaxZoomPreference(15);

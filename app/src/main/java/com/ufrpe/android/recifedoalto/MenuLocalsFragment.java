@@ -59,13 +59,5 @@ public class MenuLocalsFragment extends BaseFragmentMenu{
 
     }
 
-    @Override
-    protected Intent createIntent() {
-        Intent currentIntent = this.getActivity().getIntent();
-        Intent intent = new Intent(getActivity(), MapsActivity.class);
-        String areaTitleMenu=getString(currentIntent.getIntExtra("area",0));
-        intent.putExtra("areaTitleMenu",areaTitleMenu);
-        return intent;
-    }
 
 }

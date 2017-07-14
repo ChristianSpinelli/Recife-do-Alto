@@ -11,7 +11,6 @@ import android.view.MenuItem;
  */
 
 public abstract class BaseFragmentMenu extends Fragment {
-    protected abstract Intent createIntent();
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -21,7 +20,7 @@ public abstract class BaseFragmentMenu extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.map_menu:
-                Intent intent = createIntent();
+                Intent intent = MapsActivity.newIntent(this.getActivity());
                 startActivity(intent);
                 return true;
             case R.id.locals_menu:

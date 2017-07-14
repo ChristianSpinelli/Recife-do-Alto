@@ -51,10 +51,4 @@ public class MenuFragment extends BaseFragmentMenu {
     }
 
 
-    @Override
-    protected Intent createIntent() {
-        Intent intent = MapsActivity.newIntent(this.getActivity());
-        intent.putExtra("areas",1);
-        return intent;
-    }
 }

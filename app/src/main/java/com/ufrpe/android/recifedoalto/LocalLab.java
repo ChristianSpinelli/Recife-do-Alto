@@ -20,14 +20,14 @@ public class LocalLab {
         mAreas = new ArrayList<Area>();
 
         InfoImage infoImage1_1 = new InfoImage(R.drawable.img_local1,R.string.local1_title,R.string.local1_description,0);
-        InfoImage infoImage1_2 = new InfoImage(R.drawable.img_local1_2,R.string.local1_title,R.string.local1_description2,0);
+        InfoImage infoImage1_2 = new InfoImage(R.drawable.img_local1_2,R.string.local1_title,R.string.local1_description,0);
         ArrayList<InfoImage> infoImages1 = new ArrayList<InfoImage>();
         infoImages1.add(infoImage1_1);
         infoImages1.add(infoImage1_2);
-        Local local1 = new Local(infoImages1,R.drawable.img_map1,new LatLng(-8.082839,-34.891022),R.string.local1_address);
+        Local local1 = new Local(infoImages1,R.drawable.img_map1,new LatLng(-8.081665,-34.890282),R.string.local1_address);
 
         InfoImage infoImage2_1 = new InfoImage(R.drawable.img_local2,R.string.local2_title,R.string.local2_description,1);
-        InfoImage infoImage2_2 = new InfoImage(R.drawable.img_local2_2,R.string.local2_title,R.string.local2_description2,1);
+        InfoImage infoImage2_2 = new InfoImage(R.drawable.img_local2_2,R.string.local2_title,R.string.local2_description,1);
         ArrayList<InfoImage> infoImages2 = new ArrayList<InfoImage>();
         infoImages2.add(infoImage2_1);
         infoImages2.add(infoImage2_2);
