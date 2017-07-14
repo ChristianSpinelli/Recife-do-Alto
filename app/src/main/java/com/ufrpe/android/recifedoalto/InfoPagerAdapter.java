@@ -14,22 +14,27 @@ import java.util.ArrayList;
 public class InfoPagerAdapter extends FragmentStatePagerAdapter {
 
     private ArrayList<InfoImage> mInfoImages;
-    private Activity mActivity;
+    private int mPosition;
 
-    public InfoPagerAdapter(FragmentManager fm, ArrayList<InfoImage> infoImages, Activity activity) {
+
+    public InfoPagerAdapter(FragmentManager fm, ArrayList<InfoImage> infoImages) {
         super(fm);
         mInfoImages = infoImages;
-        mActivity = activity;
     }
 
 
     @Override
     public Fragment getItem(int position) {
-        return new InfoFragment(position);
+        mPosition = position;
+        return new InfoFragment(mPosition);
     }
 
     @Override
     public int getCount() {
         return mInfoImages.size();
+    }
+
+    public int getPosition() {
+        return mPosition;
     }
 }
