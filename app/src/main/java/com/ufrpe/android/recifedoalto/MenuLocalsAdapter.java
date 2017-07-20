@@ -30,6 +30,7 @@ public class MenuLocalsAdapter extends RecyclerView.Adapter<MenuLocalsAdapter.Vi
 
         public View mView;
         public int mPostion;
+        public String mTitle;
         public ViewHolder(View v) {
             super(v);
             mView = v;
@@ -48,20 +49,22 @@ public class MenuLocalsAdapter extends RecyclerView.Adapter<MenuLocalsAdapter.Vi
     public void onBindViewHolder(final MenuLocalsAdapter.ViewHolder holder, int position) {
         holder.mPostion=position;
 
+
         int image = mLocals.get(position).getImageMap();
-        String title = mActivity.getString(mLocals.get(position).getInfoImages().get(0).getTitle());
+         holder.mTitle = mActivity.getString(mLocals.get(position).getInfoImages().get(0).getTitle());
 
         ImageView img = (ImageView) holder.mView.findViewById(R.id.locals_menu_img);
         img.setImageResource(image);
 
         TextView titleView = (TextView) holder.mView.findViewById(R.id.menu_locals_title);
-        titleView.setText(title);
+        titleView.setText(holder.mTitle);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = LocalsPagerActivity.newIntent(mActivity);
                 intent.putExtra("position",holder.mPostion);
+                intent.putExtra("title",holder.mTitle);
                 mActivity.startActivity(intent);
             }
         });

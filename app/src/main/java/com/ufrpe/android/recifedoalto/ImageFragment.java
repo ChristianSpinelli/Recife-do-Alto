@@ -72,7 +72,6 @@ public class ImageFragment extends Fragment {
                         }
 
                     }
-
                     Log.d("Position",event.getX()+" "+event.getY());
                 }
 

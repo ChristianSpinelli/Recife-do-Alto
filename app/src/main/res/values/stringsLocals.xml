@@ -10,5 +10,11 @@
      em agosto de 1630.</string>
     <string name="local2_address">Praça das Cinco Pontas, s/n - São José, Recife - PE, 50020-500</string>
 
+    <string name="local3_title">Rio Capibaribe</string>
+    <string name="local3_description">Principal rio da cidade, atravessa vários bairros até chegar ao mar, na região central. Presente em histórias, músicas, lendas e poesias do Recife.</string>
+    <string name="local3_address"></string>
+
     <string name="area_title">Mirante do Shopping Riomar</string>
+    <string name="area2_tittle">Terraço do Paço Alfândega</string>
+
 </resources>

@@ -4,13 +4,28 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/locals_subitem"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/local1_title"
-        android:textSize="18sp"
-        android:textColor="@color/colorText"
-        android:paddingLeft="24dp"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- "
+            android:textSize="18sp"
+            android:paddingLeft="36dp"
+            android:textColor="@color/colorText"/>
+
+        <TextView
+            android:id="@+id/locals_subitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/local1_title"
+            android:textSize="18sp"
+            android:textColor="@color/colorText"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
