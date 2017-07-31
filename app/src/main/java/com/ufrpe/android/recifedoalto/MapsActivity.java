@@ -9,6 +9,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -68,19 +69,43 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             final LatLng localPosition = local.getPosition();
             int address = local.getAddress();
             int title = local.getInfoImages().get(0).getTitle();
-            mMap.addMarker(new MarkerOptions().snippet(getString(address)).position(localPosition).title(getString(title)));
+            //verificando se o local possui icone, se não tiver deixa o default do google
+            if(local.getIcon() != 0){
+                mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(local.getIcon()))
+                        .snippet(getString(address)).position(localPosition).title(getString(title)));
+            }else{
+                mMap.addMarker(new MarkerOptions()
+                        .snippet(getString(address)).position(localPosition).title(getString(title)));
+            }
+
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(localPosition, 13));
         }else{
+            //colocando todos os locais no mapa
             for (int i = 0; i <locals.size() ; i++) {
                 Local local = locals.get(i);
-                mMap.addMarker(new MarkerOptions().snippet(getString(local.getAddress()))
-                        .position(local.getPosition()).title(getString(local.getInfoImages().get(0).getTitle())));
+                //verificando se o local possui icone, se não tiver deixa o default do google
+                if(local.getIcon() != 0){
+                    mMap.addMarker(new MarkerOptions().snippet(getString(local.getAddress()))
+                            .icon(BitmapDescriptorFactory.fromResource(local.getIcon()))
+                            .position(local.getPosition()).title(getString(local.getInfoImages().get(0).getTitle())));
+                }else{
+                    mMap.addMarker(new MarkerOptions().snippet(getString(local.getAddress()))
+                            .position(local.getPosition()).title(getString(local.getInfoImages().get(0).getTitle())));
+                }
+
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(local.getPosition(), 13));
             }
+            //colocando todas as areas no mapa
             for (int i = 0; i <areas.size() ; i++) {
                 Area area = areas.get(i);
-                mMap.addMarker(new MarkerOptions().position(area.getPosition())
-                        .title(getString(area.getTitle())));
+                if(area.getIcon() !=0){
+                    mMap.addMarker(new MarkerOptions().position(area.getPosition())
+                            .icon(BitmapDescriptorFactory.fromResource(area.getIcon())).title(getString(area.getTitle())));
+                }else{
+                    mMap.addMarker(new MarkerOptions().position(area.getPosition())
+                           .title(getString(area.getTitle())));
+                }
+
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(area.getPosition(), 13));
             }
         }

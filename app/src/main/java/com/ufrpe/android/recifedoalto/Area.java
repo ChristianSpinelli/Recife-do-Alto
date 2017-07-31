@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class Area {
 
-    private int mTitle, mImg;
+    private int mTitle, mImg, mIcon;
     private ArrayList<Local> mLocals;
 
     public LatLng getPosition() {
@@ -48,5 +48,13 @@ public class Area {
 
     public void setLocals(ArrayList<Local> locals) {
         mLocals = locals;
+    }
+
+    public int getIcon() {
+        return mIcon;
+    }
+
+    public void setIcon(int icon) {
+        mIcon = icon;
     }
 }

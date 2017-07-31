@@ -26,6 +26,7 @@ public class LocalLab {
         infoImages1.add(infoImage1_1);
         infoImages1.add(infoImage1_2);
         Local local1 = new Local(infoImages1,R.drawable.img_map1,new LatLng(-8.081665,-34.890282),R.string.local1_address);
+        local1.setIcon(R.drawable.bridge_icon);
 
         //criação do local forte das cinco pontas
         InfoImage infoImage2_1 = new InfoImage(R.drawable.img_local2,R.string.local2_title,R.string.local2_description,1);
@@ -34,12 +35,14 @@ public class LocalLab {
         infoImages2.add(infoImage2_1);
         infoImages2.add(infoImage2_2);
         Local local2 = new Local(infoImages2,R.drawable.forte_das_cinco_pontas,new LatLng(-8.071743,-34.880880),R.string.local2_address);
+        local2.setIcon(R.drawable.museum_war_icon);
 
         //criação do local rio capibaribe
-        InfoImage infoImage3_1 = new InfoImage(R.drawable.mirante_paco,R.string.local3_title,R.string.local3_description,0);
+        InfoImage infoImage3_1 = new InfoImage(R.drawable.paco_local1,R.string.local3_title,R.string.local3_description,2);
         ArrayList<InfoImage> infoImages3 = new ArrayList<>();
         infoImages3.add(infoImage3_1);
-        Local local3 = new Local(infoImages3,R.drawable.paco_local1,new LatLng(-8.064789,-34.874896),R.string.local3_address);
+        Local local3 = new Local(infoImages3,R.drawable.mirante_paco,new LatLng(-8.064789,-34.874896),R.string.local3_address);
+        local3.setIcon(R.drawable.river_icon);
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -49,9 +52,11 @@ public class LocalLab {
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
         area1.getLocals().add(local1);
         area1.getLocals().add(local2);
+        area1.setIcon(R.drawable.shopping_icon);
 
         Area area2 = new Area(R.string.area2_tittle,R.drawable.mirante_paco,new LatLng(-8.064825,-34.873804));
         area2.getLocals().add(local3);
+        area2.setIcon(R.drawable.shopping_icon);
 
 
         mAreas.add(area1);
