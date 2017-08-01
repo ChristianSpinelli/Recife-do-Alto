@@ -2,6 +2,7 @@ package com.ufrpe.android.recifedoalto;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -84,12 +85,25 @@ public class ExpandableLocalsListAdapter extends BaseExpandableListAdapter {
             convertView = inflater.inflate(R.layout.fragment_locals_subitem,parent,false);
         }
 
-        String subItemText = mActivity.getString(mAreas.get(groupPosition).getLocals()
+        final String subItemText = mActivity.getString(mAreas.get(groupPosition).getLocals()
                 .get(childPosition).getInfoImages().get(0).getTitle());
 
-        TextView textView = (TextView) convertView.findViewById(R.id.locals_subitem);
+        final int localPosition = mAreas.get(groupPosition).getLocals()
+                .get(childPosition).getInfoImages().get(0).getLocalPosition();
+
+        final TextView textView = (TextView) convertView.findViewById(R.id.locals_subitem);
 
         textView.setText(subItemText);
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = LocalsPagerActivity.newIntent(mActivity);
+                intent.putExtra("position", localPosition);
+                intent.putExtra("title",subItemText);
+                mActivity.startActivity(intent);
+            }
+        });
 
         return convertView;
     }
