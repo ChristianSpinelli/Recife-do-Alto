@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:text="@string/route"
         android:paddingLeft="24dp"
-        android:paddingTop="12dp"
+        android:paddingTop="6dp"
         android:textSize="14sp"
         android:textColor="@color/colorPrimary"/>
 
@@ -47,7 +47,7 @@
                 android:text="@string/local1_description"
                 android:textSize="14sp"
                 android:textColor="@color/colorText"
-                android:paddingTop="12dp"
+                android:paddingTop="6dp"
                 android:paddingLeft="24dp"/>
 
         </LinearLayout>

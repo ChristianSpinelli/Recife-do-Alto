@@ -13,13 +13,14 @@ import java.util.ArrayList;
  * Created by Christian Spinelli on 13/07/2017.
  */
 
-public class ExpandableLocalsListFragment extends Fragment {
+public class ExpandableLocalsListFragment extends BaseFragmentMenu {
 
     private ExpandableLocalsListAdapter mAdapter;
     private ExpandableListView mListView;
 
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
         View view = inflater.inflate(R.layout.activity_locals_expandable_list,container,false);
         return view;
     }

@@ -1,10 +1,14 @@
 package com.ufrpe.android.recifedoalto;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
 /**
  * Created by Christian Spinelli on 13/07/2017.

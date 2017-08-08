@@ -14,7 +14,7 @@ import android.widget.ImageView;
  * Created by Christian Spinelli on 12/06/2017.
  */
 
-public class ImageFragment extends Fragment {
+public class ImageFragment extends BaseFragmentMenu {
 
     private ImageView mImgLocal;
     private final int mImage;
@@ -26,6 +26,7 @@ public class ImageFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
         View view = inflater.inflate(R.layout.activity_image,container,false);
         return view;
     }

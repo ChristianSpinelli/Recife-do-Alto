@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * Created by Christian Spinelli on 27/06/2017.
  */
 
-public class InfoPagerFragment extends Fragment {
+public class InfoPagerFragment extends BaseFragmentMenu {
 
     private ViewPager mViewPager;
     private InfoPagerAdapter mAdapter;
@@ -25,6 +25,7 @@ public class InfoPagerFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
         View view = inflater.inflate(R.layout.activity_pager_info,container,false);
         return view;
     }
