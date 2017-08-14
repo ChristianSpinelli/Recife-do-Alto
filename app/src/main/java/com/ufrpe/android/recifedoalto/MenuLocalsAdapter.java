@@ -2,7 +2,11 @@ package com.ufrpe.android.recifedoalto;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +52,6 @@ public class MenuLocalsAdapter extends RecyclerView.Adapter<MenuLocalsAdapter.Vi
     @Override
     public void onBindViewHolder(final MenuLocalsAdapter.ViewHolder holder, int position) {
         holder.mPostion=position;
-
 
         int image = mLocals.get(position).getImageMap();
          holder.mTitle = mActivity.getString(mLocals.get(position).getInfoImages().get(0).getTitle());
