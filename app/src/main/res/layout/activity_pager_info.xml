@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/info_title"
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/local1_title"
-        android:gravity="center_horizontal"
-        android:textSize="18sp"
-        android:padding="14dp"
-        android:textColor="@color/colorPrimary"/>
+        android:layout_height="350dp"
+        android:fitsSystemWindows="true">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager_info"
-        android:layout_width="match_parent"
-        android:layout_height="350dp">
-    </android.support.v4.view.ViewPager>
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-    <TextView
-        android:id="@+id/info_route"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/route"
-        android:paddingLeft="24dp"
-        android:paddingTop="6dp"
-        android:textSize="14sp"
-        android:textColor="@color/colorPrimary"/>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_info"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+            </android.support.v4.view.ViewPager>
 
-    <ScrollView
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_info"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#ffe5e5e5"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,19 +50,42 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/info_description"
+                android:id="@+id/info_route"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/local1_description"
-                android:textSize="14sp"
-                android:textColor="@color/colorText"
+                android:layout_height="wrap_content"
+                android:text="@string/route"
+                android:paddingLeft="24dp"
                 android:paddingTop="6dp"
-                android:paddingLeft="24dp"/>
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/info_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/local1_description"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorText"
+                        android:paddingTop="6dp"
+                        android:paddingLeft="24dp"/>
+
+                </LinearLayout>
+
+            </ScrollView>
 
         </LinearLayout>
 
-    </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
 
 
-
-</LinearLayout>

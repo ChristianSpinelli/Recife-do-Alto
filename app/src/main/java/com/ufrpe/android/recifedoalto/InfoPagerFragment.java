@@ -2,9 +2,13 @@ package com.ufrpe.android.recifedoalto;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,8 +24,9 @@ public class InfoPagerFragment extends BaseFragmentMenu {
 
     private ViewPager mViewPager;
     private InfoPagerAdapter mAdapter;
-    private TextView mTitle, mDescription, mRoute;
+    private TextView mDescription, mRoute;
     private ArrayList<InfoImage> mInfoImages;
+    private CollapsingToolbarLayout mCollapsingToolbarLayout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -33,7 +38,6 @@ public class InfoPagerFragment extends BaseFragmentMenu {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         mViewPager = (ViewPager) view.findViewById(R.id.pager_info);
-        mTitle = (TextView) view.findViewById(R.id.info_title);
         mDescription = (TextView) view.findViewById(R.id.info_description);
         mRoute = (TextView) view.findViewById(R.id.info_route);
 
@@ -45,7 +49,18 @@ public class InfoPagerFragment extends BaseFragmentMenu {
         String title = getString(mInfoImages.get(mAdapter.getPosition()).getTitle());
         String description = getString(mInfoImages.get(mAdapter.getPosition()).getDescription());
 
-        mTitle.setText(title);
+        mCollapsingToolbarLayout = (CollapsingToolbarLayout) view.findViewById(R.id.collapsing_toolbar);
+
+        Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar_info);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+        ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
+        mCollapsingToolbarLayout = (CollapsingToolbarLayout) view.findViewById(R.id.collapsing_toolbar_info);
+        mCollapsingToolbarLayout.setTitle(title);
+
+        toolbarTextAppernce();
+
         mDescription.setText(description);
 
         mRoute.setOnClickListener(new View.OnClickListener() {
@@ -59,5 +74,10 @@ public class InfoPagerFragment extends BaseFragmentMenu {
         });
 
         mViewPager.setAdapter(mAdapter);
+    }
+
+    private void toolbarTextAppernce() {
+        mCollapsingToolbarLayout.setCollapsedTitleTextAppearance(R.style.collapsedappbar);
+        mCollapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.expandedappbar);
     }
 }
