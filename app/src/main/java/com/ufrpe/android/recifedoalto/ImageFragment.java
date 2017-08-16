@@ -57,13 +57,15 @@ public class ImageFragment extends BaseFragmentMenu {
 
                     }if(mImage == R.drawable.img_map1){
                         Local local;
-                        if((event.getY()>=1120 && event.getY() <= 1150) ||
+                        if((event.getY()>=1250 && event.getY() <= 1280) ||
                                 (event.getX()>=640 && event.getX()<=860) &&
-                                        (event.getY()>=560 && event.getY()<=1170)){
+                                        (event.getY()>=560 && event.getY()<=1280)){
                             local = LocalLab.get().getLocals().get(0);
                             openInfoActivity(local);
 
                         }
+
+
                     }if(mImage == R.drawable.forte_das_cinco_pontas){
                         Local local;
                         if( (event.getX()>=310 && event.getX()<=790) &&
