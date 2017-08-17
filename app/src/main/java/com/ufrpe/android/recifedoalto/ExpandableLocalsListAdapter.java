@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -88,10 +89,16 @@ public class ExpandableLocalsListAdapter extends BaseExpandableListAdapter {
         final String subItemText = mActivity.getString(mAreas.get(groupPosition).getLocals()
                 .get(childPosition).getInfoImages().get(0).getTitle());
 
+        final int subItemIcon = mAreas.get(groupPosition).getLocals().get(childPosition).getIconList();
+
         final int localPosition = mAreas.get(groupPosition).getLocals()
                 .get(childPosition).getInfoImages().get(0).getLocalPosition();
 
         final TextView textView = (TextView) convertView.findViewById(R.id.locals_subitem);
+
+        final ImageView imageView = (ImageView) convertView.findViewById(R.id.subitem_icon);
+
+        imageView.setImageResource(subItemIcon);
 
         textView.setText(subItemText);
 

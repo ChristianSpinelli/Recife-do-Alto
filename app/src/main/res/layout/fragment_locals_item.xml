@@ -10,7 +10,9 @@
         android:layout_height="wrap_content"
         android:text="@string/area_title"
         android:textSize="18sp"
-        android:textColor="@color/colorPrimary"
-        android:paddingLeft="24dp"/>
+        android:textColor="@color/colorTextGray"
+        android:paddingLeft="24dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"/>
 
 </LinearLayout>

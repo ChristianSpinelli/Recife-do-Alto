@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class Local implements Serializable{
 
-    private int  mImageMap, mAddress, mIcon;
+    private int  mImageMap, mAddress, mIcon, mIconList;
     private ArrayList<InfoImage> mInfoImages;
     private LatLng mPosition;
 
@@ -70,5 +70,13 @@ public class Local implements Serializable{
 
     public void setIcon(int icon) {
         mIcon = icon;
+    }
+
+    public int getIconList() {
+        return mIconList;
+    }
+
+    public void setIconList(int iconList) {
+        mIconList = iconList;
     }
 }

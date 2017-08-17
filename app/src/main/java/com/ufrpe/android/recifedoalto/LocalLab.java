@@ -27,6 +27,7 @@ public class LocalLab {
         infoImages1.add(infoImage1_2);
         Local local1 = new Local(infoImages1,R.drawable.img_map1,new LatLng(-8.081665,-34.890282),R.string.local1_address);
         local1.setIcon(R.drawable.bridge_icon);
+        local1.setIconList(R.drawable.ic_bridge_black_36dp);
 
         //criação do local forte das cinco pontas
         InfoImage infoImage2_1 = new InfoImage(R.drawable.img_local2,R.string.local2_title,R.string.local2_description,1);
@@ -36,6 +37,7 @@ public class LocalLab {
         infoImages2.add(infoImage2_2);
         Local local2 = new Local(infoImages2,R.drawable.forte_das_cinco_pontas,new LatLng(-8.071743,-34.880880),R.string.local2_address);
         local2.setIcon(R.drawable.museum_war_icon);
+        local2.setIconList(R.drawable.icons8_museum);
 
         //criação do local rio capibaribe
         InfoImage infoImage3_1 = new InfoImage(R.drawable.paco_local1,R.string.local3_title,R.string.local3_description,2);
@@ -43,6 +45,7 @@ public class LocalLab {
         infoImages3.add(infoImage3_1);
         Local local3 = new Local(infoImages3,R.drawable.mirante_paco,new LatLng(-8.064789,-34.874896),R.string.local3_address);
         local3.setIcon(R.drawable.river_icon);
+        local3.setIconList(R.drawable.icons8_river);
 
         mLocals.add(local1);
         mLocals.add(local2);

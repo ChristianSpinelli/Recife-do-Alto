@@ -2,6 +2,9 @@ package com.ufrpe.android.recifedoalto;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +30,13 @@ public class ExpandableLocalsListFragment extends BaseFragmentMenu {
 
     @Override
     public void onViewCreated(View view,Bundle savedInstanceState) {
+
+        Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar_list);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+        ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
+        actionBar.setTitle(getString(R.string.locals_items));
 
         mListView = (ExpandableListView) view.findViewById(R.id.locals_list);
         LocalLab localLab = LocalLab.get();
