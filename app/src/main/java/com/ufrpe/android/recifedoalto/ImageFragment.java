@@ -40,26 +40,15 @@ public class ImageFragment extends BaseFragmentMenu {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_DOWN){
-                    if(mImage == R.drawable.riomar) {
+
+                    float heigth = mImgLocal.getHeight();//1704
+                    float width = mImgLocal.getWidth();//1080
+
+                    if(mImage == R.drawable.img_map1){
                         Local local;
-                        if ((event.getY() >= 1120 && event.getY() <= 1180) ||
-                                (event.getX() >= 1530 && event.getX() <= 1730 &&
-                                        (event.getY() >= 560 && event.getY() <= 1180))) {
-                            local = LocalLab.get().getLocals().get(0);
-                            openInfoActivity(local);
-
-                        }
-                        if ((event.getX() >= 470 && event.getX() <= 540) && (event.getY() <= 1060 && event.getY() >= 1020)) {
-                            local = LocalLab.get().getLocals().get(1);
-                            openInfoActivity(local);
-
-                        }
-
-                    }if(mImage == R.drawable.img_map1){
-                        Local local;
-                        if((event.getY()>=1250 && event.getY() <= 1280) ||
-                                (event.getX()>=640 && event.getX()<=860) &&
-                                        (event.getY()>=560 && event.getY()<=1280)){
+                        if((event.getY()>= (heigth*0.7335) && event.getY() <= (heigth*0.7511)) ||
+                                (event.getX()>=(width*0.5925) && event.getX()<=(width*0.7962)) &&
+                                        (event.getY()>=(heigth*0.3286) && event.getY()<=(heigth*0.7511))){
                             local = LocalLab.get().getLocals().get(0);
                             openInfoActivity(local);
 
@@ -68,15 +57,16 @@ public class ImageFragment extends BaseFragmentMenu {
 
                     }if(mImage == R.drawable.forte_das_cinco_pontas){
                         Local local;
-                        if( (event.getX()>=310 && event.getX()<=790) &&
-                                (event.getY()>=420 && event.getY()<=940 ) ){
+                        if( (event.getX()>=(width*0.2870) && event.getX()<=(width*0.7314)) &&
+                                (event.getY()>=(heigth*0.2464) && event.getY()<=(heigth*0.5516) ) ){
                             local = LocalLab.get().getLocals().get(1);
                             openInfoActivity(local);
                         }
 
                     }if(mImage == R.drawable.mirante_paco){
                         Local local;
-                        if((event.getX()>=45 && event.getX()<=970) &&(event.getY()>=780 && event.getY()<=1510)){
+                        if((event.getX()>=(width*0.0416) && event.getX()<=(width*0.8981))
+                                &&(event.getY()>=(heigth*0.4577) && event.getY()<=(heigth*0.8861))){
                             local = LocalLab.get().getLocals().get(2);
                             openInfoActivity(local);
                         }
