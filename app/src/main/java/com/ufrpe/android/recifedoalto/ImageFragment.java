@@ -44,7 +44,7 @@ public class ImageFragment extends BaseFragmentMenu {
                     float heigth = mImgLocal.getHeight();//1704
                     float width = mImgLocal.getWidth();//1080
 
-                    if(mImage == R.drawable.img_map1){
+                    if(mImage == R.drawable.img_map1_selec){
                         Local local;
                         if((event.getY()>= (heigth*0.7335) && event.getY() <= (heigth*0.7511)) ||
                                 (event.getX()>=(width*0.5925) && event.getX()<=(width*0.7962)) &&
@@ -55,7 +55,7 @@ public class ImageFragment extends BaseFragmentMenu {
                         }
 
 
-                    }if(mImage == R.drawable.forte_das_cinco_pontas){
+                    }if(mImage == R.drawable.forte_das_cinco_pontas_selec){
                         Local local;
                         if( (event.getX()>=(width*0.2870) && event.getX()<=(width*0.7314)) &&
                                 (event.getY()>=(heigth*0.2464) && event.getY()<=(heigth*0.5516) ) ){
@@ -63,7 +63,7 @@ public class ImageFragment extends BaseFragmentMenu {
                             openInfoActivity(local);
                         }
 
-                    }if(mImage == R.drawable.mirante_paco){
+                    }if(mImage == R.drawable.mirante_paco_selec){
                         Local local;
                         if((event.getX()>=(width*0.0416) && event.getX()<=(width*0.8981))
                                 &&(event.getY()>=(heigth*0.4577) && event.getY()<=(heigth*0.8861))){

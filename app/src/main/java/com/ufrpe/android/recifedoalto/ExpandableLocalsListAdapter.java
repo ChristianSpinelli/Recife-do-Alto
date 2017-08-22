@@ -102,7 +102,7 @@ public class ExpandableLocalsListAdapter extends BaseExpandableListAdapter {
 
         textView.setText(subItemText);
 
-        textView.setOnClickListener(new View.OnClickListener() {
+        convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = LocalsPagerActivity.newIntent(mActivity);

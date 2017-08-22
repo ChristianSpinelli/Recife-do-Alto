@@ -1,5 +1,6 @@
 package com.ufrpe.android.recifedoalto;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ExpandableListView;
 
 import java.util.ArrayList;
@@ -40,9 +42,10 @@ public class ExpandableLocalsListFragment extends BaseFragmentMenu {
 
         mListView = (ExpandableListView) view.findViewById(R.id.locals_list);
         LocalLab localLab = LocalLab.get();
-        ArrayList<Area> areas = localLab.getAreas();
+        final ArrayList<Area> areas = localLab.getAreas();
         mAdapter = new ExpandableLocalsListAdapter(this.getActivity(),areas);
         mListView.setAdapter(mAdapter);
+
 
 
 
