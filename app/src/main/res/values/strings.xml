@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Recife do Alto</string>
-    <string name="route">Como chegar?</string>
-    <string name="you_are_here">Você está aqui.</string>
-    <string name="ver_mapa">Ver mapa</string>
-    <string name="locals_items">Lista de locais</string>
+    <string name="route">How can I get?</string>
+    <string name="you_are_here">You are here.</string>
+    <string name="ver_mapa">See Map</string>
+    <string name="locals_items">Locations List</string>
 </resources>

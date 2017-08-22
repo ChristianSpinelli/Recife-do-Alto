@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="local1_title">Ponte Paulo Guerra</string>
+    <string name="local1_description">Construída em 1978 para desafogar o trânsito e facilitar o acesso à zona sul da cidade. </string>
+    <string name="local1_address">Rua Paulo Guerra - Caxangá, Recife - PE, 50800-200</string>
+
+    <string name="local2_title">Museu da Cidade do Recife - Forte das Cinco Pontas</string>
+    <string name="local2_description">Foi construído em Fevereiro de 1630 por mando do coronel holandês
+        Diederick van Waerdenburch. E ainda em obras resistiu com sucesso a um ataque das forças portuguesas
+     em agosto de 1630.</string>
+    <string name="local2_address">Praça das Cinco Pontas, s/n - São José, Recife - PE, 50020-500</string>
+
+    <string name="local3_title">Rio Capibaribe</string>
+    <string name="local3_description">Principal rio da cidade, atravessa vários bairros até chegar ao mar, na região central. Presente em histórias, músicas, lendas e poesias do Recife.</string>
+    <string name="local3_address"></string>
+
+    <string name="area_title">Mirante do Shopping Riomar</string>
+    <string name="area2_tittle">Terraço do Paço Alfândega</string>
+
+</resources>

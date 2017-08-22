@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="local1_title">Ponte Paulo Guerra</string>
-    <string name="local1_description">Construída em 1978 para desafogar o trânsito e facilitar o acesso à zona sul da cidade. </string>
-    <string name="local1_address">Rua Paulo Guerra - Caxangá, Recife - PE, 50800-200</string>
+    <string name="local1_title">Paulo Guerra Bridge</string>
+    <string name="local1_description">Built in 1978 to relieve the traffic and make the acess to south side more easier </string>
+    <string name="local1_address">Paulo Guerra street - Caxangá, Recife - PE, 50800-200</string>
 
-    <string name="local2_title">Museu da Cidade do Recife - Forte das Cinco Pontas</string>
-    <string name="local2_description">Foi construído em Fevereiro de 1630 por mando do coronel holandês
-        Diederick van Waerdenburch. E ainda em obras resistiu com sucesso a um ataque das forças portuguesas
-     em agosto de 1630.</string>
-    <string name="local2_address">Praça das Cinco Pontas, s/n - São José, Recife - PE, 50020-500</string>
+    <string name="local2_title">Museum of the city of Recife- Fort of Cinco Pontas</string>
+    <string name="local2_description">Built in February of 1630 by the Dutch colonel Diederick van Waerdenburch demand.</string>
+    <string name="local2_address">Cinco Pontas Square, s/n - São José, Recife - PE, 50020-500</string>
 
-    <string name="local3_title">Rio Capibaribe</string>
-    <string name="local3_description">Principal rio da cidade, atravessa vários bairros até chegar ao mar, na região central. Presente em histórias, músicas, lendas e poesias do Recife.</string>
+    <string name="local3_title">Capibaribe River</string>
+    <string name="local3_description">Most important river in the city, cross many neighborhoods until
+        get in the sea, in the central region. Is Remembered in stories, musics, legends and poetry of Recife.</string>
     <string name="local3_address"></string>
 
-    <string name="area_title">Mirante do Shopping Riomar</string>
-    <string name="area2_tittle">Terraço do Paço Alfândega</string>
+    <string name="area_title">Observatory of Riomar Shopping</string>
+    <string name="area2_tittle">Paço Alfândega Pier</string>
 
 </resources>
