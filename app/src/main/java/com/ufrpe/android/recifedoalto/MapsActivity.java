@@ -11,6 +11,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
@@ -71,11 +72,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             int title = local.getInfoImages().get(0).getTitle();
             //verificando se o local possui icone, se não tiver deixa o default do google
             if(local.getIcon() != 0){
-                mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(local.getIcon()))
+                Marker marker= mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(local.getIcon()))
                         .snippet(getString(address)).position(localPosition).title(getString(title)));
+                marker.showInfoWindow();
+
             }else{
-                mMap.addMarker(new MarkerOptions()
+               Marker marker = mMap.addMarker(new MarkerOptions()
                         .snippet(getString(address)).position(localPosition).title(getString(title)));
+                marker.showInfoWindow();
             }
 
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(localPosition, 13));
