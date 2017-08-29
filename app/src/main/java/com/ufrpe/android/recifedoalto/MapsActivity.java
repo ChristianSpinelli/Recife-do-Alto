@@ -156,37 +156,42 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             case R.id.category_shopping:
                 sCategory = getString(R.string.shopping);
                 item.setChecked(true);
-                startActivity(getIntent());
                 mMenuItem=1;
+                restartActivity();
                 return true;
             case R.id.category_bridge:
                 sCategory= getString(R.string.bridge);
                 item.setChecked(true);
                 mMenuItem=2;
-                startActivity(getIntent());
+                restartActivity();
                 return true;
             case R.id.category_museum:
                 sCategory=getString(R.string.museum);
                 item.setChecked(true);
                 mMenuItem=3;
-                startActivity(getIntent());
+                restartActivity();
                 return true;
             case R.id.category_river:
                 sCategory=getString(R.string.river);
                 item.setChecked(true);
                 mMenuItem=4;
-                startActivity(getIntent());
+                restartActivity();
                 return true;
             case R.id.category_all:
                 sCategory=getString(R.string.all);
                 item.setChecked(true);
                 mMenuItem=0;
-                startActivity(getIntent());
+                restartActivity();
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void restartActivity(){
+        finish();
+        startActivity(getIntent());
     }
 
 
