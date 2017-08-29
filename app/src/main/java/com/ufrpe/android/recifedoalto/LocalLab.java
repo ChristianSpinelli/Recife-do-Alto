@@ -26,7 +26,7 @@ public class LocalLab {
         infoImages1.add(infoImage1_1);
         infoImages1.add(infoImage1_2);
         Local local1 = new Local(infoImages1,R.drawable.img_map1,new LatLng(-8.081665,-34.890282),R.string.local1_address);
-        local1.setIcon(R.drawable.bridge_icon);
+        local1.setCategory(Category.BRIDGE);
         local1.setIconList(R.drawable.ic_bridge_black_36dp);
         local1.setImageMapSelec(R.drawable.img_map1_selec);
 
@@ -37,7 +37,7 @@ public class LocalLab {
         infoImages2.add(infoImage2_1);
         infoImages2.add(infoImage2_2);
         Local local2 = new Local(infoImages2,R.drawable.forte_das_cinco_pontas,new LatLng(-8.071743,-34.880880),R.string.local2_address);
-        local2.setIcon(R.drawable.museum_war_icon);
+        local2.setCategory(Category.MUSEUM);
         local2.setIconList(R.drawable.icons8_museum);
         local2.setImageMapSelec(R.drawable.forte_das_cinco_pontas_selec);
 
@@ -46,7 +46,7 @@ public class LocalLab {
         ArrayList<InfoImage> infoImages3 = new ArrayList<>();
         infoImages3.add(infoImage3_1);
         Local local3 = new Local(infoImages3,R.drawable.mirante_paco,new LatLng(-8.064789,-34.874896),R.string.local3_address);
-        local3.setIcon(R.drawable.river_icon);
+        local3.setCategory(Category.RIVER);
         local3.setIconList(R.drawable.icons8_river);
         local3.setImageMapSelec(R.drawable.mirante_paco_selec);
 
@@ -58,11 +58,11 @@ public class LocalLab {
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
         area1.getLocals().add(local1);
         area1.getLocals().add(local2);
-        area1.setIcon(R.drawable.shopping_icon);
+        area1.setCategory(Category.SHOPPING);
 
         Area area2 = new Area(R.string.area2_tittle,R.drawable.mirante_paco,new LatLng(-8.064825,-34.873804));
         area2.getLocals().add(local3);
-        area2.setIcon(R.drawable.shopping_icon);
+        area2.setCategory(Category.SHOPPING);
 
 
         mAreas.add(area1);

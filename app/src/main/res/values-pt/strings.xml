@@ -4,4 +4,10 @@
     <string name="you_are_here">Você está aqui.</string>
     <string name="ver_mapa">Ver mapa</string>
     <string name="locals_items">Lista de locais</string>
+    <string name="shopping">Shopping</string>
+    <string name="bridge">Ponte</string>
+    <string name="river">Rio</string>
+    <string name="museum">Museu</string>
+    <string name="all">Todos</string>
+    <string name="menu_categories">Menu de Categorias</string>
 </resources>

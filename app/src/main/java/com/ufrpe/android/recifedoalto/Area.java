@@ -10,8 +10,9 @@ import java.util.ArrayList;
 
 public class Area {
 
-    private int mTitle, mImg, mIcon;
+    private int mTitle, mImg;
     private ArrayList<Local> mLocals;
+    private Category mCategory;
 
     public LatLng getPosition() {
         return mPosition;
@@ -50,11 +51,15 @@ public class Area {
         mLocals = locals;
     }
 
-    public int getIcon() {
-        return mIcon;
+    public Category getCategory() {
+        return mCategory;
     }
 
-    public void setIcon(int icon) {
-        mIcon = icon;
+    public void setCategory(Category category) {
+        mCategory = category;
+    }
+
+    public void setPosition(LatLng position) {
+        mPosition = position;
     }
 }
