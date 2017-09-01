@@ -13,6 +13,7 @@ public class Area {
     private int mTitle, mImg;
     private ArrayList<Local> mLocals;
     private Category mCategory;
+    private boolean mInsertArea;
 
     public LatLng getPosition() {
         return mPosition;
@@ -25,6 +26,7 @@ public class Area {
         mTitle = title;
         mImg = img;
         mLocals = new ArrayList<Local>();
+        mInsertArea = true;
     }
 
     public int getTitle() {
@@ -61,5 +63,13 @@ public class Area {
 
     public void setPosition(LatLng position) {
         mPosition = position;
+    }
+
+    public boolean isInsertArea() {
+        return mInsertArea;
+    }
+
+    public void setInsertArea(boolean insertArea) {
+        mInsertArea = insertArea;
     }
 }

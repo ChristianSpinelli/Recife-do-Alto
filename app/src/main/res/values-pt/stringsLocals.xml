@@ -14,7 +14,15 @@
     <string name="local3_description">Principal rio da cidade, atravessa vários bairros até chegar ao mar, na região central. Presente em histórias, músicas, lendas e poesias do Recife.</string>
     <string name="local3_address"></string>
 
+    <string name="local4_title">Shopping Riomar</string>
+    <string name="local4_description"> O RioMar Shopping é um centro comercial de grande porte. Inaugurado em 30 de outubro de 2012,
+        é o maior empreendimento comercial do Nordeste do Brasil, sendo o 5º maior do país e o 1º do tipo fora do estado de
+        São Paulo. É o primeiro endereço de alto luxo do Norte-Nordeste, abarcando lojas de grifes internacionais.
+        O RioMar Shopping é o primeiro centro de compras do Brasil a conquistar o selo AQUA (Alta Qualidade Ambiental).</string>
+    <string name="local4_address">Av. República do Líbano, 251 - Pina, Recife - PE, 51110-160</string>
+
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>
+    <string name="area3_title">Mirante Catamarã</string>
 
 </resources>

@@ -9,7 +9,8 @@ public enum Category {
     SHOPPING(R.string.shopping,R.drawable.shopping_icon),
     BRIDGE(R.string.bridge,R.drawable.bridge_icon),
     MUSEUM(R.string.museum,R.drawable.museum_war_icon),
-    RIVER(R.string.river,R.drawable.river_icon);
+    RIVER(R.string.river,R.drawable.river_icon),
+    BOAT_TOUR(R.string.boat_tour,R.drawable.boat_tour_icon);
 
     public int mTitle, mIcon;
 

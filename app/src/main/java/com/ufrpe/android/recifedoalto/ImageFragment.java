@@ -70,6 +70,13 @@ public class ImageFragment extends BaseFragmentMenu {
                             local = LocalLab.get().getLocals().get(2);
                             openInfoActivity(local);
                         }
+
+                    }
+
+                    if(mImage == R.drawable.shopping_riomar_select){
+                        Local local;
+                        local = LocalLab.get().getLocals().get(3);
+                        openInfoActivity(local);
                     }
                     Log.d("Position",event.getX()+" "+event.getY());
                 }

@@ -12,7 +12,7 @@
             android:id="@+id/subitem_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_bridge_black_36dp"
+            android:src="@drawable/ic_bridge"
             android:paddingLeft="12dp"/>
 
         <TextView

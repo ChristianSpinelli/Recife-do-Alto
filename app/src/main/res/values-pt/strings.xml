@@ -8,6 +8,7 @@
     <string name="bridge">Ponte</string>
     <string name="river">Rio</string>
     <string name="museum">Museu</string>
+    <string name="boat_tour">Passeio de barco</string>
     <string name="all">Todos</string>
     <string name="menu_categories">Menu de Categorias</string>
 </resources>

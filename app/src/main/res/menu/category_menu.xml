@@ -16,6 +16,9 @@
         <item android:id="@+id/category_river"
               android:title="@string/river"
               android:icon="@drawable/river_icon"/>
+        <item android:id="@+id/category_boat_tour"
+            android:title="@string/boat_tour"
+            android:icon="@drawable/boat_tour_icon"/>
     </group>
 
 </menu>

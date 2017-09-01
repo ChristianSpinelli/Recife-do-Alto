@@ -120,10 +120,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             for (int i = 0; i <areas.size() ; i++) {
                 Area area = areas.get(i);
 
-                if(sCategory==null || sCategory==getString(R.string.all)){
+                if((sCategory==null || sCategory==getString(R.string.all)) &&(area.isInsertArea())){
                     mMap.addMarker(new MarkerOptions().position(area.getPosition())
                             .icon(BitmapDescriptorFactory.fromResource(area.getCategory().getIcon())).title(getString(area.getTitle())));
-                }else if (sCategory==getString(area.getCategory().getTitle())){
+                }else if (sCategory==getString(area.getCategory().getTitle()) && area.isInsertArea()){
                     mMap.addMarker(new MarkerOptions().position(area.getPosition())
                             .icon(BitmapDescriptorFactory.fromResource(area.getCategory().getIcon())).title(getString(area.getTitle())));
                 }
@@ -175,6 +175,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 sCategory=getString(R.string.river);
                 item.setChecked(true);
                 mMenuItem=4;
+                restartActivity();
+                return true;
+            case R.id.category_boat_tour:
+                sCategory=getString(R.string.boat_tour);
+                item.setChecked(true);
+                mMenuItem=5;
                 restartActivity();
                 return true;
             case R.id.category_all:
