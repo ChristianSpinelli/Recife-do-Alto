@@ -13,7 +13,7 @@ public class ImageFragmentActivity extends BaseFragmentActivity {
 
     @Override
     protected Fragment createFragment() {
-        return new ImageFragment(getIntent().getIntExtra("image",0));
+        return new ImageFragment();
     }
 
     public static Intent newIntent(Context context) {

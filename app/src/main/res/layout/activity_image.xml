@@ -12,7 +12,10 @@
 
 <HorizontalScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideInset"
+    android:scrollbarThumbHorizontal="@color/colorPrimary"
+    android:fadeScrollbars="false">
 
     <ImageView
         android:id="@+id/img_local"

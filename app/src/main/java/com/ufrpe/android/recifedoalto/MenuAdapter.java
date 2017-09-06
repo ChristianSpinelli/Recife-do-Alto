@@ -31,7 +31,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         public View mView;
-        public int mPosition, mImage;
+        public int mPosition, mImage,mImageMap;
         public String mTitle;
         public ViewHolder(View v) {
             super(v);
@@ -53,6 +53,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
     public void onBindViewHolder(final MenuAdapter.ViewHolder holder, int position) {
         holder.mPosition = position;
         holder.mImage = mAreas.get(position).getImg();
+        holder.mImageMap = mAreas.get(position).getImgMap();
         holder.mTitle = mActivity.getString(mAreas.get(position).getTitle());
 
         ImageView img = (ImageView) holder.mView.findViewById(R.id.menu_img);
@@ -66,7 +67,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
             @Override
             public void onClick(View v) {
                 Intent intent = ImageFragmentActivity.newIntent(mActivity);
-                intent.putExtra("image",holder.mImage);
+                intent.putExtra("image",holder.mImageMap);
                 mActivity.startActivity(intent);
             }
         });

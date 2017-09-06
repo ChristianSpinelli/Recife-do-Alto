@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class Area {
 
-    private int mTitle, mImg;
+    private int mTitle, mImg, mImgMap;
     private ArrayList<Local> mLocals;
     private Category mCategory;
     private boolean mInsertArea;
@@ -71,5 +71,13 @@ public class Area {
 
     public void setInsertArea(boolean insertArea) {
         mInsertArea = insertArea;
+    }
+
+    public int getImgMap() {
+        return mImgMap;
+    }
+
+    public void setImgMap(int imgMap) {
+        mImgMap = imgMap;
     }
 }

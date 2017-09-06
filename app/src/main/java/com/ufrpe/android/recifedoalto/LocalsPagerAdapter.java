@@ -24,7 +24,7 @@ public class LocalsPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return new ImageFragment(mAreas.get(position).getImg());
+        return new ImageFragment();
     }
 
     @Override

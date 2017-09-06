@@ -69,15 +69,18 @@ public class LocalLab {
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
         area1.getLocals().add(local1);
         area1.getLocals().add(local2);
+        area1.setImgMap(R.drawable.mirante_riomar_map);
         area1.setCategory(Category.SHOPPING);
         area1.setInsertArea(false);
 
         Area area2 = new Area(R.string.area2_tittle,R.drawable.mirante_paco,new LatLng(-8.064825,-34.873804));
         area2.getLocals().add(local3);
+        area2.setImgMap(R.drawable.mirante_paco);
         area2.setCategory(Category.SHOPPING);
 
         Area area3 = new Area(R.string.area3_title,R.drawable.mirante_catamara,new LatLng(-8.0741111,-34.8844026));
         area3.getLocals().add(local4);
+        area3.setImgMap(R.drawable.mirante_catamara);
         area3.setCategory(Category.BOAT_TOUR);
 
 
