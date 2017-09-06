@@ -9,12 +9,21 @@
     tools:context="com.ufrpe.android.recifedoalto.LocalsPagerActivity">
 
 
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
     <ImageView
         android:id="@+id/img_local"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/img_local1"/>
+
+</HorizontalScrollView>
+
+
 
 
 

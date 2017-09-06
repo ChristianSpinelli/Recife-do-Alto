@@ -94,6 +94,8 @@ public class ExpandableLocalsListAdapter extends BaseExpandableListAdapter {
         final int localPosition = mAreas.get(groupPosition).getLocals()
                 .get(childPosition).getInfoImages().get(0).getLocalPosition();
 
+        final Local local = mAreas.get(groupPosition).getLocals().get(childPosition);
+
         final TextView textView = (TextView) convertView.findViewById(R.id.locals_subitem);
 
         final ImageView imageView = (ImageView) convertView.findViewById(R.id.subitem_icon);
@@ -105,9 +107,8 @@ public class ExpandableLocalsListAdapter extends BaseExpandableListAdapter {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = LocalsPagerActivity.newIntent(mActivity);
-                intent.putExtra("position", localPosition);
-                intent.putExtra("title",subItemText);
+                Intent intent = InfoPagerActivity.newIntent(mActivity);
+                intent.putExtra("images",local.getInfoImages());
                 mActivity.startActivity(intent);
             }
         });

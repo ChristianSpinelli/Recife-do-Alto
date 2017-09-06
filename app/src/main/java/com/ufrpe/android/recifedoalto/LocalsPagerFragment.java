@@ -35,24 +35,10 @@ public class LocalsPagerFragment extends Fragment {
         LocalLab localLab = LocalLab.get();
 
         ArrayList<Area> areas = localLab.getAreas();
-        ArrayList<Local> locals = new ArrayList<Local>();
-        ArrayList<Local> auxLocals  = new ArrayList<Local>();
 
         Intent intent = this.getActivity().getIntent();
-        String title = intent.getStringExtra("title");
 
-        for (int i = 0; i <areas.size() ; i++) {
-           auxLocals = areas.get(i).getLocals();
-            for (int j = 0; j < auxLocals.size(); j++) {
-                if(getString(auxLocals.get(j).getInfoImages().get(0).getTitle()).equals(title)){
-                    locals = areas.get(i).getLocals();
-                    break;
-                }
-            }
-
-        }
-
-        mAdapter = new LocalsPagerAdapter(fm,locals,this.getActivity());
+        mAdapter = new LocalsPagerAdapter(fm,areas,this.getActivity());
         mViewPager.setAdapter(mAdapter);
 
         int position = intent.getIntExtra("position",0);

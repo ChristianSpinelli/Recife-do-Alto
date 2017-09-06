@@ -13,22 +13,22 @@ import java.util.ArrayList;
 
 public class LocalsPagerAdapter extends FragmentStatePagerAdapter {
 
-    private ArrayList<Local> mLocals;
+    private ArrayList<Area> mAreas;
     private Activity mActivity;
 
-    public LocalsPagerAdapter(FragmentManager fm, ArrayList<Local> locals, Activity activity) {
+    public LocalsPagerAdapter(FragmentManager fm, ArrayList<Area> areas, Activity activity) {
         super(fm);
-        mLocals = locals;
+        mAreas = areas;
         mActivity = activity;
     }
 
     @Override
     public Fragment getItem(int position) {
-        return new ImageFragment(mLocals.get(position).getImageMapSelec());
+        return new ImageFragment(mAreas.get(position).getImg());
     }
 
     @Override
     public int getCount() {
-        return mLocals.size();
+        return mAreas.size();
     }
 }

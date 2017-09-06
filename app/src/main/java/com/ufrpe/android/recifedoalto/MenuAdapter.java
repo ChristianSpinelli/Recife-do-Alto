@@ -31,7 +31,8 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         public View mView;
-        public int mPosition;
+        public int mPosition, mImage;
+        public String mTitle;
         public ViewHolder(View v) {
             super(v);
             mView = v;
@@ -51,21 +52,21 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(final MenuAdapter.ViewHolder holder, int position) {
         holder.mPosition = position;
-        int image = mAreas.get(position).getImg();
-        String title = mActivity.getString(mAreas.get(position).getTitle());
+        holder.mImage = mAreas.get(position).getImg();
+        holder.mTitle = mActivity.getString(mAreas.get(position).getTitle());
 
         ImageView img = (ImageView) holder.mView.findViewById(R.id.menu_img);
-        img.setImageResource(image);
+        img.setImageResource(holder.mImage);
 
         TextView titleView = (TextView) holder.mView.findViewById(R.id.menu_title);
-        titleView.setText(title);
+        titleView.setText(holder.mTitle);
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = MenuLocalsFragmentActivity.newIntent(mActivity);
-                intent.putExtra("area",mAreas.get(holder.mPosition).getTitle());
+                Intent intent = ImageFragmentActivity.newIntent(mActivity);
+                intent.putExtra("image",holder.mImage);
                 mActivity.startActivity(intent);
             }
         });
