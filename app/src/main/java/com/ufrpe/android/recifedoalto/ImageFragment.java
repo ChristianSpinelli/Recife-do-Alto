@@ -54,10 +54,29 @@ public class ImageFragment extends Fragment {
                                 openInfoActivity(local);
                             }
 
+                    }if(mImage == R.drawable.mirante_catamara_map){
+                       Local local;
+                        if( (event.getX()>=(width*0.8450) && event.getX()<(width*0.8750))
+                                && (event.getY()>= (heigth*0.1642) && event.getY()<(heigth*0.2389) ) ){
+                            local = LocalLab.get().getLocals().get(3);
+                            openInfoActivity(local);
+
+                        }if( (event.getX()>=(width*0.6700) && event.getX()<(width*0.7050))
+                                && (event.getY()>=(heigth*0.2479) && event.getY()<(heigth*0.3195)) ){
+                            local = LocalLab.get().getLocals().get(0);
+                            openInfoActivity(local);
+                        }
+                    }if(mImage == R.drawable.mirante_paco_map){
+                        Local local;
+                        if( (event.getX()>=(width*0.1750) && event.getX()<(width*0.2100))
+                                && (event.getY()>=(heigth*0.2090) && event.getY()<(heigth*0.2897)) ){
+                            local = LocalLab.get().getLocals().get(2);
+                            openInfoActivity(local);
+                        }
                     }
 
                     Log.d("Position", event.getX()+ " " + event.getY());
-                    Log.d("Position", mImgLocal.getHeight()+ " " + mImgLocal.getWidth());
+                    Log.d("Position",mImgLocal.getWidth()+ " " +  mImgLocal.getHeight());
                 }
 
                 return true;
