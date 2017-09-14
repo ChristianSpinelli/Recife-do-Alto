@@ -49,6 +49,8 @@
         </activity>
         <activity android:name=".ImageFragmentActivity">
         </activity>
+        <activity android:name=".SplashScreen2">
+        </activity>
         <activity
             android:name=".InfoPagerActivity"
             android:configChanges="orientation|screenSize">

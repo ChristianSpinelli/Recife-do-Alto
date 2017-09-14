@@ -37,8 +37,8 @@ public class ImageFragment extends Fragment {
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_DOWN) {
 
-                    float heigth = mImgLocal.getHeight();//1674 //978
-                    float width = mImgLocal.getWidth();//2000 //2000
+                    float heigth = mImgLocal.getHeight();//1674
+                    float width = mImgLocal.getWidth();//2000
 
 
                     if (mImage == R.drawable.mirante_riomar_map) {
@@ -66,6 +66,7 @@ public class ImageFragment extends Fragment {
                             local = LocalLab.get().getLocals().get(0);
                             openInfoActivity(local);
                         }
+
                     }if(mImage == R.drawable.mirante_paco_map){
                         Local local;
                         if( (event.getX()>=(width*0.1750) && event.getX()<(width*0.2100))
