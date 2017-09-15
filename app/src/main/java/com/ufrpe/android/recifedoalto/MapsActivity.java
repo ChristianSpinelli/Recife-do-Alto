@@ -7,10 +7,13 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -147,50 +150,77 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-        getMenuInflater().inflate(R.menu.category_menu, menu);
-        menu.getItem(mMenuItem).setChecked(true);
+        getMenuInflater().inflate(R.menu.menu_map, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.category_shopping:
-                sCategory = getString(R.string.shopping);
-                item.setChecked(true);
-                mMenuItem=1;
-                restartActivity();
+            case R.id.category_menu:
+                View v = findViewById(R.id.category_menu);
+                PopupMenu pm = new PopupMenu(this,v);
+                Menu menu = pm.getMenu();
+                pm.getMenuInflater().inflate(R.menu.category_menu, menu);
+                menu.getItem(mMenuItem).setChecked(true);
+                pm.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()){
+                            case R.id.category_shopping:
+                                sCategory = getString(R.string.shopping);
+                                item.setChecked(true);
+                                mMenuItem=1;
+                                restartActivity();
+                                return true;
+                            case R.id.category_bridge:
+                                sCategory= getString(R.string.bridge);
+                                item.setChecked(true);
+                                mMenuItem=2;
+                                restartActivity();
+                                return true;
+                            case R.id.category_museum:
+                                sCategory=getString(R.string.museum);
+                                item.setChecked(true);
+                                mMenuItem=3;
+                                restartActivity();
+                                return true;
+                            case R.id.category_river:
+                                sCategory=getString(R.string.river);
+                                item.setChecked(true);
+                                mMenuItem=4;
+                                restartActivity();
+                                return true;
+                            case R.id.category_boat_tour:
+                                sCategory=getString(R.string.boat_tour);
+                                item.setChecked(true);
+                                mMenuItem=5;
+                                restartActivity();
+                                return true;
+                            case R.id.category_all:
+                                sCategory=getString(R.string.all);
+                                item.setChecked(true);
+                                mMenuItem=0;
+                                restartActivity();
+                                return true;
+                            default:
+                                break;
+
+                        }
+                        return false;
+                    }
+                });
+                pm.show();
                 return true;
-            case R.id.category_bridge:
-                sCategory= getString(R.string.bridge);
-                item.setChecked(true);
-                mMenuItem=2;
-                restartActivity();
+            case R.id.observatory_menu:
+                Intent intent = MenuFragmentActivity.newIntent(this);
+                startActivity(intent);
                 return true;
-            case R.id.category_museum:
-                sCategory=getString(R.string.museum);
-                item.setChecked(true);
-                mMenuItem=3;
-                restartActivity();
+            case R.id.locals_menu:
+                intent = ExpandableLocalsListActivity.newIntent(this);
+                startActivity(intent);
                 return true;
-            case R.id.category_river:
-                sCategory=getString(R.string.river);
-                item.setChecked(true);
-                mMenuItem=4;
-                restartActivity();
-                return true;
-            case R.id.category_boat_tour:
-                sCategory=getString(R.string.boat_tour);
-                item.setChecked(true);
-                mMenuItem=5;
-                restartActivity();
-                return true;
-            case R.id.category_all:
-                sCategory=getString(R.string.all);
-                item.setChecked(true);
-                mMenuItem=0;
-                restartActivity();
-                return true;
+
 
             default:
                 return super.onOptionsItemSelected(item);
