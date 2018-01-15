@@ -69,8 +69,8 @@ public class ImageFragment extends Fragment {
 
                     }if(mImage == R.drawable.mirante_paco_map){
                         Local local;
-                        if( (event.getX()>=(width*0.1750) && event.getX()<(width*0.2100))
-                                && (event.getY()>=(heigth*0.2090) && event.getY()<(heigth*0.2897)) ){
+                        if( (event.getX()>=(width*0.4133) && event.getX()<(width*0.4297))
+                                && (event.getY()>=(heigth*0.5017) && event.getY()<(heigth*0.6033)) ){
                             local = LocalLab.get().getLocals().get(2);
                             openInfoActivity(local);
                         }
