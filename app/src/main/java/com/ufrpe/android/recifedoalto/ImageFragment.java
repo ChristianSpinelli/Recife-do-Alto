@@ -43,26 +43,26 @@ public class ImageFragment extends Fragment {
 
                     if (mImage == R.drawable.mirante_riomar_map) {
                         Local local;
-                            if ((event.getX() >= (width*0.6550) && event.getX() < (width*0.6725))
-                                    && (event.getY() >= (heigth*0.4330) && event.getY() < (heigth*0.4928)) ) {
+                            if ((event.getX() >= (width*0.8106) && event.getX() < (width*0.8368))
+                                    && (event.getY() >= (heigth*0.3643) && event.getY() < (heigth*0.4749)) ) {
                                 local = LocalLab.get().getLocals().get(0);
                                 openInfoActivity(local);
 
-                            }if((event.getX()>=(width*0.1500) && event.getX()<(width*0.1900))
-                                && (event.getY()>= (heigth*0.3643) && event.getY()<(heigth*0.4480))){
+                            }if((event.getX()>=(width*0.6080) && event.getX()<(width*0.6367))
+                                && (event.getY()>= (heigth*0.3225) && event.getY()<(heigth*0.4181))){
                                 local = LocalLab.get().getLocals().get(1);
                                 openInfoActivity(local);
                             }
 
                     }if(mImage == R.drawable.mirante_catamara_map){
                        Local local;
-                        if( (event.getX()>=(width*0.8450) && event.getX()<(width*0.8750))
-                                && (event.getY()>= (heigth*0.1642) && event.getY()<(heigth*0.2389) ) ){
+                        if( (event.getX()>=(width*0.8656) && event.getX()<(width*0.8763))
+                                && (event.getY()>= (heigth*0.2568) && event.getY()<(heigth*0.3643) ) ){
                             local = LocalLab.get().getLocals().get(3);
                             openInfoActivity(local);
 
-                        }if( (event.getX()>=(width*0.6700) && event.getX()<(width*0.7050))
-                                && (event.getY()>=(heigth*0.2479) && event.getY()<(heigth*0.3195)) ){
+                        }if( (event.getX()>=(width*0.8355) && event.getX()<(width*0.8463))
+                                && (event.getY()>=(heigth*0.2986) && event.getY()<(heigth*0.4062)) ){
                             local = LocalLab.get().getLocals().get(0);
                             openInfoActivity(local);
                         }
