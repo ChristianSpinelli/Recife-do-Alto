@@ -10,13 +10,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.github.chrisbanes.photoview.OnPhotoTapListener;
+import com.github.chrisbanes.photoview.PhotoView;
+
+
 /**
  * Created by Christian Spinelli on 12/06/2017.
  */
 
 public class ImageFragment extends Fragment {
 
-    private ImageView mImgLocal;
+    private PhotoView mImgLocal;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -29,63 +33,58 @@ public class ImageFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
         final int mImage = getActivity().getIntent().getIntExtra("image",0);
-
-        mImgLocal = (ImageView) view.findViewById(R.id.img_local);
+        mImgLocal = (PhotoView) view.findViewById(R.id.img_local);
         mImgLocal.setImageResource(mImage);
-        mImgLocal.setOnTouchListener(new View.OnTouchListener() {
+        mImgLocal.setOnPhotoTapListener(new OnPhotoTapListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+            public void onPhotoTap(ImageView view, float x, float y) {
+                float heigth = mImgLocal.getHeight();//1674
+                float width = mImgLocal.getWidth();//2000
+                float relativeHeight=y*heigth;
+                float relativeWidth=x*width;
 
-                    float heigth = mImgLocal.getHeight();//1674
-                    float width = mImgLocal.getWidth();//2000
+                if (mImage == R.drawable.mirante_riomar_map) {
+                    Local local;
+                    if ((relativeWidth>= (width*0.8106) && relativeWidth < (width*0.8368))
+                            && (relativeHeight >= (heigth*0.3643) && relativeHeight < (heigth*0.4749)) ) {
+                        local = LocalLab.get().getLocals().get(0);
+                        openInfoActivity(local);
 
-
-                    if (mImage == R.drawable.mirante_riomar_map) {
-                        Local local;
-                            if ((event.getX() >= (width*0.8106) && event.getX() < (width*0.8368))
-                                    && (event.getY() >= (heigth*0.3643) && event.getY() < (heigth*0.4749)) ) {
-                                local = LocalLab.get().getLocals().get(0);
-                                openInfoActivity(local);
-
-                            }if((event.getX()>=(width*0.6080) && event.getX()<(width*0.6367))
-                                && (event.getY()>= (heigth*0.3225) && event.getY()<(heigth*0.4181))){
-                                local = LocalLab.get().getLocals().get(1);
-                                openInfoActivity(local);
-                            }
-
-                    }if(mImage == R.drawable.mirante_catamara_map){
-                       Local local;
-                        if( (event.getX()>=(width*0.7286) && event.getX()<(width*0.7522))
-                                && (event.getY()>= (heigth*0.2568) && event.getY()<(heigth*0.3643) ) ){
-                            local = LocalLab.get().getLocals().get(3);
-                            openInfoActivity(local);
-
-                        }if( (event.getX()>=(width*0.6665) && event.getX()<(width*0.6879))
-                                && (event.getY()>=(heigth*0.2986) && event.getY()<(heigth*0.4062)) ){
-                            local = LocalLab.get().getLocals().get(0);
-                            openInfoActivity(local);
-                        }
-
-                    }if(mImage == R.drawable.mirante_paco_map){
-                        Local local;
-                        if( (event.getX()>=(width*0.4133) && event.getX()<(width*0.4297))
-                                && (event.getY()>=(heigth*0.5017) && event.getY()<(heigth*0.6033)) ){
-                            local = LocalLab.get().getLocals().get(2);
-                            openInfoActivity(local);
-                        }
+                    }if((relativeWidth>=(width*0.6080) && relativeWidth<(width*0.6367))
+                            && (relativeHeight>= (heigth*0.3225) && relativeHeight<(heigth*0.4181))){
+                        local = LocalLab.get().getLocals().get(1);
+                        openInfoActivity(local);
                     }
 
-                    Log.d("Position", event.getX()+ " " + event.getY());
-                    Log.d("Position",mImgLocal.getWidth()+ " " +  mImgLocal.getHeight());
+                }if(mImage == R.drawable.mirante_catamara_map){
+                    Local local;
+                    if( (relativeWidth>=(width*0.7286) && relativeWidth<(width*0.7522))
+                            && (relativeHeight>= (heigth*0.2568) && relativeHeight<(heigth*0.3643) ) ){
+                        local = LocalLab.get().getLocals().get(3);
+                        openInfoActivity(local);
+
+                    }if( relativeWidth>=(width*0.6665) && relativeWidth<(width*0.6879)
+                            && (relativeHeight>=(heigth*0.2986) && relativeHeight<(heigth*0.4062))){
+                        local = LocalLab.get().getLocals().get(0);
+                        openInfoActivity(local);
+                    }
+
+                }if(mImage == R.drawable.mirante_paco_map){
+                    Local local;
+                    if( (relativeWidth>=(width*0.4133) &&relativeWidth<(width*0.4297))
+                            && (relativeHeight>=(heigth*0.5017) && relativeHeight<(heigth*0.6033)) ){
+                        local = LocalLab.get().getLocals().get(2);
+                        openInfoActivity(local);
+                    }
                 }
 
-                return true;
+                Log.d("Position", relativeWidth+ " " + relativeHeight);
+                Log.d("Position",mImgLocal.getWidth()+ " " +  mImgLocal.getHeight());
             }
         });
 
-    }
 
+    }
     private void openInfoActivity(Local local){
         Intent intent = InfoPagerActivity.newIntent(this.getActivity());
         intent.putExtra("images",local.getInfoImages());
