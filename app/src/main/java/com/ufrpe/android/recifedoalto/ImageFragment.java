@@ -39,40 +39,40 @@ public class ImageFragment extends Fragment {
             @Override
             public void onPhotoTap(ImageView view, float x, float y) {
                 float heigth = mImgLocal.getHeight();//1674
-                float width = mImgLocal.getWidth();//2000
+                float width = mImgLocal.getWidth();//3824
                 float relativeHeight=y*heigth;
                 float relativeWidth=x*width;
 
                 if (mImage == R.drawable.mirante_riomar_map) {
                     Local local;
-                    if ((relativeWidth>= (width*0.8106) && relativeWidth < (width*0.8368))
-                            && (relativeHeight >= (heigth*0.3643) && relativeHeight < (heigth*0.4749)) ) {
+                    if ((relativeWidth>= (width*0.6027) && relativeWidth < (width*0.6328))
+                            && (relativeHeight >= (heigth*0.3285) && relativeHeight < (heigth*0.4390)) ) {
                         local = LocalLab.get().getLocals().get(0);
                         openInfoActivity(local);
 
-                    }if((relativeWidth>=(width*0.6080) && relativeWidth<(width*0.6367))
-                            && (relativeHeight>= (heigth*0.3225) && relativeHeight<(heigth*0.4181))){
+                    }if((relativeWidth>=(width*0.8054) && relativeWidth<(width*0.8355))
+                            && (relativeHeight>= (heigth*0.3673) && relativeHeight<(heigth*0.4778))){
                         local = LocalLab.get().getLocals().get(1);
                         openInfoActivity(local);
                     }
 
                 }if(mImage == R.drawable.mirante_catamara_map){
                     Local local;
-                    if( (relativeWidth>=(width*0.7286) && relativeWidth<(width*0.7522))
-                            && (relativeHeight>= (heigth*0.2568) && relativeHeight<(heigth*0.3643) ) ){
+                    if( (relativeWidth>=(width*0.7282) && relativeWidth<(width*0.7531))
+                            && (relativeHeight>= (heigth*0.2508) && relativeHeight<(heigth*0.3614) ) ){
                         local = LocalLab.get().getLocals().get(3);
                         openInfoActivity(local);
 
-                    }if( relativeWidth>=(width*0.6665) && relativeWidth<(width*0.6879)
-                            && (relativeHeight>=(heigth*0.2986) && relativeHeight<(heigth*0.4062))){
+                    }if( relativeWidth>=(width*0.6665) && relativeWidth<(width*0.6903)
+                            && (relativeHeight>=(heigth*0.2986) && relativeHeight<(heigth*0.4091))){
                         local = LocalLab.get().getLocals().get(0);
                         openInfoActivity(local);
                     }
 
                 }if(mImage == R.drawable.mirante_paco_map){
                     Local local;
-                    if( (relativeWidth>=(width*0.4133) &&relativeWidth<(width*0.4297))
-                            && (relativeHeight>=(heigth*0.5017) && relativeHeight<(heigth*0.6033)) ){
+                    if( (relativeWidth>=(width*0.4040) &&relativeWidth<(width*0.4249))
+                            && (relativeHeight>=(heigth*0.5077) && relativeHeight<(heigth*0.6182)) ){
                         local = LocalLab.get().getLocals().get(2);
                         openInfoActivity(local);
                     }
