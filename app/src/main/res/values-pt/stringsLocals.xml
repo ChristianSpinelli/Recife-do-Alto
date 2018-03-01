@@ -27,6 +27,12 @@
         Em 2003, passou a se chamar Antiga Ponte Giratória.</string>
     <string name="local5_address">Pte. Giratoria, 161 - São José, Recife - PE, 50020-360</string>
 
+    <string name="local6_title">Ponte Maurício de Nassau</string>
+    <string name="local6_description">Situada onde existiu a primeira ponte da América Latina, construída por Nassau em 1643.
+        Na sua inauguração, visando a cobrança de pedágio, ocorreu o episódio do “boi voador”. Foi reconstruída em 1917,
+        no governo de Manoel Borba.</string>
+    <string name="local6_address">Pte. Maurício de Nassau, 308-524, Recife - PE</string>
+
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>
     <string name="area3_title">Mirante Catamarã</string>

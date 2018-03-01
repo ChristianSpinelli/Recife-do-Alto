@@ -1,5 +1,6 @@
 package com.ufrpe.android.recifedoalto;
 
+import com.google.android.gms.ads.identifier.AdvertisingIdClient;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.ArrayList;
@@ -58,7 +59,6 @@ public class LocalLab {
         local4.setCategory(Category.SHOPPING);
         local4.setIconList(R.drawable.ic_shopping);
 
-
         //criação do local Antiga Ponte Giratória
         InfoImage infoImage5_1 = new InfoImage(R.drawable.img_local5_1,R.string.local5_title,R.string.local5_description,4);
         ArrayList<InfoImage> infoImages5 = new ArrayList<>();
@@ -67,14 +67,23 @@ public class LocalLab {
         local5.setCategory(Category.BRIDGE);
         local5.setIconList(R.drawable.ic_bridge);
 
+        //criação do local Ponte Maurício de Nassau
+        InfoImage infoImage6_1 = new InfoImage(R.drawable.img_local6_1,R.string.local6_title,R.string.local6_description,5);
+        ArrayList<InfoImage> infoImages6 = new ArrayList<>();
+        infoImages6.add(infoImage6_1);
+        Local local6 = new Local(infoImages6, new LatLng(-8.063925, -34.875415),R.string.local6_address);
+        local6.setCategory(Category.BRIDGE);
+        local6.setIconList(R.drawable.ic_bridge);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
         mLocals.add(local3);
         mLocals.add(local4);
         mLocals.add(local5);
+        mLocals.add(local6);
 
-
+        //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
         area1.getLocals().add(local1);
         area1.getLocals().add(local2);
@@ -82,12 +91,15 @@ public class LocalLab {
         area1.setCategory(Category.SHOPPING);
         area1.setInsertArea(false);
 
+        //criação do mirante paço alfândega
         Area area2 = new Area(R.string.area2_tittle,R.drawable.mirante_paco,new LatLng(-8.064825,-34.873804));
         area2.getLocals().add(local3);
         area2.getLocals().add(local5);
+        area2.getLocals().add(local6);
         area2.setImgMap(R.drawable.mirante_paco_map);
         area2.setCategory(Category.SHOPPING);
 
+        //criação do mirante catamarã
         Area area3 = new Area(R.string.area3_title,R.drawable.mirante_catamara,new LatLng(-8.0741111,-34.8844026));
         area3.getLocals().add(local4);
         area3.getLocals().add(local1);
