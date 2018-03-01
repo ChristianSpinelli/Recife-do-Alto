@@ -21,6 +21,12 @@
         O RioMar Shopping é o primeiro centro de compras do Brasil a conquistar o selo AQUA (Alta Qualidade Ambiental).</string>
     <string name="local4_address">Av. República do Líbano, 251 - Pina, Recife - PE, 51110-160</string>
 
+    <string name="local5_title">Antiga Ponte Giratória</string>
+    <string name="local5_description">De 1923, era formada por três lances de ferro, sendo um giratório para dar passagem às
+        embarcações do porto. Caiu em desuso, foi desmontada e substituída pela de concreto em 1971, denominada 12 de setembro.
+        Em 2003, passou a se chamar Antiga Ponte Giratória.</string>
+    <string name="local5_address">Pte. Giratoria, 161 - São José, Recife - PE, 50020-360</string>
+
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>
     <string name="area3_title">Mirante Catamarã</string>
