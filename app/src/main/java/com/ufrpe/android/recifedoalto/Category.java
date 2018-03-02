@@ -1,5 +1,7 @@
 package com.ufrpe.android.recifedoalto;
 
+import java.util.ArrayList;
+
 /**
  * Created by Christian Spinelli on 28/08/2017.
  */
@@ -13,7 +15,7 @@ public enum Category {
     BOAT_TOUR(R.string.boat_tour,R.drawable.boat_tour_icon),
     HISTORICAL_MONUMENT(R.string.historical_monument,R.drawable.historical_monument_icon);
 
-    public int mTitle, mIcon;
+    public int mTitle, mIcon, mId;
 
     private Category(int title, int icon){
         mTitle = title;
