@@ -91,6 +91,14 @@ public class LocalLab {
         local8.setCategory(Category.HISTORICAL_MONUMENT);
         local8.setIconList(R.drawable.ic_historical_monument);
 
+        //criação Fórum Thomaz de Aquino
+        InfoImage infoImage9_1 = new InfoImage(R.drawable.img_local9_1,R.string.local9_title,R.string.local9_description,8);
+        ArrayList<InfoImage> infoImages9 = new ArrayList<>();
+        infoImages9.add(infoImage9_1);
+        Local local9 = new Local(infoImages9, new LatLng(-8.065696, -34.876523),R.string.local9_address);
+        local9.setCategory(Category.HISTORICAL_MONUMENT);
+        local9.setIconList(R.drawable.ic_historical_monument);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -100,6 +108,7 @@ public class LocalLab {
         mLocals.add(local6);
         mLocals.add(local7);
         mLocals.add(local8);
+        mLocals.add(local9);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
@@ -113,6 +122,7 @@ public class LocalLab {
         Area area2 = new Area(R.string.area2_tittle,R.drawable.mirante_paco,new LatLng(-8.064825,-34.873804));
         area2.getLocals().add(local3);//1
         area2.getLocals().add(local5);//2
+        area2.getLocals().add(local9);//6
         area2.getLocals().add(local8);//9
         area2.getLocals().add(local6);//14
         area2.getLocals().add(local7);//18

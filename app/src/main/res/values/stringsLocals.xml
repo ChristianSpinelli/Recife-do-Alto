@@ -41,6 +41,11 @@
     <string name="local8_description">Local de desembarque do Imperador Pedro II no século XIX, abriga hoje café com anfiteatro.</string>
     <string name="local8_address">Av. Martins de Barros, 252 - Santana, Recife - PE, 50010-230</string>
 
+    <string name="local9_title">Fórum Thomaz de Aquino</string>
+    <string name="local9_description">Inaugurado em 1938, foi um marco da modernização do centro e funcionou como hotel até
+        o ano de 1992. Atualmente funciona como fórum. Em seu local existiu o colégio jesuíta do Recife.</string>
+    <string name="local9_address">Av. Martins de Barros, 593 - Santo Antônio, Recife - PE, 50010-230</string>
+
     <string name="area_title">Observatory of Riomar Shopping</string>
     <string name="area2_tittle">Observatory Paço Alfândega</string>
     <string name="area3_title">Observatory Catamarã</string>
