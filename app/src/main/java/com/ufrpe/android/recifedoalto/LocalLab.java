@@ -26,7 +26,7 @@ public class LocalLab {
         ArrayList<InfoImage> infoImages1 = new ArrayList<InfoImage>();
         infoImages1.add(infoImage1_1);
         infoImages1.add(infoImage1_2);
-        Local local1 = new Local(infoImages1,new LatLng(-8.081665,-34.890282),R.string.local1_address);
+        Local local1 = new Local(infoImages1,new LatLng(-8.081665, -34.890282),R.string.local1_address);
         local1.setCategory(Category.BRIDGE);
         local1.setIconList(R.drawable.ic_bridge);
 
@@ -75,6 +75,22 @@ public class LocalLab {
         local6.setCategory(Category.BRIDGE);
         local6.setIconList(R.drawable.ic_bridge);
 
+        //criação Ponte Buarque de Macedo
+        InfoImage infoImage7_1 = new InfoImage(R.drawable.img_local7_1,R.string.local7_title,R.string.local7_description,6);
+        ArrayList<InfoImage> infoImages7 = new ArrayList<>();
+        infoImages7.add(infoImage7_1);
+        Local local7 = new Local(infoImages7, new LatLng(-8.061825, -34.875846),R.string.local7_address);
+        local7.setCategory(Category.BRIDGE);
+        local7.setIconList(R.drawable.ic_bridge);
+
+        //criação Cais do Imperador
+        InfoImage infoImage8_1 = new InfoImage(R.drawable.img_local8_1,R.string.local8_title,R.string.local8_description,7);
+        ArrayList<InfoImage> infoImages8 = new ArrayList<>();
+        infoImages8.add(infoImage8_1);
+        Local local8 = new Local(infoImages8, new LatLng(-8.065100, -34.876103),R.string.local8_address);
+        local8.setCategory(Category.HISTORICAL_MONUMENT);
+        local8.setIconList(R.drawable.ic_historical_monument);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -82,27 +98,31 @@ public class LocalLab {
         mLocals.add(local4);
         mLocals.add(local5);
         mLocals.add(local6);
+        mLocals.add(local7);
+        mLocals.add(local8);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
-        area1.getLocals().add(local1);
-        area1.getLocals().add(local2);
+        area1.getLocals().add(local2);//1
+        area1.getLocals().add(local1);//2
         area1.setImgMap(R.drawable.mirante_riomar_map);
         area1.setCategory(Category.SHOPPING);
         area1.setInsertArea(false);
 
         //criação do mirante paço alfândega
         Area area2 = new Area(R.string.area2_tittle,R.drawable.mirante_paco,new LatLng(-8.064825,-34.873804));
-        area2.getLocals().add(local3);
-        area2.getLocals().add(local5);
-        area2.getLocals().add(local6);
+        area2.getLocals().add(local3);//1
+        area2.getLocals().add(local5);//2
+        area2.getLocals().add(local8);//9
+        area2.getLocals().add(local6);//14
+        area2.getLocals().add(local7);//18
         area2.setImgMap(R.drawable.mirante_paco_map);
         area2.setCategory(Category.SHOPPING);
 
         //criação do mirante catamarã
         Area area3 = new Area(R.string.area3_title,R.drawable.mirante_catamara,new LatLng(-8.0741111,-34.8844026));
-        area3.getLocals().add(local4);
-        area3.getLocals().add(local1);
+        area3.getLocals().add(local4);//1
+        area3.getLocals().add(local1);//2
         area3.setImgMap(R.drawable.mirante_catamara_map);
         area3.setCategory(Category.BOAT_TOUR);
 

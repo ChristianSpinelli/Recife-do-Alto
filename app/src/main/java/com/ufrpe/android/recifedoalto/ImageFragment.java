@@ -85,10 +85,22 @@ public class ImageFragment extends Fragment {
                         local = LocalLab.get().getLocals().get(4);
                         openInfoActivity(local);
                     }
+                    //9
+                    if( (relativeWidth>=(width*0.4864) &&relativeWidth<(width*0.5060))
+                            && (relativeHeight>=(heigth*0.3255) && relativeHeight<(heigth*0.4360)) ){
+                        local = LocalLab.get().getLocals().get(7);
+                        openInfoActivity(local);
+                    }
                     //14
                     if( (relativeWidth>=(width*0.7322) &&relativeWidth<(width*0.7531))
                             && (relativeHeight>=(heigth*0.2927) && relativeHeight<(heigth*0.4032)) ){
                         local = LocalLab.get().getLocals().get(5);
+                        openInfoActivity(local);
+                    }
+                    //18
+                    if( (relativeWidth>=(width*0.9388) &&relativeWidth<(width*0.9597))
+                            && (relativeHeight>=(heigth*0.2867) && relativeHeight<(heigth*0.3972)) ){
+                        local = LocalLab.get().getLocals().get(6);
                         openInfoActivity(local);
                     }
                 }

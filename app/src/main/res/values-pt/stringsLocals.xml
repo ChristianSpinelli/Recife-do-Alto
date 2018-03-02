@@ -33,6 +33,15 @@
         no governo de Manoel Borba.</string>
     <string name="local6_address">Pte. Maurício de Nassau, 308-524, Recife - PE</string>
 
+    <string name="local7_title">Ponte Buarque de Macedo</string>
+    <string name="local7_description">Construída inicialmente em madeira (1882-1890), liga a Avenida Rio Branco à Praça da República.
+        A ponte foi inaugurada em 1890 como nome de Buarque de Macedo, ministro que autorizou a construção. </string>
+    <string name="local7_address">Pte. Buarque de Macedo, 115, Recife - PE, 50030-150</string>
+
+    <string name="local8_title">Cais do Imperador</string>
+    <string name="local8_description">Local de desembarque do Imperador Pedro II no século XIX, abriga hoje café com anfiteatro.</string>
+    <string name="local8_address">Av. Martins de Barros, 252 - Santana, Recife - PE, 50010-230</string>
+
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>
     <string name="area3_title">Mirante Catamarã</string>
