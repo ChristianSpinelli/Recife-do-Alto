@@ -29,6 +29,12 @@
             android:title="@string/historical_monument"
             android:visible="true"/>
 
+        <item
+            android:id="@+id/category_square"
+            android:icon="@drawable/square_icon"
+            android:title="@string/square"
+            android:visible="true"/>
+
     </group>
 
 </menu>

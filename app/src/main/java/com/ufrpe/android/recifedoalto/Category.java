@@ -13,7 +13,8 @@ public enum Category {
     MUSEUM(R.string.museum,R.drawable.museum_war_icon),
     RIVER(R.string.river,R.drawable.river_icon),
     BOAT_TOUR(R.string.boat_tour,R.drawable.boat_tour_icon),
-    HISTORICAL_MONUMENT(R.string.historical_monument,R.drawable.historical_monument_icon);
+    HISTORICAL_MONUMENT(R.string.historical_monument,R.drawable.historical_monument_icon),
+    SQUARE(R.string.square,R.drawable.square_icon);
 
     public int mTitle, mIcon, mId;
 

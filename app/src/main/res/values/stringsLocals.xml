@@ -46,6 +46,12 @@
         o ano de 1992. Atualmente funciona como fórum. Em seu local existiu o colégio jesuíta do Recife.</string>
     <string name="local9_address">Av. Martins de Barros, 593 - Santo Antônio, Recife - PE, 50010-230</string>
 
+    <string name="local10_title">Praça 17</string>
+    <string name="local10_description">O nome da praça homenageia e Revolução Pernambucana de 1817.
+        Ao centro está o monumento em homenagem aos aviadores Gago Coutinho e Sacadura Cabral, tendo também imagem de Santos Dumont.
+        Há ainda uma fonte com índia de mármore e a igreja do Espírito Santo.</string>
+    <string name="local10_address">Praça Dezessete - Santo Antônio, Recife - PE, 50010-070</string>
+
     <string name="area_title">Observatory of Riomar Shopping</string>
     <string name="area2_tittle">Observatory Paço Alfândega</string>
     <string name="area3_title">Observatory Catamarã</string>

@@ -99,6 +99,14 @@ public class LocalLab {
         local9.setCategory(Category.HISTORICAL_MONUMENT);
         local9.setIconList(R.drawable.ic_historical_monument);
 
+        //criação Praça 17
+        InfoImage infoImage10_1 = new InfoImage(R.drawable.img_local10_1,R.string.local10_title,R.string.local10_description,9);
+        ArrayList<InfoImage> infoImages10 = new ArrayList<>();
+        infoImages10.add(infoImage10_1);
+        Local local10 = new Local(infoImages10, new LatLng(-8.065248, -34.876521),R.string.local10_address);
+        local10.setCategory(Category.SQUARE);
+        local10.setIconList(R.drawable.ic_square);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -109,6 +117,7 @@ public class LocalLab {
         mLocals.add(local7);
         mLocals.add(local8);
         mLocals.add(local9);
+        mLocals.add(local10);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
@@ -124,6 +133,7 @@ public class LocalLab {
         area2.getLocals().add(local5);//2
         area2.getLocals().add(local9);//6
         area2.getLocals().add(local8);//9
+        area2.getLocals().add(local10);//10
         area2.getLocals().add(local6);//14
         area2.getLocals().add(local7);//18
         area2.setImgMap(R.drawable.mirante_paco_map);
