@@ -45,14 +45,9 @@ public class ImageFragment extends Fragment {
 
                 if (mImage == R.drawable.mirante_riomar_map) {
                     Local local;
-                    //1
-                    if ((relativeWidth>= (width*0.6027) && relativeWidth < (width*0.6328))
-                            && (relativeHeight >= (heigth*0.3285) && relativeHeight < (heigth*0.4390)) ) {
-                        local = LocalLab.get().getLocals().get(1);
-                        openInfoActivity(local);
-                     //2
-                    }if((relativeWidth>=(width*0.8054) && relativeWidth<(width*0.8355))
-                            && (relativeHeight>= (heigth*0.3673) && relativeHeight<(heigth*0.4778))){
+                     //1
+                    if((relativeWidth>=(width*0.8263) && relativeWidth<(width*0.8577))
+                            && (relativeHeight>= (heigth*0.1672) && relativeHeight<(heigth*0.2777))){
                         local = LocalLab.get().getLocals().get(0);
                         openInfoActivity(local);
                     }

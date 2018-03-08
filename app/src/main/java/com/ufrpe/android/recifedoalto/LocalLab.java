@@ -121,8 +121,7 @@ public class LocalLab {
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
-        area1.getLocals().add(local2);//1
-        area1.getLocals().add(local1);//2
+        area1.getLocals().add(local1);//1
         area1.setImgMap(R.drawable.mirante_riomar_map);
         area1.setCategory(Category.SHOPPING);
         area1.setInsertArea(false);
