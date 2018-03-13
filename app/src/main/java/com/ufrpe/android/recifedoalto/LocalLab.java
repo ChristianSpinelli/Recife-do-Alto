@@ -107,6 +107,22 @@ public class LocalLab {
         local10.setCategory(Category.SQUARE);
         local10.setIconList(R.drawable.ic_square);
 
+        //Obelisco da restauração
+        InfoImage infoImage11_1 = new InfoImage(R.drawable.img_local11_1,R.string.local11_title, R.string.local11_description,10);
+        ArrayList<InfoImage> infoImages11 = new ArrayList<>();
+        infoImages11.add(infoImage11_1);
+        Local local11 = new Local(infoImages11, new LatLng(-8.066174, -34.873922),R.string.local11_address);
+        local11.setCategory(Category.HISTORICAL_MONUMENT);
+        local11.setIconList(R.drawable.ic_historical_monument);
+
+        // Igreja de nossa senhora do livramento
+        InfoImage infoImage12_1 = new InfoImage(R.drawable.img_local12_1,R.string.local12_title, R.string.local12_description,11);
+        ArrayList<InfoImage> infoImages12 = new ArrayList<>();
+        infoImages12.add(infoImage12_1);
+        Local local12 = new Local(infoImages12, new LatLng(-8.067039, -34.878098),R.string.local12_address);
+        local12.setCategory(Category.CHURCH);
+        local12.setIconList(R.drawable.ic_church);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -118,6 +134,8 @@ public class LocalLab {
         mLocals.add(local8);
         mLocals.add(local9);
         mLocals.add(local10);
+        mLocals.add(local11);
+        mLocals.add(local12);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
@@ -130,6 +148,8 @@ public class LocalLab {
         Area area2 = new Area(R.string.area2_tittle,R.drawable.mirante_paco,new LatLng(-8.064825,-34.873804));
         area2.getLocals().add(local3);//1
         area2.getLocals().add(local5);//2
+        area2.getLocals().add(local11);//3
+        area2.getLocals().add(local12);//4
         area2.getLocals().add(local9);//6
         area2.getLocals().add(local8);//9
         area2.getLocals().add(local10);//10

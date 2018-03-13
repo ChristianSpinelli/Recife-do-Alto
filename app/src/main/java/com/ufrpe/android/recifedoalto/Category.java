@@ -14,7 +14,8 @@ public enum Category {
     RIVER(R.string.river,R.drawable.river_icon),
     BOAT_TOUR(R.string.boat_tour,R.drawable.boat_tour_icon),
     HISTORICAL_MONUMENT(R.string.historical_monument,R.drawable.historical_monument_icon),
-    SQUARE(R.string.square,R.drawable.square_icon);
+    SQUARE(R.string.square,R.drawable.square_icon),
+    CHURCH(R.string.church,R.drawable.church_icon);
 
     public int mTitle, mIcon, mId;
 

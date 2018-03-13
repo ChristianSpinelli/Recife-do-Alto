@@ -53,6 +53,21 @@
         Há ainda uma fonte com índia de mármore e a igreja do Espírito Santo.</string>
     <string name="local10_address">Praça Dezessete - Santo Antônio, Recife - PE, 50010-070</string>
 
+    <string name="local11_title">Obelisco da Restauração</string>
+    <string name="local11_description">Projetado pelo arquiteto português Maia Gomes baseado em um esboço de Francisco Brennand,
+        também não poderia ficar de fora do tour. O monumento foi esculpido em Portugal, pesa 20 toneladas, tem 10 metros de altura
+        e foi implantado acima de uma rosa dos ventos. A obra é dedicada aos heróis da Insurreição Pernambucana e atualmente está
+        localizada no Cais da Alfândega.</string>
+    <string name="local11_address"></string>
+
+    <string name="local12_title">Igreja de Nossa Senhora do Livramento dos Homens Pardos do Recife</string>
+    <string name="local12_description">No final do séc. XVII, a irmandade dos homens pardos construiu sua capela no Recife.
+        O templo mantém as características de sua reforma ocorrida entre os anos de 1830 e 1856. A localização da igreja definiu
+        a formação das ruas Direita e da Penha, bem como do Pátio, cercado por casarões que abrigam estabelecimentos comerciais.
+    </string>
+    <string name="local12_address">Santo Antônio, Recife - PE, 50010-340</string>
+
+
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>
     <string name="area3_title">Mirante Catamarã</string>
