@@ -67,6 +67,61 @@
     </string>
     <string name="local12_address">Santo Antônio, Recife - PE, 50010-340</string>
 
+    <string name="local13_title">Igreja de São Pedro dos Clérigos</string>
+    <string name="local13_description">Concluída em 1782, A igreja é um dos mais representativos templos barrocos do Brasil.
+        O pátio no seu entorno é muito conhecido por abrigar vários atrativos relacionados à cultura local.</string>
+    <string name="local13_address">Santo Antônio, Recife - PE, 50010-360</string>
+
+    <string name="local14_title">Igreja do Divino Espírito Santo</string>
+    <string name="local14_description">Ao longo dos anos, teve duas denominações até se chamar como hoje a conhecemos.
+        Antes de 1654, era a Igreja Calvinista dos Franceses; após 1654, Igreja de Nossa Senhora do Ó; e a partir de 1855,
+        Igreja do Divino Espírito Santo. A igreja é muito conhecida hoje pelo peculiar formato de seu altar mor que faz lembrar
+        um bolo de noiva.</string>
+    <string name="local14_address">Praça Dezessete, S/N - Santo Antônio, Recife - PE, 50010-000</string>
+
+    <string name="local15_title">Basílica de Nª Srª do Carmo</string>
+    <string name="local15_description">Construída no local onde um dia existiu o palácio da boa vista de Maurício de Nassau,
+        A Basílica e Convento de Nossa Senhora do Carmo é um conjunto arquitetônico católico pertencente à Ordem primeira Carmelita.
+        A basílica é muito conhecida pela forte presença do barroco em sua composição artística e arquitetônica.</string>
+    <string name="local15_address">Av. Dantas Barreto, 646 - Santo Antônio, Recife - PE, 50020-000</string>
+
+    <string name="local16_title">Igreja de Nossa Senhora do Rosário dos Homens Pretos</string>
+    <string name="local16_description">Construída entre os anos de 1662 e 1667, no reinado de D Afonso VI, rei de Portugal,
+        de quem há um retrato a óleo na sacristia. Em 1739 sua fachada estava arruinada e foi recuperada a partir de 1777.
+        Às suas portas, são realizadas coroações de rainhas dos maracatus recifenses.</string>
+    <string name="local16_address">R. Estreita do Rosário, s/n - Santo Antônio, Recife - PE, 50010-130</string>
+
+    <string name="local17_title">Igreja Matriz do Santíssimo Sacramento de Santo Antônio</string>
+    <string name="local17_description">Construída entre 1752 e 1790 no local onde havia uma antiga casa de pólvora dos holandeses.
+        Mantém as características originais da fachada principal, com elementos decorativos modelados em arenito dos arrecifes.
+    </string>
+    <string name="local17_address">Praça da Independência, s/n - Santo Antônio, Recife - PE, 50010-080</string>
+
+    <string name="local18_title">Arquivo Público</string>
+    <string name="local18_description">Com quase 285 anos de existência, o prédio que abriga atualmente a sede do Arquivo
+        Público Estadual, na Rua do Imperador Pedro Segundo, no bairro de Santo Antônio, já foi a Casa de Câmara e Cadeia
+        do Recife, chegando a receber alguns presos políticos de importantes revoluções como Frei Caneca em 1825.</string>
+    <string name="local18_address">R. Imperador Pedro Segundo, 371 - Santo Antônio, Recife - PE, 50010-240</string>
+
+    <string name="local19_title">Convento Franciscano</string>
+    <string name="local19_description">Construído entre 1606 e 1613. Com a ocupação holandesa teve uso militar sendo transformado
+        no Forte Ernesto (1630-16540. No século XVIII foi adaptado ao estilo barroco. Em suas dependências, funciona
+        o museu franciscano de arte sacra.</string>
+    <string name="local19_address">R. Imperador Pedro Segundo, 206 - Santo Antônio, Recife - PE, 50010-050</string>
+
+    <string name="local20_title">Palácio da Justiça</string>
+    <string name="local20_description">O Palácio da Justiça é uma edificação da cidade do Recife, capital de Pernambuco,
+        Brasil. Foi projetado pelo arquiteto italiano Giácomo Palumbo. Abriga o Tribunal de Justiça de Pernambuco, e
+        encontra-se na Praça da República, Ilha de Antônio Vaz, bairro de Santo Antônio.</string>
+    <string name="local20_address">Praça da República, s/n - Santo Antônio, Recife - PE, 50010-040</string>
+
+    <string name="local21_title">Palácio do Campo das Princesas</string>
+    <string name="local21_description">O Palácio do Campo das Princesas é a sede administrativa do poder executivo do
+        estado brasileiro de Pernambuco, localizada na cidade do Recife. Idealizado desde 1786 pelo governador José César
+        Meneses, foi construído em 1841 pelo engenheiro Morais Âncora, a mando do governador Francisco do Rego Barros, no
+        local onde ficava o Erário Régio.</string>
+    <string name="local21_address">Praça da República, S/N - Santo Antônio, Recife - PE, 50010-928</string>
+
 
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>

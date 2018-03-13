@@ -95,30 +95,98 @@ public class ImageFragment extends Fragment {
                         openInfoActivity(local);
                     }
 
+                    //5
+                    if( (relativeWidth>=(width*0.3896) &&relativeWidth<(width*0.4105))
+                            && (relativeHeight>=(heigth*0.1702) && relativeHeight<(heigth*0.2777)) ){
+                        local = LocalLab.get().getLocals().get(12);
+                        openInfoActivity(local);
+                    }
+
                     //6
                     if( (relativeWidth>=(width*0.4327) &&relativeWidth<(width*0.4537))
                             && (relativeHeight>=(heigth*0.0268) && relativeHeight<(heigth*0.1373)) ){
                         local = LocalLab.get().getLocals().get(8);
                         openInfoActivity(local);
                     }
+
+                    //7
+                    if( (relativeWidth>=(width*0.4641) &&relativeWidth<(width*0.4850))
+                            && (relativeHeight>=(heigth*0.0448) && relativeHeight<(heigth*0.1553)) ){
+                        local = LocalLab.get().getLocals().get(13);
+                        openInfoActivity(local);
+                    }
+
+                    //8
+                    if( (relativeWidth>=(width*0.4746) &&relativeWidth<(width*0.4929))
+                            && (relativeHeight>=(heigth*0.1702) && relativeHeight<(heigth*0.2747)) ){
+                        local = LocalLab.get().getLocals().get(14);
+                        openInfoActivity(local);
+                    }
+
                     //9
                     if( (relativeWidth>=(width*0.4864) &&relativeWidth<(width*0.5060))
                             && (relativeHeight>=(heigth*0.3255) && relativeHeight<(heigth*0.4360)) ){
                         local = LocalLab.get().getLocals().get(7);
                         openInfoActivity(local);
                     }
+
                     //10
                     if( (relativeWidth>=(width*0.4981) &&relativeWidth<(width*0.5177))
                             && (relativeHeight>=(heigth*0.1911) && relativeHeight<(heigth*0.2986)) ){
                         local = LocalLab.get().getLocals().get(9);
                         openInfoActivity(local);
                     }
+
+                    //11
+                    if( (relativeWidth>=(width*0.5086) &&relativeWidth<(width*0.5282))
+                            && (relativeHeight>=(heigth*0.0776) && relativeHeight<(heigth*0.1821)) ){
+                        local = LocalLab.get().getLocals().get(15);
+                        openInfoActivity(local);
+                    }
+
+                    //12
+                    if( (relativeWidth>=(width*0.5910) &&relativeWidth<(width*0.6132))
+                            && (relativeHeight>=(heigth*0.0776) && relativeHeight<(heigth*0.1821)) ){
+                        local = LocalLab.get().getLocals().get(16);
+                        openInfoActivity(local);
+                    }
+
+                    //13
+                    if( (relativeWidth>=(width*0.6956) &&relativeWidth<(width*0.7152))
+                            && (relativeHeight>=(heigth*0.1851) && relativeHeight<(heigth*0.2956)) ){
+                        local = LocalLab.get().getLocals().get(17);
+                        openInfoActivity(local);
+                    }
+
                     //14
                     if( (relativeWidth>=(width*0.7322) &&relativeWidth<(width*0.7531))
                             && (relativeHeight>=(heigth*0.2927) && relativeHeight<(heigth*0.4032)) ){
                         local = LocalLab.get().getLocals().get(5);
                         openInfoActivity(local);
                     }
+
+                    //15
+                    if( (relativeWidth>=(width*0.7792) &&relativeWidth<(width*0.7975))
+                            && (relativeHeight>=(heigth*0.1344) && relativeHeight<(heigth*0.2419)) ){
+                        local = LocalLab.get().getLocals().get(18);
+                        openInfoActivity(local);
+                    }
+
+                    //16
+                    if( (relativeWidth>=(width*0.8028) &&relativeWidth<(width*0.8224))
+                            && (relativeHeight>=(heigth*0.0955) && relativeHeight<(heigth*0.2001)) ){
+                        local = LocalLab.get().getLocals().get(19);
+                        openInfoActivity(local);
+                    }
+
+                    //17
+                    if( (relativeWidth>=(width*0.8786) &&relativeWidth<(width*0.8982))
+                            && (relativeHeight>=(heigth*0.2150) && relativeHeight<(heigth*0.3195)) ){
+                        local = LocalLab.get().getLocals().get(20);
+                        openInfoActivity(local);
+                    }
+
+
                     //18
                     if( (relativeWidth>=(width*0.9388) &&relativeWidth<(width*0.9597))
                             && (relativeHeight>=(heigth*0.2867) && relativeHeight<(heigth*0.3972)) ){

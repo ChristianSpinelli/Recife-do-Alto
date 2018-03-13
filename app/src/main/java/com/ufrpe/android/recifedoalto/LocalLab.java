@@ -123,6 +123,78 @@ public class LocalLab {
         local12.setCategory(Category.CHURCH);
         local12.setIconList(R.drawable.ic_church);
 
+        //Igreja de são pedro dos clérigos
+        InfoImage infoImage13_1 = new InfoImage(R.drawable.img_local13_1,R.string.local13_title,R.string.local13_description,12);
+        ArrayList<InfoImage> infoImages13 = new ArrayList<>();
+        infoImages13.add(infoImage13_1);
+        Local local13 = new Local(infoImages13, new LatLng(-8.067396, -34.879248),R.string.local13_address);
+        local13.setCategory(Category.CHURCH);
+        local13.setIconList(R.drawable.ic_church);
+
+        //Igreja do divino espirito santo
+        InfoImage infoImage14_1 = new InfoImage(R.drawable.img_local14_1,R.string.local14_title,R.string.local14_description,13);
+        ArrayList<InfoImage> infoImages14 = new ArrayList<>();
+        infoImages14.add(infoImage14_1);
+        Local local14 = new Local(infoImages14, new LatLng(-8.065704, -34.876918),R.string.local14_address);
+        local14.setCategory(Category.CHURCH);
+        local14.setIconList(R.drawable.ic_church);
+
+        //Basílica de Nª Srª do Carmo
+        InfoImage infoImage15_1 = new InfoImage(R.drawable.img_local15_1,R.string.local15_title,R.string.local15_description,14);
+        ArrayList<InfoImage> infoImages15 = new ArrayList<>();
+        infoImages15.add(infoImage15_1);
+        Local local15 = new Local(infoImages15, new LatLng(-8.066009, -34.879900),R.string.local15_address);
+        local15.setCategory(Category.CHURCH);
+        local15.setIconList(R.drawable.ic_church);
+
+        //Igreja de Nossa Senhora do Rosário dos Homens Pretos
+        InfoImage infoImage16_1 = new InfoImage(R.drawable.img_local16_1,R.string.local16_title,R.string.local16_description,15);
+        ArrayList<InfoImage> infoImages16 = new ArrayList<>();
+        infoImages16.add(infoImage16_1);
+        Local local16 = new Local(infoImages16, new LatLng(-8.065396, -34.877866),R.string.local16_address);
+        local16.setCategory(Category.CHURCH);
+        local16.setIconList(R.drawable.ic_church);
+
+        //Igreja Matriz do Santíssimo Sacramento de Santo Antônio
+        InfoImage infoImage17_1 = new InfoImage(R.drawable.img_local17_1,R.string.local17_title,R.string.local17_description,16);
+        ArrayList<InfoImage> infoImages17 = new ArrayList<>();
+        infoImages17.add(infoImage17_1);
+        Local local17 = new Local(infoImages17, new LatLng(-8.064240, -34.878803),R.string.local17_address);
+        local17.setCategory(Category.CHURCH);
+        local17.setIconList(R.drawable.ic_church);
+
+        //Arquivo Público
+        InfoImage infoImage18_1 = new InfoImage(R.drawable.img_local18_1,R.string.local18_title,R.string.local18_description,17);
+        ArrayList<InfoImage> infoImages18 = new ArrayList<>();
+        infoImages18.add(infoImage18_1);
+        Local local18 = new Local(infoImages18, new LatLng(-8.063694, -34.876669),R.string.local18_address);
+        local18.setCategory(Category.HISTORICAL_MONUMENT);
+        local18.setIconList(R.drawable.ic_historical_monument);
+
+        //Convento Franciscano
+        InfoImage infoImage19_1 = new InfoImage(R.drawable.img_local19_1,R.string.local19_title,R.string.local19_description,18);
+        ArrayList<InfoImage> infoImages19 = new ArrayList<>();
+        infoImages19.add(infoImage19_1);
+        Local local19 = new Local(infoImages19, new LatLng(-8.062049, -34.877342),R.string.local19_address);
+        local19.setCategory(Category.CHURCH);
+        local19.setIconList(R.drawable.ic_church);
+
+        //Palácio da Justiça
+        InfoImage infoImage20_1 = new InfoImage(R.drawable.img_local20_1,R.string.local20_title,R.string.local20_description,19);
+        ArrayList<InfoImage> infoImages20 = new ArrayList<>();
+        infoImages20.add(infoImage20_1);
+        Local local20 = new Local(infoImages20, new LatLng(-8.061671, -34.877610),R.string.local20_address);
+        local20.setCategory(Category.HISTORICAL_MONUMENT);
+        local20.setIconList(R.drawable.ic_historical_monument);
+
+        //Palácio do Campo das Princesas
+        InfoImage infoImage21_1 = new InfoImage(R.drawable.img_local21_1,R.string.local21_title,R.string.local21_description,20);
+        ArrayList<InfoImage> infoImages21 = new ArrayList<>();
+        infoImages21.add(infoImage21_1);
+        Local local21 = new Local(infoImages21, new LatLng(-8.060049, -34.877494),R.string.local21_address);
+        local21.setCategory(Category.HISTORICAL_MONUMENT);
+        local21.setIconList(R.drawable.ic_historical_monument);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -136,6 +208,15 @@ public class LocalLab {
         mLocals.add(local10);
         mLocals.add(local11);
         mLocals.add(local12);
+        mLocals.add(local13);
+        mLocals.add(local14);
+        mLocals.add(local15);
+        mLocals.add(local16);
+        mLocals.add(local17);
+        mLocals.add(local18);
+        mLocals.add(local19);
+        mLocals.add(local20);
+        mLocals.add(local21);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
@@ -150,10 +231,19 @@ public class LocalLab {
         area2.getLocals().add(local5);//2
         area2.getLocals().add(local11);//3
         area2.getLocals().add(local12);//4
+        area2.getLocals().add(local13);//5
         area2.getLocals().add(local9);//6
+        area2.getLocals().add(local14);//7
+        area2.getLocals().add(local15);//8
         area2.getLocals().add(local8);//9
         area2.getLocals().add(local10);//10
+        area2.getLocals().add(local16);//11
+        area2.getLocals().add(local17);//12
+        area2.getLocals().add(local18);//13
         area2.getLocals().add(local6);//14
+        area2.getLocals().add(local19);//15
+        area2.getLocals().add(local20);///16
+        area2.getLocals().add(local21);//17
         area2.getLocals().add(local7);//18
         area2.setImgMap(R.drawable.mirante_paco_map);
         area2.setCategory(Category.SHOPPING);
