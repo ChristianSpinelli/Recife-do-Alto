@@ -227,6 +227,22 @@ public class LocalLab {
         local25.setCategory(Category.CHURCH);
         local25.setIconList(R.drawable.ic_church);
 
+        //Cais José Estelita
+        InfoImage infoImage26_1 = new InfoImage(R.drawable.img_local26_1,R.string.local26_title,R.string.local26_description,25);
+        ArrayList<InfoImage> infoImages26 = new ArrayList<>();
+        infoImages26.add(infoImage26_1);
+        Local local26 = new Local(infoImages26, new LatLng(-8.076262, -34.890300),R.string.local26_address);
+        local26.setCategory(Category.HISTORICAL_MONUMENT);
+        local26.setIconList(R.drawable.ic_historical_monument);
+
+        //Cabanga Iate Clube
+        InfoImage infoImage27_1 = new InfoImage(R.drawable.img_local27_1,R.string.local27_title,R.string.local27_description,26);
+        ArrayList<InfoImage> infoImages27 = new ArrayList<>();
+        infoImages27.add(infoImage27_1);
+        Local local27 = new Local(infoImages27, new LatLng(-8.079697, -34.894609),R.string.local27_address);
+        local27.setCategory(Category.BOAT_TOUR);
+        local27.setIconList(R.drawable.ic_river);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -253,6 +269,8 @@ public class LocalLab {
         mLocals.add(local23);
         mLocals.add(local24);
         mLocals.add(local25);
+        mLocals.add(local26);
+        mLocals.add(local27);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
@@ -261,6 +279,8 @@ public class LocalLab {
         area1.getLocals().add(local23);//4
         area1.getLocals().add(local24);//5
         area1.getLocals().add(local25);//6
+        area1.getLocals().add(local26);//7
+        area1.getLocals().add(local27);//8
         area1.setImgMap(R.drawable.mirante_riomar_map);
         area1.setCategory(Category.SHOPPING);
         area1.setInsertArea(false);

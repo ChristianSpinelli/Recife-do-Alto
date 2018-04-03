@@ -144,6 +144,14 @@
         possui mosaico na fachada, obra de Francisco Brennand.</string>
     <string name="local25_address">São José, Recife - PE, 50010-120</string>
 
+    <string name="local26_title">Cais José Estelita</string>
+    <string name="local26_description">Um dos cais que formam a paisagem o Recife, fica às margens do Rio Pina.</string>
+    <string name="local26_address">2443, Av. Eng. José Estelita, 1647 - São José, Recife - PE</string>
+
+    <string name="local27_title">Cabanga Iate Clube</string>
+    <string name="local27_description">Fundado em 1942 na Bacia do Pina para a prática de esportes náuticos.</string>
+    <string name="local27_address">s/n, Av. Eng. José Estelita - Cabanga, Recife - PE, 53427-660</string>
+
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>
     <string name="area3_title">Mirante Catamarã</string>
