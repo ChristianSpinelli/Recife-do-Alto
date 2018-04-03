@@ -195,6 +195,38 @@ public class LocalLab {
         local21.setCategory(Category.HISTORICAL_MONUMENT);
         local21.setIconList(R.drawable.ic_historical_monument);
 
+        //Brasilia Teimosa
+        InfoImage infoImage22_1 = new InfoImage(R.drawable.img_local22_1,R.string.local22_title,R.string.local22_description,21);
+        ArrayList<InfoImage> infoImages22 = new ArrayList<>();
+        infoImages22.add(infoImage22_1);
+        Local local22 = new Local(infoImages22, new LatLng(-8.086039, -34.878503),R.string.local22_address);
+        local22.setCategory(Category.HISTORICAL_MONUMENT);
+        local22.setIconList(R.drawable.ic_historical_monument);
+
+        //Coluna de cristal
+        InfoImage infoImage23_1 = new InfoImage(R.drawable.img_local23_1,R.string.local23_title,R.string.local23_description,22);
+        ArrayList<InfoImage> infoImages23 = new ArrayList<>();
+        infoImages23.add(infoImage23_1);
+        Local local23 = new Local(infoImages23, new LatLng(-8.063935, -34.869188),R.string.local23_address);
+        local23.setCategory(Category.HISTORICAL_MONUMENT);
+        local23.setIconList(R.drawable.ic_historical_monument);
+
+        //Basilica da Penha
+        InfoImage infoImage24_1 = new InfoImage(R.drawable.img_local24_1,R.string.local24_title,R.string.local24_description,23);
+        ArrayList<InfoImage> infoImages24 = new ArrayList<>();
+        infoImages24.add(infoImage24_1);
+        Local local24 = new Local(infoImages24, new LatLng(-8.068863, -34.878721),R.string.local24_address);
+        local24.setCategory(Category.CHURCH);
+        local24.setIconList(R.drawable.ic_church);
+
+        //Igreja Mateiz de São José
+        InfoImage infoImage25_1 = new InfoImage(R.drawable.img_local25_1,R.string.local25_title,R.string.local25_description,24);
+        ArrayList<InfoImage> infoImages25 = new ArrayList<>();
+        infoImages25.add(infoImage25_1);
+        Local local25 = new Local(infoImages25, new LatLng(-8.072316, -34.882262),R.string.local25_address);
+        local25.setCategory(Category.CHURCH);
+        local25.setIconList(R.drawable.ic_church);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -217,10 +249,18 @@ public class LocalLab {
         mLocals.add(local19);
         mLocals.add(local20);
         mLocals.add(local21);
+        mLocals.add(local22);
+        mLocals.add(local23);
+        mLocals.add(local24);
+        mLocals.add(local25);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
         area1.getLocals().add(local1);//1
+        area1.getLocals().add(local22);//2
+        area1.getLocals().add(local23);//4
+        area1.getLocals().add(local24);//5
+        area1.getLocals().add(local25);//6
         area1.setImgMap(R.drawable.mirante_riomar_map);
         area1.setCategory(Category.SHOPPING);
         area1.setInsertArea(false);

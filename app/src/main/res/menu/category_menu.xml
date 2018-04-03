@@ -35,6 +35,12 @@
             android:title="@string/square"
             android:visible="true"/>
 
+        <item
+            android:id="@+id/category_church"
+            android:icon="@drawable/church_icon"
+            android:title="@string/church"
+            android:visible="true"/>
+
     </group>
 
 </menu>

@@ -121,6 +121,28 @@
         local onde ficava o Erário Régio.</string>
     <string name="local21_address">Praça da República, S/N - Santo Antônio, Recife - PE, 50010-928</string>
 
+    <string name="local22_title">Brasília Teimosa</string>
+    <string name="local22_description">Bairro surgido a partir de 1947, entre o rio e o mar, com forte cultura de pesca,
+        sendo hoje local de diversidade gastronômica com enfoque nos frutos do mar e com acesso para o molhe onde está
+        localizado o parque de esculturas de Francisco Brennand.</string>
+    <string name="local22_address"></string>
+
+    <string name="local23_title">Coluna de Cristal</string>
+    <string name="local23_description">Sendo a principal obra no complexo do parque das esculturas, a Coluna de Cristal,
+        com 32 metros de altura é confeccionada em argila e bronze. Ao total existem no parque 90 obras (esculturas)
+        do escultor e artista plástico pernambucano Francisco Brennand.</string>
+    <string name="local23_address">Recife - PE, 50030-230</string>
+
+    <string name="local24_title">Basílica da Penha</string>
+    <string name="local24_description">Construída no século XVII e ampliada em 1882 no estilo Neorrenascentista,
+        é um dos maiores e mais movimentados templos católicos da cidade.</string>
+    <string name="local24_address">Praça Dom Vital - São José, Recife - PE, 50020-280</string>
+
+    <string name="local25_title">Igreja Matriz de São José</string>
+    <string name="local25_description">Igreja Matriz do Bairro de São José, construída 1845, em estilo neoclássico,
+        possui mosaico na fachada, obra de Francisco Brennand.</string>
+    <string name="local25_address">São José, Recife - PE, 50010-120</string>
+
     <string name="area_title">Observatory of Riomar Shopping</string>
     <string name="area2_tittle">Observatory Paço Alfândega</string>
     <string name="area3_title">Observatory Catamarã</string>
