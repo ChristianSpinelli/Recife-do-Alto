@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/about_menu"
+        android:title="@string/about"
+        android:orderInCategory="3"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/map_menu"
+        android:title="@string/ver_mapa"
+        android:orderInCategory="2"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/locals_menu"
+        android:title="@string/locals_items"
+        android:orderInCategory="1"
+        app:showAsAction="never">
+
+    </item>
+
+</menu>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="local1_title">Paulo Guerra Bridge</string>
-    <string name="local1_description">Built in 1978 to relieve the traffic and make the acess to south side more easier </string>
+    <string name="local1_description">Built in 1978 to relieve the traffic and make the acess to south side easier </string>
     <string name="local1_address">Paulo Guerra street - Caxangá, Recife - PE, 50800-200</string>
 
     <string name="local2_title">Museum of the city of Recife- Fort of Cinco Pontas</string>

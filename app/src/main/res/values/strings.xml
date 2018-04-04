@@ -12,4 +12,9 @@
     <string name="all">All</string>
     <string name="menu_categories">Category Menu</string>
     <string name="observatory_list">Observatory List</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="about">About</string>
+    <string name="about_prefecture_info">Support: Recife Prefecture</string>
+    <string name="about_ufrpe_info">Department of Statistics and Informatics
+Project developed by Christian Spinelli and Rodolfo Bispo and coordinated by prof. Gilberto A. de A. Cysneiros Filho</string>
 </resources>
