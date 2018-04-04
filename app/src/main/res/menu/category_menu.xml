@@ -22,6 +22,25 @@
             android:icon="@drawable/boat_tour_icon"
             android:title="@string/boat_tour"
             android:visible="true"/>
+
+        <item
+            android:id="@+id/category_historical_monument"
+            android:icon="@drawable/historical_monument_icon"
+            android:title="@string/historical_monument"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/category_square"
+            android:icon="@drawable/square_icon"
+            android:title="@string/square"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/category_church"
+            android:icon="@drawable/church_icon"
+            android:title="@string/church"
+            android:visible="true"/>
+
     </group>
 
 </menu>

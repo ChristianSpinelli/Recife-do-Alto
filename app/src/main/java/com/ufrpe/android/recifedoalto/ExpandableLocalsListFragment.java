@@ -7,6 +7,9 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -18,7 +21,7 @@ import java.util.ArrayList;
  * Created by Christian Spinelli on 13/07/2017.
  */
 
-public class ExpandableLocalsListFragment extends BaseFragmentMenu {
+public class ExpandableLocalsListFragment extends BaseFragmentMenu2 {
 
     private ExpandableLocalsListAdapter mAdapter;
     private ExpandableListView mListView;

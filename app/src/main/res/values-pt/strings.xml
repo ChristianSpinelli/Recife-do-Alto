@@ -16,4 +16,7 @@
     <string name="about_prefecture_info">Apoio: Prefeitura do Recife</string>
     <string name="about_ufrpe_info">Departamento de Estatística e Informática
 Projeto desenvolvido por Christian Spinelli e Rodolfo Bispo e coordenado pelo prof. Gilberto A. de A. Cysneiros Filho</string>
+    <string name="historical_monument">Monumento Histórico</string>
+    <string name="square">Praça</string>
+    <string name="church">Igreja</string>
 </resources>

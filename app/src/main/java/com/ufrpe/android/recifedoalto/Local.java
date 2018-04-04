@@ -23,10 +23,9 @@ public class Local implements Serializable{
 
 
 
-    public Local( ArrayList<InfoImage> images, int imageMap, LatLng position, int address){
+    public Local( ArrayList<InfoImage> images, LatLng position, int address){
         mPosition = position;
         mInfoImages = images;
-        mImageMap = imageMap;
         mAddress = address;
 
 

@@ -197,6 +197,24 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                                 mMenuItem=5;
                                 restartActivity();
                                 return true;
+                            case R.id.category_historical_monument:
+                                sCategory=getString(R.string.historical_monument);
+                                item.setChecked(true);
+                                mMenuItem=6;
+                                restartActivity();;
+                                return true;
+                            case R.id.category_square:
+                                sCategory=getString(R.string.square);
+                                item.setChecked(true);
+                                mMenuItem=7;
+                                restartActivity();;
+                                return true;
+                            case R.id.category_church:
+                                sCategory=getString(R.string.church);
+                                item.setChecked(true);
+                                mMenuItem=8;
+                                restartActivity();;
+                                return true;
                             case R.id.category_all:
                                 sCategory=getString(R.string.all);
                                 item.setChecked(true);

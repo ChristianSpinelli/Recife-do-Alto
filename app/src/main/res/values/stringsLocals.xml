@@ -20,6 +20,137 @@
         O RioMar Shopping é o primeiro centro de compras do Brasil a conquistar o selo AQUA (Alta Qualidade Ambiental).</string>
     <string name="local4_address">Av. República do Líbano, 251 - Pina, Recife - PE, 51110-160</string>
 
+    <string name="local5_title">Antiga Ponte Giratória</string>
+    <string name="local5_description">De 1923, era formada por três lances de ferro, sendo um giratório para dar passagem às
+        embarcações do porto. Caiu em desuso, foi desmontada e substituída pela de concreto em 1971, denominada 12 de setembro.
+        Em 2003, passou a se chamar Antiga Ponte Giratória.</string>
+    <string name="local5_address">Pte. Giratoria, 161 - São José, Recife - PE, 50020-360</string>
+
+    <string name="local6_title">Ponte Maurício de Nassau</string>
+    <string name="local6_description">Situada onde existiu a primeira ponte da América Latina, construída por Nassau em 1643.
+        Na sua inauguração, visando a cobrança de pedágio, ocorreu o episódio do “boi voador”. Foi reconstruída em 1917,
+        no governo de Manoel Borba.</string>
+    <string name="local6_address">Pte. Maurício de Nassau, 308-524, Recife - PE</string>
+
+    <string name="local7_title">Ponte Buarque de Macedo</string>
+    <string name="local7_description">Construída inicialmente em madeira (1882-1890), liga a Avenida Rio Branco à Praça da República.
+        A ponte foi inaugurada em 1890 como nome de Buarque de Macedo, ministro que autorizou a construção. </string>
+    <string name="local7_address">Pte. Buarque de Macedo, 115, Recife - PE, 50030-150</string>
+
+    <string name="local8_title">Cais do Imperador</string>
+    <string name="local8_description">Local de desembarque do Imperador Pedro II no século XIX, abriga hoje café com anfiteatro.</string>
+    <string name="local8_address">Av. Martins de Barros, 252 - Santana, Recife - PE, 50010-230</string>
+
+    <string name="local9_title">Fórum Thomaz de Aquino</string>
+    <string name="local9_description">Inaugurado em 1938, foi um marco da modernização do centro e funcionou como hotel até
+        o ano de 1992. Atualmente funciona como fórum. Em seu local existiu o colégio jesuíta do Recife.</string>
+    <string name="local9_address">Av. Martins de Barros, 593 - Santo Antônio, Recife - PE, 50010-230</string>
+
+    <string name="local10_title">Praça 17</string>
+    <string name="local10_description">O nome da praça homenageia e Revolução Pernambucana de 1817.
+        Ao centro está o monumento em homenagem aos aviadores Gago Coutinho e Sacadura Cabral, tendo também imagem de Santos Dumont.
+        Há ainda uma fonte com índia de mármore e a igreja do Espírito Santo.</string>
+    <string name="local10_address">Praça Dezessete - Santo Antônio, Recife - PE, 50010-070</string>
+
+    <string name="local11_title">Obelisco da Restauração</string>
+    <string name="local11_description">Projetado pelo arquiteto português Maia Gomes baseado em um esboço de Francisco Brennand,
+        também não poderia ficar de fora do tour. O monumento foi esculpido em Portugal, pesa 20 toneladas, tem 10 metros de altura
+        e foi implantado acima de uma rosa dos ventos. A obra é dedicada aos heróis da Insurreição Pernambucana e atualmente está
+        localizada no Cais da Alfândega.</string>
+    <string name="local11_address"></string>
+
+    <string name="local12_title">Igreja de Nossa Senhora do Livramento dos Homens Pardos do Recife</string>
+    <string name="local12_description">No final do séc. XVII, a irmandade dos homens pardos construiu sua capela no Recife.
+        O templo mantém as características de sua reforma ocorrida entre os anos de 1830 e 1856. A localização da igreja definiu
+        a formação das ruas Direita e da Penha, bem como do Pátio, cercado por casarões que abrigam estabelecimentos comerciais.
+    </string>
+    <string name="local12_address">Santo Antônio, Recife - PE, 50010-340</string>
+
+    <string name="local13_title">Igreja de São Pedro dos Clérigos</string>
+    <string name="local13_description">Concluída em 1782, A igreja é um dos mais representativos templos barrocos do Brasil.
+        O pátio no seu entorno é muito conhecido por abrigar vários atrativos relacionados à cultura local.</string>
+    <string name="local13_address">Santo Antônio, Recife - PE, 50010-360</string>
+
+    <string name="local14_title">Igreja do Divino Espírito Santo</string>
+    <string name="local14_description">Ao longo dos anos, teve duas denominações até se chamar como hoje a conhecemos.
+        Antes de 1654, era a Igreja Calvinista dos Franceses; após 1654, Igreja de Nossa Senhora do Ó; e a partir de 1855,
+        Igreja do Divino Espírito Santo. A igreja é muito conhecida hoje pelo peculiar formato de seu altar mor que faz lembrar
+        um bolo de noiva.</string>
+    <string name="local14_address">Praça Dezessete, S/N - Santo Antônio, Recife - PE, 50010-000</string>
+
+    <string name="local15_title">Basílica de Nª Srª do Carmo</string>
+    <string name="local15_description">Construída no local onde um dia existiu o palácio da boa vista de Maurício de Nassau,
+        A Basílica e Convento de Nossa Senhora do Carmo é um conjunto arquitetônico católico pertencente à Ordem primeira Carmelita.
+        A basílica é muito conhecida pela forte presença do barroco em sua composição artística e arquitetônica.</string>
+    <string name="local15_address">Av. Dantas Barreto, 646 - Santo Antônio, Recife - PE, 50020-000</string>
+
+    <string name="local16_title">Igreja de Nossa Senhora do Rosário dos Homens Pretos</string>
+    <string name="local16_description">Construída entre os anos de 1662 e 1667, no reinado de D Afonso VI, rei de Portugal,
+        de quem há um retrato a óleo na sacristia. Em 1739 sua fachada estava arruinada e foi recuperada a partir de 1777.
+        Às suas portas, são realizadas coroações de rainhas dos maracatus recifenses.</string>
+    <string name="local16_address">R. Estreita do Rosário, s/n - Santo Antônio, Recife - PE, 50010-130</string>
+
+    <string name="local17_title">Igreja Matriz do Santíssimo Sacramento de Santo Antônio</string>
+    <string name="local17_description">Construída entre 1752 e 1790 no local onde havia uma antiga casa de pólvora dos holandeses.
+        Mantém as características originais da fachada principal, com elementos decorativos modelados em arenito dos arrecifes.
+    </string>
+    <string name="local17_address">Praça da Independência, s/n - Santo Antônio, Recife - PE, 50010-080</string>
+
+    <string name="local18_title">Arquivo Público</string>
+    <string name="local18_description">Com quase 285 anos de existência, o prédio que abriga atualmente a sede do Arquivo
+        Público Estadual, na Rua do Imperador Pedro Segundo, no bairro de Santo Antônio, já foi a Casa de Câmara e Cadeia
+        do Recife, chegando a receber alguns presos políticos de importantes revoluções como Frei Caneca em 1825.</string>
+    <string name="local18_address">R. Imperador Pedro Segundo, 371 - Santo Antônio, Recife - PE, 50010-240</string>
+
+    <string name="local19_title">Convento Franciscano</string>
+    <string name="local19_description">Construído entre 1606 e 1613. Com a ocupação holandesa teve uso militar sendo transformado
+        no Forte Ernesto (1630-16540. No século XVIII foi adaptado ao estilo barroco. Em suas dependências, funciona
+        o museu franciscano de arte sacra.</string>
+    <string name="local19_address">R. Imperador Pedro Segundo, 206 - Santo Antônio, Recife - PE, 50010-050</string>
+
+    <string name="local20_title">Palácio da Justiça</string>
+    <string name="local20_description">O Palácio da Justiça é uma edificação da cidade do Recife, capital de Pernambuco,
+        Brasil. Foi projetado pelo arquiteto italiano Giácomo Palumbo. Abriga o Tribunal de Justiça de Pernambuco, e
+        encontra-se na Praça da República, Ilha de Antônio Vaz, bairro de Santo Antônio.</string>
+    <string name="local20_address">Praça da República, s/n - Santo Antônio, Recife - PE, 50010-040</string>
+
+    <string name="local21_title">Palácio do Campo das Princesas</string>
+    <string name="local21_description">O Palácio do Campo das Princesas é a sede administrativa do poder executivo do
+        estado brasileiro de Pernambuco, localizada na cidade do Recife. Idealizado desde 1786 pelo governador José César
+        Meneses, foi construído em 1841 pelo engenheiro Morais Âncora, a mando do governador Francisco do Rego Barros, no
+        local onde ficava o Erário Régio.</string>
+    <string name="local21_address">Praça da República, S/N - Santo Antônio, Recife - PE, 50010-928</string>
+
+    <string name="local22_title">Brasília Teimosa</string>
+    <string name="local22_description">Bairro surgido a partir de 1947, entre o rio e o mar, com forte cultura de pesca,
+        sendo hoje local de diversidade gastronômica com enfoque nos frutos do mar e com acesso para o molhe onde está
+        localizado o parque de esculturas de Francisco Brennand.</string>
+    <string name="local22_address"></string>
+
+    <string name="local23_title">Coluna de Cristal</string>
+    <string name="local23_description">Sendo a principal obra no complexo do parque das esculturas, a Coluna de Cristal,
+        com 32 metros de altura é confeccionada em argila e bronze. Ao total existem no parque 90 obras (esculturas)
+        do escultor e artista plástico pernambucano Francisco Brennand.</string>
+    <string name="local23_address">Recife - PE, 50030-230</string>
+
+    <string name="local24_title">Basílica da Penha</string>
+    <string name="local24_description">Construída no século XVII e ampliada em 1882 no estilo Neorrenascentista,
+        é um dos maiores e mais movimentados templos católicos da cidade.</string>
+    <string name="local24_address">Praça Dom Vital - São José, Recife - PE, 50020-280</string>
+
+    <string name="local25_title">Igreja Matriz de São José</string>
+    <string name="local25_description">Igreja Matriz do Bairro de São José, construída 1845, em estilo neoclássico,
+        possui mosaico na fachada, obra de Francisco Brennand.</string>
+    <string name="local25_address">São José, Recife - PE, 50010-120</string>
+
+    <string name="local26_title">Cais José Estelita</string>
+    <string name="local26_description">Um dos cais que formam a paisagem o Recife, fica às margens do Rio Pina.</string>
+    <string name="local26_address">2443, Av. Eng. José Estelita, 1647 - São José, Recife - PE</string>
+
+    <string name="local27_title">Cabanga Iate Clube</string>
+    <string name="local27_description">Fundado em 1942 na Bacia do Pina para a prática de esportes náuticos.</string>
+    <string name="local27_address">s/n, Av. Eng. José Estelita - Cabanga, Recife - PE, 53427-660</string>
+
     <string name="area_title">Observatory of Riomar Shopping</string>
     <string name="area2_tittle">Observatory Paço Alfândega</string>
     <string name="area3_title">Observatory Catamarã</string>

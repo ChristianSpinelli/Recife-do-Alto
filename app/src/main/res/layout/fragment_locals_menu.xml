@@ -33,7 +33,7 @@
             android:paddingBottom="24dp"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
-            android:src="@drawable/img_map1"/>
+            android:src="@drawable/img_local1"/>
 
     </LinearLayout>
 
