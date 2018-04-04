@@ -267,6 +267,54 @@ public class LocalLab {
         local30.setCategory(Category.HISTORICAL_MONUMENT);
         local30.setIconList(R.drawable.ic_historical_monument);
 
+        //Porto Digital
+        InfoImage infoImage31_1 = new InfoImage(R.drawable.img_local31_1,R.string.local31_title,R.string.local31_description,30);
+        ArrayList<InfoImage> infoImages31 = new ArrayList<>();
+        infoImages31.add(infoImage31_1);
+        Local local31 = new Local(infoImages31, new LatLng(-8.063111, -34.873968),R.string.local31_address);
+        local31.setCategory(Category.HISTORICAL_MONUMENT);
+        local31.setIconList(R.drawable.ic_historical_monument);
+
+        //Casa da Cultura
+        InfoImage infoImage32_1 = new InfoImage(R.drawable.img_local32_1,R.string.local32_title,R.string.local32_description,31);
+        ArrayList<InfoImage> infoImages32 = new ArrayList<>();
+        infoImages32.add(infoImage32_1);
+        Local local32 = new Local(infoImages32, new LatLng(-8.066103, -34.883294),R.string.local32_address);
+        local32.setCategory(Category.HISTORICAL_MONUMENT);
+        local32.setIconList(R.drawable.ic_historical_monument);
+
+        //Hospital Pedro 2
+        InfoImage infoImage33_1 = new InfoImage(R.drawable.img_local33_1,R.string.local33_title,R.string.local33_description,32);
+        ArrayList<InfoImage> infoImages33 = new ArrayList<>();
+        infoImages33.add(infoImage33_1);
+        Local local33 = new Local(infoImages33, new LatLng(-8.067388, -34.890559),R.string.local33_address);
+        local33.setCategory(Category.HISTORICAL_MONUMENT);
+        local33.setIconList(R.drawable.ic_historical_monument);
+
+        //Hotel Central
+        InfoImage infoImage34_1 = new InfoImage(R.drawable.img_local34_1,R.string.local34_title,R.string.local34_description,33);
+        ArrayList<InfoImage> infoImages34 = new ArrayList<>();
+        infoImages34.add(infoImage34_1);
+        Local local34 = new Local(infoImages34, new LatLng(-8.061139, -34.887570),R.string.local34_address);
+        local34.setCategory(Category.HISTORICAL_MONUMENT);
+        local34.setIconList(R.drawable.ic_historical_monument);
+
+        //Forum do Recife
+        InfoImage infoImage35_1 = new InfoImage(R.drawable.img_local35_1,R.string.local35_title,R.string.local35_description,34);
+        ArrayList<InfoImage> infoImages35 = new ArrayList<>();
+        infoImages35.add(infoImage35_1);
+        Local local35 = new Local(infoImages35, new LatLng(-8.070366, -34.894705),R.string.local35_address);
+        local35.setCategory(Category.HISTORICAL_MONUMENT);
+        local35.setIconList(R.drawable.ic_historical_monument);
+
+        //estádio do sport
+        InfoImage infoImage36_1 = new InfoImage(R.drawable.img_local36_1,R.string.local36_title,R.string.local36_description,35);
+        ArrayList<InfoImage> infoImages36 = new ArrayList<>();
+        infoImages36.add(infoImage36_1);
+        Local local36 = new Local(infoImages36, new LatLng(-8.062927, -34.902896),R.string.local36_address);
+        local36.setCategory(Category.HISTORICAL_MONUMENT);
+        local36.setIconList(R.drawable.ic_historical_monument);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -298,6 +346,12 @@ public class LocalLab {
         mLocals.add(local28);
         mLocals.add(local29);
         mLocals.add(local30);
+        mLocals.add(local31);
+        mLocals.add(local32);
+        mLocals.add(local33);
+        mLocals.add(local34);
+        mLocals.add(local35);
+        mLocals.add(local36);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
@@ -311,6 +365,12 @@ public class LocalLab {
         area1.getLocals().add(local27);//8
         area1.getLocals().add(local29);//9
         area1.getLocals().add(local30);//10
+        area1.getLocals().add(local31);//11
+        area1.getLocals().add(local32);//12
+        area1.getLocals().add(local33);//13
+        area1.getLocals().add(local34);//14
+        area1.getLocals().add(local35);//15
+        area1.getLocals().add(local36);//16
         area1.setImgMap(R.drawable.mirante_riomar_map);
         area1.setCategory(Category.SHOPPING);
         area1.setInsertArea(false);

@@ -105,6 +105,42 @@ public class ImageFragment extends Fragment {
                         local = LocalLab.get().getLocals().get(29);
                         openInfoActivity(local);
                     }
+                    //11
+                    if((relativeWidth>=(width*0.6040) && relativeWidth<(width*0.6341))
+                            && (relativeHeight>= (heigth*0.2060) && relativeHeight<(heigth*0.3136))){
+                        local = LocalLab.get().getLocals().get(30);
+                        openInfoActivity(local);
+                    }
+                    //12
+                    if((relativeWidth>=(width*0.5190) && relativeWidth<(width*0.5478))
+                            && (relativeHeight>= (heigth*0.4390) && relativeHeight<(heigth*0.5465))){
+                        local = LocalLab.get().getLocals().get(31);
+                        openInfoActivity(local);
+                    }
+                    //13
+                    if((relativeWidth>=(width*0.3922) && relativeWidth<(width*0.4197))
+                            && (relativeHeight>= (heigth*0.3405) && relativeHeight<(heigth*0.4450))){
+                        local = LocalLab.get().getLocals().get(32);
+                        openInfoActivity(local);
+                    }
+                    //14
+                    if((relativeWidth>=(width*0.4288) && relativeWidth<(width*0.4550))
+                            && (relativeHeight>= (heigth*0.3345) && relativeHeight<(heigth*0.4330))){
+                        local = LocalLab.get().getLocals().get(33);
+                        openInfoActivity(local);
+                    }
+                    //15
+                    if((relativeWidth>=(width*0.2955) && relativeWidth<(width*0.3255))
+                            && (relativeHeight>= (heigth*0.3345) && relativeHeight<(heigth*0.4330))){
+                        local = LocalLab.get().getLocals().get(34);
+                        openInfoActivity(local);
+                    }
+                    //16
+                    if((relativeWidth>=(width*0.1503) && relativeWidth<(width*0.1804))
+                            && (relativeHeight>= (heigth*0.3345) && relativeHeight<(heigth*0.4330))){
+                        local = LocalLab.get().getLocals().get(35);
+                        openInfoActivity(local);
+                    }
 
 
                 }if(mImage == R.drawable.mirante_catamara_map){

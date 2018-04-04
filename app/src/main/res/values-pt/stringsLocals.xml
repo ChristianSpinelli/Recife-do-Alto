@@ -167,6 +167,37 @@
         da humanidade.</string>
     <string name="local30_address"></string>
 
+    <string name="local31_title">Porto Digital</string>
+    <string name="local31_description">Central de operações do Porto Digital, parque tecnológico formado por empresas locais
+        e multinacionais em tecnologia.</string>
+    <string name="local31_address">R. 210, Cais do Apolo, 222 - Recife, PE</string>
+
+    <string name="local32_title">Cúpula da Casa da Cultura</string>
+    <string name="local32_description">Antiga Casa de Detenção do Recife. Funcionou como presídio de 1850 a 1976, quando
+        foi desativada e se transformou em centro de artesanato.</string>
+    <string name="local32_address">R. Floriano Peixoto, 141 - Santo Antônio, Recife - PE, 50020-060</string>
+
+    <string name="local33_title">Hospital Pedro II</string>
+    <string name="local33_description">Inaugurado em 1861 no bairro dos Coelhos, sendo uma grande referência até a
+        primeira metade do século XX. Foi restaurado e integra o complexo do IMIP.</string>
+    <string name="local33_address"> R. dos Coelhos, 300 - Boa Vista, Recife - PE, 50070-550</string>
+
+    <string name="local34_title">Hotel Central do Recife</string>
+    <string name="local34_description">De características ecléticas, o Hotel Central foi a primeira construção do gênero de
+        grande porte em Pernambuco. Em seus tempos áureos o hotel recebeu hóspedes ilustres como o ex-presidente da República
+        Getúlio Vargas, o cineasta americano Orson Welles e a cantora e atriz Carmen Miranda.</string>
+    <string name="local34_address"> Av. Manoel Borba, 209 - Boa Vista, Recife - PE, 50070-000</string>
+
+    <string name="local35_title">Fórum do Recife</string>
+    <string name="local35_description">Fórum Rodolfo Aureliano – Inaugurado em 1999 para centralizar serviços do TJPE,
+        faz referências à arquitetura clássica em sua composição.</string>
+    <string name="local35_address"> Av. Desembargador Guerra Barreto, s/n - Ilha Joana Bezerra, Recife - PE, 50080-900</string>
+
+    <string name="local36_title">Estádio do Sport</string>
+    <string name="local36_description">Inaugurado em 1937, o Estádio Adelmar da Costa Carvalho é a sede do
+        Sport Clube do Recife.</string>
+    <string name="local36_address"> Rua Sport Club do Recife - Ilha do Retiro, Recife - PE, 50750-560</string>
+
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>
     <string name="area3_title">Mirante Catamarã</string>
