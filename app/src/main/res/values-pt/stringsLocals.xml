@@ -157,6 +157,16 @@
         em 1953.</string>
     <string name="local28_address"></string>
 
+    <string name="local29_title">Bacia do Pina</string>
+    <string name="local29_description">Estuário de um dos principais rios que cortam a cidade do Recife. Recebe as águas
+        dos rios Jordão e Tejipió e abriga manguezais e comunidades ribeirinhas.</string>
+    <string name="local29_address">R. Bacia do Pina - Nova Descoberta, Recife - PE</string>
+
+    <string name="local30_title">Colinas de Olinda</string>
+    <string name="local30_description">Colinas da acrópole de Olinda, primeira capital de Pernambuco, Patrimônio
+        da humanidade.</string>
+    <string name="local30_address"></string>
+
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>
     <string name="area3_title">Mirante Catamarã</string>

@@ -93,6 +93,18 @@ public class ImageFragment extends Fragment {
                         local = LocalLab.get().getLocals().get(26);
                         openInfoActivity(local);
                     }
+                    //9
+                    if((relativeWidth>=(width*0.6733) && relativeWidth<(width*0.7034))
+                            && (relativeHeight>= (heigth*0.4330) && relativeHeight<(heigth*0.5406))){
+                        local = LocalLab.get().getLocals().get(28);
+                        openInfoActivity(local);
+                    }
+                    //10
+                    if((relativeWidth>=(width*0.5269) && relativeWidth<(width*0.5583))
+                            && (relativeHeight>= (heigth*0.3345) && relativeHeight<(heigth*0.4360))){
+                        local = LocalLab.get().getLocals().get(29);
+                        openInfoActivity(local);
+                    }
 
 
                 }if(mImage == R.drawable.mirante_catamara_map){

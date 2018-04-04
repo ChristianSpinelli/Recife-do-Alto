@@ -251,6 +251,22 @@ public class LocalLab {
         local28.setCategory(Category.BRIDGE);
         local28.setIconList(R.drawable.ic_bridge);
 
+        //Bacia do Pina
+        InfoImage infoImage29_1 = new InfoImage(R.drawable.img_local29_1,R.string.local29_title,R.string.local29_description,28);
+        ArrayList<InfoImage> infoImages29 = new ArrayList<>();
+        infoImages29.add(infoImage29_1);
+        Local local29 = new Local(infoImages29, new LatLng(-8.082037, -34.887282),R.string.local29_address);
+        local29.setCategory(Category.HISTORICAL_MONUMENT);
+        local29.setIconList(R.drawable.ic_historical_monument);
+
+        //Colinas de Olinda
+        InfoImage infoImage30_1 = new InfoImage(R.drawable.img_local30_1,R.string.local30_title,R.string.local30_description,29);
+        ArrayList<InfoImage> infoImages30 = new ArrayList<>();
+        infoImages30.add(infoImage30_1);
+        Local local30 = new Local(infoImages30, new LatLng(-8.013572, -34.849864),R.string.local30_address);
+        local30.setCategory(Category.HISTORICAL_MONUMENT);
+        local30.setIconList(R.drawable.ic_historical_monument);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -280,6 +296,8 @@ public class LocalLab {
         mLocals.add(local26);
         mLocals.add(local27);
         mLocals.add(local28);
+        mLocals.add(local29);
+        mLocals.add(local30);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
@@ -291,6 +309,8 @@ public class LocalLab {
         area1.getLocals().add(local25);//6
         area1.getLocals().add(local26);//7
         area1.getLocals().add(local27);//8
+        area1.getLocals().add(local29);//9
+        area1.getLocals().add(local30);//10
         area1.setImgMap(R.drawable.mirante_riomar_map);
         area1.setCategory(Category.SHOPPING);
         area1.setInsertArea(false);
