@@ -57,6 +57,12 @@ public class ImageFragment extends Fragment {
                         local = LocalLab.get().getLocals().get(21);
                         openInfoActivity(local);
                     }
+                    //3
+                    if((relativeWidth>=(width*0.7126) && relativeWidth<(width*0.7426))
+                            && (relativeHeight>= (heigth*0.3882) && relativeHeight<(heigth*0.4958))){
+                        local = LocalLab.get().getLocals().get(27);
+                        openInfoActivity(local);
+                    }
                     //4
                     if((relativeWidth>=(width*0.6537) && relativeWidth<(width*0.6825))
                             && (relativeHeight>= (heigth*0.3273) && relativeHeight<(heigth*0.4348))){

@@ -243,6 +243,14 @@ public class LocalLab {
         local27.setCategory(Category.BOAT_TOUR);
         local27.setIconList(R.drawable.ic_river);
 
+        //Ponte do Pina
+        InfoImage infoImage28_1 = new InfoImage(R.drawable.img_local28_1,R.string.local28_title,R.string.local28_description,27);
+        ArrayList<InfoImage> infoImages28 = new ArrayList<>();
+        infoImages28.add(infoImage28_1);
+        Local local28 = new Local(infoImages28, new LatLng(-8.083055, -34.890552),R.string.local28_address);
+        local28.setCategory(Category.BRIDGE);
+        local28.setIconList(R.drawable.ic_bridge);
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -271,11 +279,13 @@ public class LocalLab {
         mLocals.add(local25);
         mLocals.add(local26);
         mLocals.add(local27);
+        mLocals.add(local28);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
         area1.getLocals().add(local1);//1
         area1.getLocals().add(local22);//2
+        area1.getLocals().add(local28);//3
         area1.getLocals().add(local23);//4
         area1.getLocals().add(local24);//5
         area1.getLocals().add(local25);//6

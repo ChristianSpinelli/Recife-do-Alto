@@ -151,6 +151,11 @@
     <string name="local27_description">Fundado em 1942 na Bacia do Pina para a prática de esportes náuticos.</string>
     <string name="local27_address">s/n, Av. Eng. José Estelita - Cabanga, Recife - PE, 53427-660</string>
 
+    <string name="local28_title">Ponte do Pina (Ponte Agamenon Magalhães)</string>
+    <string name="local28_description">Inaugurada na década de 1920 para ligar o Pina ao Centro do Recife, sendo reconstruída
+        em 1953.</string>
+    <string name="local28_address"></string>
+
     <string name="area_title">Observatory of Riomar Shopping</string>
     <string name="area2_tittle">Observatory Paço Alfândega</string>
     <string name="area3_title">Observatory Catamarã</string>
