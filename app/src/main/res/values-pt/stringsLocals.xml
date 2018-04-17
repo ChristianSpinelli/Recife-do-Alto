@@ -198,6 +198,41 @@
         Sport Clube do Recife.</string>
     <string name="local36_address"> Rua Sport Club do Recife - Ilha do Retiro, Recife - PE, 50750-560</string>
 
+    <string name="local37_title">Arrecifes</string>
+    <string name="local37_description">Barreira de arrecifes naturais existente em toda a orla recifense, da qual derivou o nome
+        da cidade.</string>
+    <string name="local37_address"></string>
+
+    <string name="local38_title">Iate Clube Pernambuco</string>
+    <string name="local38_description">Clube de navegação, iatismo e esportes náuticos, localizado no Molhe
+        do Recife.</string>
+    <string name="local38_address">Muro de Pedras do Porto do Recife, s/n - Brasília Teimosa, PE, 50030-230</string>
+
+    <string name="local39_title">Empresarial JCPM</string>
+    <string name="local39_description">O moderno edifício JCPM Trade Center, com seu projeto arquitetônico, promove conceitos
+        mundiais de especificações técnicas, sistemas de segurança e alta tecnologia, proporcionando aos seus ocupantes
+        conforto diferenciado e baixo custo operacional.</string>
+    <string name="local39_address">Av. Antônio de Goes, 60 - Pina, Recife - PE, 51010-000</string>
+
+    <string name="local40_title">Bairro do Pina</string>
+    <string name="local40_description">O Pina é um bairro da cidade do Recife e encontra-se ao norte de Boa Viagem.
+        Contém uma das duas praias da capital pernambucana, a Praia do Pina, também conhecida como Praia do Sport,
+        que é a continuação da Praia de Boa Viagem.</string>
+    <string name="local40_address"></string>
+
+    <string name="local41_title">Bairro de Boa Viagem</string>
+    <string name="local41_description">O Boa Viagem é um extenso e populoso bairro nobre da Zona Sul do Recife.
+        Uma das suas principais características é a sua posição ao longo do Oceano Atlântico. A avenida Boa Viagem,
+        que corta o bairro por completo, é à beira-mar.</string>
+    <string name="local41_address"></string>
+
+    <string name="local42_title">Clube Catamarã</string>
+    <string name="local42_description">Clube de turismo especializado em passeios de catamarã, com sede localizada próximo ao
+    forte das cinco pontas, ele também conta com complexo que une educação, gastronomia, diversão, cultura, negócios e lazer,
+    </string>
+    <string name="local42_address">s/n, Cais Santa Rita - São José, Recife - PE, 50020-360</string>
+
+
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>
     <string name="area3_title">Mirante Catamarã</string>

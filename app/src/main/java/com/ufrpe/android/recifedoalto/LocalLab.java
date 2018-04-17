@@ -315,6 +315,55 @@ public class LocalLab {
         local36.setCategory(Category.HISTORICAL_MONUMENT);
         local36.setIconList(R.drawable.ic_historical_monument);
 
+        //Arrecifes
+        InfoImage infoImage37_1 = new InfoImage(R.drawable.img_local37_1,R.string.local37_title,R.string.local37_description,36);
+        ArrayList<InfoImage> infoImages37 = new ArrayList<>();
+        infoImages37.add(infoImage37_1);
+        Local local37 = new Local(infoImages37, new LatLng(-8.071496, -34.872359),R.string.local37_address);
+        local37.setCategory(Category.HISTORICAL_MONUMENT);
+        local37.setIconList(R.drawable.ic_historical_monument);
+
+        //Iate Clube Pernambuco
+        InfoImage infoImage38_1 = new InfoImage(R.drawable.img_local38_1,R.string.local38_title,R.string.local38_description,37);
+        ArrayList<InfoImage> infoImages38 = new ArrayList<>();
+        infoImages38.add(infoImage38_1);
+        Local local38 = new Local(infoImages38, new LatLng(-8.079446, -34.876818),R.string.local38_address);
+        local38.setCategory(Category.HISTORICAL_MONUMENT);
+        local38.setIconList(R.drawable.ic_historical_monument);
+
+        //Empresarial JCPM
+        InfoImage infoImage39_1 = new InfoImage(R.drawable.img_local39_1,R.string.local39_title,R.string.local39_description,38);
+        ArrayList<InfoImage> infoImages39 = new ArrayList<>();
+        infoImages39.add(infoImage39_1);
+        Local local39 = new Local(infoImages39, new LatLng(-8.08946,-34.881987),R.string.local39_address);
+        local39.setCategory(Category.HISTORICAL_MONUMENT);
+        local39.setIconList(R.drawable.ic_historical_monument);
+
+        //Bairro do Pina
+        InfoImage infoImage40_1 = new InfoImage(R.drawable.img_local40_1,R.string.local40_title,R.string.local40_description,39);
+        ArrayList<InfoImage> infoImages40 = new ArrayList<>();
+        infoImages40.add(infoImage40_1);
+        Local local40 = new Local(infoImages40, new LatLng(-8.0966106,-34.9116294),R.string.local40_address);
+        local40.setCategory(Category.HISTORICAL_MONUMENT);
+        local40.setIconList(R.drawable.ic_historical_monument);
+
+        //Bairro de Boa Viagem
+        InfoImage infoImage41_1 = new InfoImage(R.drawable.img_local41_1,R.string.local41_title,R.string.local41_description,40);
+        ArrayList<InfoImage> infoImages41 = new ArrayList<>();
+        infoImages41.add(infoImage41_1);
+        Local local41 = new Local(infoImages41, new LatLng(-8.1269376,-34.918234),R.string.local41_address);
+        local41.setCategory(Category.HISTORICAL_MONUMENT);
+        local41.setIconList(R.drawable.ic_historical_monument);
+
+        //Clube Catamara
+        InfoImage infoImage42_1 = new InfoImage(R.drawable.img_local42_1,R.string.local42_title,R.string.local42_description,41);
+        ArrayList<InfoImage> infoImages42 = new ArrayList<>();
+        infoImages42.add(infoImage42_1);
+        Local local42 = new Local(infoImages42, new LatLng(-8.072739,-34.879792),R.string.local42_address);
+        local42.setCategory(Category.HISTORICAL_MONUMENT);
+        local42.setIconList(R.drawable.ic_historical_monument);
+
+
 
         mLocals.add(local1);
         mLocals.add(local2);
@@ -352,6 +401,12 @@ public class LocalLab {
         mLocals.add(local34);
         mLocals.add(local35);
         mLocals.add(local36);
+        mLocals.add(local37);
+        mLocals.add(local38);
+        mLocals.add(local39);
+        mLocals.add(local40);
+        mLocals.add(local41);
+        mLocals.add(local42);
 
         //criação do mirante do shopping riomar
         Area area1 = new Area(R.string.area_title,R.drawable.riomar,new LatLng(-8.085790, -34.895140));
@@ -400,10 +455,20 @@ public class LocalLab {
 
         //criação do mirante catamarã
         Area area3 = new Area(R.string.area3_title,R.drawable.mirante_catamara,new LatLng(-8.0741111,-34.8844026));
-        area3.getLocals().add(local4);//1
-        area3.getLocals().add(local1);//2
+        area3.getLocals().add(local37);//1
+        area3.getLocals().add(local38);//2
+        area3.getLocals().add(local22);//3
+        area3.getLocals().add(local39);//4
+        area3.getLocals().add(local40);//5
+        area3.getLocals().add(local41);//6
+        area3.getLocals().add(local29);//7
+        area3.getLocals().add(local1);//8
+        area3.getLocals().add(local4);//9
+        area3.getLocals().add(local42);//10
+        area3.getLocals().add(local27);//11
         area3.setImgMap(R.drawable.mirante_catamara_map);
         area3.setCategory(Category.BOAT_TOUR);
+        area3.setInsertArea(false);
 
 
         mAreas.add(area1);

@@ -145,15 +145,16 @@ public class ImageFragment extends Fragment {
 
                 }if(mImage == R.drawable.mirante_catamara_map){
                     Local local;
-                    //1
+                    //8
+                    if( relativeWidth>=(width*0.6665) && relativeWidth<(width*0.6903)
+                            && (relativeHeight>=(heigth*0.1821) && relativeHeight<(heigth*0.2927))){
+                        local = LocalLab.get().getLocals().get(0);
+                        openInfoActivity(local);
+                    }
+                    //9
                     if( (relativeWidth>=(width*0.7282) && relativeWidth<(width*0.7531))
                             && (relativeHeight>= (heigth*0.2508) && relativeHeight<(heigth*0.3614) ) ){
                         local = LocalLab.get().getLocals().get(3);
-                        openInfoActivity(local);
-                    //2
-                    }if( relativeWidth>=(width*0.6665) && relativeWidth<(width*0.6903)
-                            && (relativeHeight>=(heigth*0.2986) && relativeHeight<(heigth*0.4091))){
-                        local = LocalLab.get().getLocals().get(0);
                         openInfoActivity(local);
                     }
 
