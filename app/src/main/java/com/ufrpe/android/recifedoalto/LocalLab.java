@@ -1,8 +1,7 @@
 package com.ufrpe.android.recifedoalto;
 
-import com.google.android.gms.ads.identifier.AdvertisingIdClient;
-import com.google.android.gms.maps.model.LatLng;
 
+import com.google.android.gms.maps.model.LatLng;
 import java.util.ArrayList;
 
 
