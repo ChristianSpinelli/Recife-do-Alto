@@ -221,9 +221,9 @@ public class ImageFragment extends Fragment {
 
                 }if(mImage == R.drawable.mirante_paco_map){
                     Local local;
-                    //1
-                    if( (relativeWidth>=(width*0.4040) &&relativeWidth<(width*0.4249))
-                            && (relativeHeight>=(heigth*0.5077) && relativeHeight<(heigth*0.6182)) ){
+                    //3
+                    if( (relativeWidth>=(width*0.2850) &&relativeWidth<(width*0.3059))
+                            && (relativeHeight>=(heigth*0.4181) && relativeHeight<(heigth*0.5256)) ){
                         local = LocalLab.get().getLocals().get(2);
                         openInfoActivity(local);
                     }
@@ -234,7 +234,7 @@ public class ImageFragment extends Fragment {
                         openInfoActivity(local);
                     }
 
-                    //3
+                    //1
                     if( (relativeWidth>=(width*0.0065) &&relativeWidth<(width*0.0287))
                             && (relativeHeight>=(heigth*0.2120) && relativeHeight<(heigth*0.3225)) ){
                         local = LocalLab.get().getLocals().get(10);
