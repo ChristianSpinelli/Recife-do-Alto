@@ -17,7 +17,8 @@
     <string name="about_prefecture_info">Support: Recife Prefecture</string>
     <string name="about_ufrpe_info">Department of Statistics and Informatics
 Project developed by Christian Spinelli and Rodolfo Bispo and coordinated by prof. Gilberto A. de A. Cysneiros Filho</string>
-    <string name="historical_monument">Monumento Histórico</string>
-    <string name="square">Praça</string>
-    <string name="church">Igreja</string>
+    <string name="historical_monument">Historical monument
+</string>
+    <string name="square">Square</string>
+    <string name="church">Church</string>
 </resources>
