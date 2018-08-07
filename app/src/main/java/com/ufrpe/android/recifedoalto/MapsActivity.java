@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -47,9 +48,17 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         ActionBar actionBar = this.getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
 
 
     }
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -166,6 +175,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 pm.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
+                        Log.d("ITEM",item.getItemId()+"");
                         switch (item.getItemId()){
                             case R.id.category_shopping:
                                 sCategory = getString(R.string.shopping);

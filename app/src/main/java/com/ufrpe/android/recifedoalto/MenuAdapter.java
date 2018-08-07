@@ -2,6 +2,7 @@ package com.ufrpe.android.recifedoalto;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 
 import android.util.Log;
@@ -10,6 +11,8 @@ import android.view.ViewGroup;
 
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.vstechlab.easyfonts.EasyFonts;
 
 import java.util.ArrayList;
 
@@ -60,6 +63,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
         img.setImageResource(holder.mImage);
 
         TextView titleView = (TextView) holder.mView.findViewById(R.id.menu_title);
+        titleView.setTypeface(EasyFonts.robotoLight(mActivity.getApplicationContext()));
         titleView.setText(holder.mTitle);
 
 

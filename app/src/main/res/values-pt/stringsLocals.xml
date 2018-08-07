@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="local1_title">Ponte Paulo Guerra</string>
-    <string name="local1_description">Construída em 1978 para desafogar o trânsito e facilitar o acesso à zona sul da cidade. </string>
+    <string name="local1_title">Ponte Estaiada José de Alencar </string>
+    <string name="local1_description">Inaugurada como parte inicial da Via Mangue para dar acesso à Avenida Celso Furtado e ao Shopping Rio Mar. </string>
     <string name="local1_address">Rua Paulo Guerra - Caxangá, Recife - PE, 50800-200</string>
 
     <string name="local2_title">Museu da Cidade do Recife - Forte das Cinco Pontas</string>
@@ -232,7 +232,7 @@
     </string>
     <string name="local42_address">s/n, Cais Santa Rita - São José, Recife - PE, 50020-360</string>
 
-
+    <string name="address_not_set">N/A</string>
     <string name="area_title">Mirante do Shopping Riomar</string>
     <string name="area2_tittle">Terraço do Paço Alfândega</string>
     <string name="area3_title">Mirante Catamarã</string>

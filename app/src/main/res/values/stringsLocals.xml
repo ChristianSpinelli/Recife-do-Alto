@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="local1_title">Paulo Guerra Bridge</string>
-    <string name="local1_description">Built in 1978 to relieve the traffic and make the acess to south side easier </string>
+    <string name="local1_title">Estaiada José de Alencar Bridge</string>
+    <string name="local1_description">Inaugurated as an initial part of Via Mangue for access to Celso Furtado Avenue and Rio Mar Shopping. </string>
     <string name="local1_address">Paulo Guerra street - Caxangá, Recife - PE, 50800-200</string>
 
     <string name="local2_title">Museum of the city of Recife- Fort of Cinco Pontas</string>
@@ -231,7 +231,7 @@
     </string>
     <string name="local42_address">s/n, Cais Santa Rita - São José, Recife - PE, 50020-360</string>
 
-
+    <string name="address_not_set">N/A</string>
     <string name="area_title">Observatory of Riomar Shopping</string>
     <string name="area2_tittle">Observatory Paço Alfândega</string>
     <string name="area3_title">Observatory Catamarã</string>

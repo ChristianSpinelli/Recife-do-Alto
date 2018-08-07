@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.vstechlab.easyfonts.EasyFonts;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -72,7 +74,7 @@ public class ExpandableLocalsListAdapter extends BaseExpandableListAdapter {
 
         String itemText = mActivity.getString(mAreas.get(groupPosition).getTitle());
         TextView textView = (TextView) convertView.findViewById(R.id.locals_item);
-
+        textView.setTypeface(EasyFonts.robotoLight(mActivity.getApplicationContext()));
         textView.setText(itemText);
 
 
@@ -103,12 +105,13 @@ public class ExpandableLocalsListAdapter extends BaseExpandableListAdapter {
         imageView.setImageResource(subItemIcon);
 
         textView.setText(subItemText);
-
+        textView.setTypeface(EasyFonts.robotoLight(mActivity.getApplicationContext()));
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = InfoPagerActivity.newIntent(mActivity);
                 intent.putExtra("images",local.getInfoImages());
+                LocalSession.get().setLocal(local);
                 mActivity.startActivity(intent);
             }
         });

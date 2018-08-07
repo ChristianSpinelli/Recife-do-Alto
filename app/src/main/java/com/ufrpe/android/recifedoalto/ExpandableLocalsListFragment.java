@@ -40,7 +40,6 @@ public class ExpandableLocalsListFragment extends BaseFragmentMenu2 {
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
         ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-
         actionBar.setTitle(getString(R.string.locals_items));
 
         mListView = (ExpandableListView) view.findViewById(R.id.locals_list);
@@ -49,8 +48,7 @@ public class ExpandableLocalsListFragment extends BaseFragmentMenu2 {
         mAdapter = new ExpandableLocalsListAdapter(this.getActivity(),areas);
         mListView.setAdapter(mAdapter);
 
-
-
-
     }
+
+
 }

@@ -24,6 +24,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import com.vstechlab.easyfonts.EasyFonts;
+
 import java.util.ArrayList;
 
 /**
@@ -82,9 +84,9 @@ public class MenuFragment extends BaseFragmentMenu {
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
         ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-
         mCollapsingToolbarLayout = (CollapsingToolbarLayout) view.findViewById(R.id.collapsing_toolbar);
         mCollapsingToolbarLayout.setTitle(getResources().getString(R.string.app_name));
+        mCollapsingToolbarLayout.setCollapsedTitleTypeface(EasyFonts.robotoLight(getActivity().getApplicationContext()));
 
 
         toolbarTextAppernce();
