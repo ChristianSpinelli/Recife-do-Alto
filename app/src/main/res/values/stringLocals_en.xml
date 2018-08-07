@@ -1,0 +1,176 @@
+<resources>
+
+    <string name="local1_title">José de Alencar Cable Car</string>
+    <string name="local1_description">Inaugurated as an initial part of Via Mangue to give access to Celso Furtado Avenue and Shopping Rio Mar.</string>
+    <string name="local1_address">Rua Paulo Guerra - Caxangá, Recife - PE, 50800-200</string>
+
+    <string name="local2_title">Museum of the City of Recife - Fort of the Five Points</string>
+    <string name="local2_description">It was built in February 1630 by command of the Dutch colonel Diederick van Waerdenburch and still in works successfully resisted an attack of the Portuguese forces in August 1630.</string>
+    <string name="local2_address">Praça das Cinco Pontas, s / n - São José, Recife - PE, 50020-500</string>
+
+    <string name="local3_title">Capibaribe River</string>
+    <string name="local3_description">Main river of the city, it crosses several districts until arriving at the sea, in the central region. Present in stories, songs, legends and poetry of Recife.</string>
+    <string name="local3_address" />
+
+    <string name="local4_title">Shopping Riomar</string>
+    <string name="local4_description"> RioMar Shopping is a large shopping center. Inaugurated on October 30, 2012, is the largest commercial enterprise in the Northeast of Brazil, being the 5th largest in the country and the 1st of its kind outside the state of São Paulo. It is the first high-luxury address of the North-Northeast, encompassing international designer stores. RioMar Shopping is the first shopping center in Brazil to win the AQUA (High Environmental Quality) seal.</string>
+    <string name="local4_address">Av. Republic of Lebanon, 251 - Pina, Recife - PE, 51110-160</string>
+
+    <string name="local5_title">Old Swing Bridge</string>
+    <string name="local5_description">From 1923, it was formed by three flights of iron, one being a vessels. It fell into disuse, was dismantled and replaced by concrete in 1971, called September 12. In 2003, it was renamed the Old Switched Bridge.</string>
+    <string name="local5_address">Pte. Giratoria, 161 - São José, Recife - PE, 50020-360</string>
+
+    <string name="local6_title">Mauritius Bridge of Nassau</string>
+    <string name="local6_description">Located where there was the first bridge of Latin America, built by Nassau in 1643. At its inauguration, in order to collect tolls, the episode of the "flying bull" occurred. It was rebuilt in 1917, in the government of Manoel Borba.</string>
+    <string name="local6_address">Pte. Maurício de Nassau, 308-524, Recife - PE</string>
+
+    <string name="local7_title">Ponte Buarque de Macedo</string>
+    <string name="local7_description">Originally built in wood (1882-1890), it connects Rio Branco Avenue to Praça da República. The bridge was inaugurated in 1890 as the name of Buarque de Macedo, minister who authorized the construction.</string>
+    <string name="local7_address">Pte. Buarque de Macedo, 115, Recife-PE, 50030-150</string>
+
+    <string name="local8_title">Emperor Wharf</string>
+    <string name="local8_description">The site of the arrival of Emperor Pedro II in the 19th century, today houses an amphitheater.</string>
+    <string name="local8_address">Av. Martins de Barros, 252 - Santana, Recife - PE, 50010-230</string>
+
+    <string name="local9_title">Forum Thomaz of Aquino</string>
+    <string name="local9_description">Inaugurated in 1938, it was a landmark of the center modernization and functioned as a hotel the year of 1992. It currently functions as a forum. In its place existed the Jesuit college of Recife.</string>
+    <string name="local9_address">Av. Martins de Barros, 593 - Santo Antônio, Recife - PE, 50010-230</string>
+
+    <string name="local10_title">Square 17</string>
+    <string name="local10_description">The name of the square honors and Pernambuco Revolution of 1817. In the center is the monument in honor of the aviators Gago Coutinho and Sacadura Cabral, also having image of Santos Dumont. There is still a fountain with marble India and the church of the Holy Spirit.</string>
+    <string name="local10_address">Praça Dezessete - Santo Antônio, Recife - PE, 50010-070</string>
+
+    <string name="local11_title">Obelisk of Restoration</string>
+    <string name="local11_description">Designed by the Portuguese architect Maia Gomes based on a sketch by Francisco Brennand, also could not be left out of the tour. The monument was carved in Portugal, weighs 20 tons, is 10 meters high and was implanted above a rose of the winds. The work is dedicated to the heroes of the Pernambuco Insurrection and is currently         located at Cais da Alfândega.</string>
+    <string name="local11_address" />
+
+    <string name="local12_title">Church of Our Lady of the Livramento of the Pardos Men of Recife</string>
+    <string name="local12_description">At the end of the century. XVII, the brotherhood of the brown men built their chapel in Recife. The temple maintains the characteristics of its reformation that took place between the years of 1830 and 1856. The location of the church defined the formation of the streets Right and Penha, as well as the Patio, surrounded by mansions that house commercial establishments.     </string>
+    <string name="local12_address">Santo Antônio, Recife - PE, 50010-340</string>
+
+    <string name="local13_title">Church of São Pedro dos Clérigos</string>
+    <string name="local13_description">Completed in 1782, The church is one of the most representative baroque temples in Brazil. The patio in its surroundings is well known for harboring several attractions related to the local culture.</string>
+    <string name="local13_address">Santo Antônio, Recife - PE, 50010-360</string>
+
+    <string name="local14_title">Church of the Divine Holy Spirit</string>
+    <string name="local14_description">Over the years, it had two denominations until being called as we know it today. Before 1654, it was the Calvinist Church of the French; after 1654, Church of Our Lady of the O; and from 1855, Church of the Divine Holy Spirit. The church is very well-known today for the peculiar shape of its main altar that reminds         a bridal cake.</string>
+    <string name="local14_address">Praça Dezessete, S / N - Santo Antônio, Recife - PE, 50010-000</string>
+
+    <string name="local15_title">Basilica of Our Lady of Carmo</string>
+    <string name="local15_description">Built on the site where once the palace of the good view of Maurice of Nassau existed, The Basilica and Convent of Nossa Senhora do Carmo is a Catholic architectural ensemble belonging to the first Carmelite Order. The basilica is well known for the strong presence of the baroque in its artistic and architectural composition.</string>
+    <string name="local15_address">Av. Dantas Barreto, 646 - Santo Antônio, Recife - PE, 50020-000</string>
+
+    <string name="local16_title">Church of Our Lady of the Rosary of the Black Men</string>
+    <string name="local16_description">Built between the years 1662 and 1667, in the reign of D Afonso VI, king of Portugal, of whom there is an oil portrait in the sacristy. In 1739 its façade was ruined and was recovered from 1777. At its doors are realized crowns of queens of the reefs maracatus.</string>
+    <string name="local16_address">R. Estreita do Rosário, s / n - Santo Antônio, Recife - PE, 50010-130</string>
+
+    <string name="local17_title">Mother Church of the Blessed Sacrament of St. Anthony</string>
+    <string name="local17_description">Constructed between 1752 and 1790 in the place where there was an old gunpowder house of the Dutch. It maintains the original features of the main façade, with decorative elements modeled on reef sandstone.</string>
+    <string name="local17_address">Independence Square, s / n - Santo Antônio, Recife - PE, 50010-080</string>
+
+    <string name="local18_title">Public Archive</string>
+    <string name="local18_description">With almost 285 years of existence, the building that currently houses the headquarters of the Archives Public in the Rua do Emperor Pedro Segundo, in the district of Santo Antônio, was already the House of Chamber and Chain of Recife, arriving to receive some political prisoners of important revolutions like Frei Caneca in 1825.</string>
+    <string name="local18_address">R. Emperor Pedro Segundo, 371 - Santo Antônio, Recife - PE, 50010-240</string>
+
+    <string name="local19_title">Franciscan convent</string>
+    <string name="local19_description">Built between 1606 and 1613. With the Dutch occupation had military use being transformed in the Ernesto Fortress (1630-16540) .In the 18th century it was adapted to the baroque style. The Franciscan Museum of Sacred Art.</string>
+    <string name="local19_address">R. Emperor Pedro Segundo, 206 - Santo Antônio, Recife - PE, 50010-050</string>
+
+    <string name="local20_title">Palace of justice</string>
+    <string name="local20_description">The Palace of Justice is a building of the city of Recife, capital of Pernambuco, Brazil. It was designed by Italian architect Giácomo Palumbo. It houses the Court of Justice of Pernambuco, and is located in Praça da República, Antônio Vaz Island, Santo Antônio neighborhood.</string>
+    <string name="local20_address">Praça da República, s / n - Santo Antônio, Recife - PE, 50010-040</string>
+
+    <string name="local21_title">Palace of the Field of the Princesses</string>
+    <string name="local21_description">The Palácio das Campo das Princesas is the administrative headquarters of the state of Pernambuco, located in the city of Recife. Idealized since 1786 by the governor José César Meneses, was built in 1841 by the engineer Morais Âncora, under the command of the governor Francisco do Rego Barros, in the         where was the Royal Treasury.</string>
+    <string name="local21_address">Praça da República, S / N - Santo Antônio, Recife - PE, 50010-928</string>
+
+    <string name="local22_title">Brasília Teimosa</string>
+    <string name="local22_description">Neighborhood emerged from 1947, between the river and the sea, with strong fishing culture, being today a place of gastronomic diversity focused on the seafood and with access to the jetty where it is located the park of sculptures of Francisco Brennand.</string>
+    <string name="local22_address" />
+
+    <string name="local23_title">Crystal Column</string>
+    <string name="local23_description">Being the main work in the complex of the park of the sculptures, the Crystal Column, with 32 meters of height is made in clay and bronze. To the total there are in the park 90 works (sculptures) of the sculptor and plastic artist from Pernambuco Francisco Brennand.</string>
+    <string name="local23_address">Recife - PE, 50030-230</string>
+
+    <string name="local24_title">Basilica of the Penha</string>
+    <string name="local24_description">Built in the seventeenth century and enlarged in 1882 in the Neorren-Renaissance style, is one of the largest and busiest Catholic temples in the city.</string>
+    <string name="local24_address">Dom Vital Square - São José, Recife - PE, 50020-280</string>
+
+    <string name="local25_title">Mother Church of São José</string>
+    <string name="local25_description">Mother Church of the District of San José, built in 1845, in neoclassical style, it has mosaic on the facade, work of Francisco Brennand.</string>
+    <string name="local25_address">São José, Recife - PE, 50010-120</string>
+
+    <string name="local26_title">Jose Estelita Wharf</string>
+    <string name="local26_description">One of the quays that form the landscape of Recife, is on the banks of the Pina River.</string>
+    <string name="local26_address">2443, Av. José Estelita, 1647 - São José, Recife - PE</string>
+
+    <string name="local27_title">Cabanga Yacht Club</string>
+    <string name="local27_description">Founded in 1942 in the Pina Basin for the practice of nautical sports.</string>
+    <string name="local27_address">s / n, Av. Eng. José Estelita - Cabanga, Recife - PE, 53427-660</string>
+
+    <string name="local28_title">Ponte do Pina (Ponte Agamenon Magalhães)</string>
+    <string name="local28_description">Inaugurated in the 1920s to connect the Pina to the Center of Recife, being reconstructed in 1953.</string>
+    <string name="local28_address" />
+
+    <string name="local29_title">Pina Basin</string>
+    <string name="local29_description">Estuary of one of the main rivers that cut the city of Recife. Receive the waters of the rivers Jordan and Tejipió and it houses mangroves and riverside communities.</string>
+    <string name="local29_address">R. Bina do Pina - Nova Descoberta, Recife - PE</string>
+
+    <string name="local30_title">Colinas de Olinda</string>
+    <string name="local30_description">Colinas of the acropolis of Olinda, first capital of Pernambuco, Patrimony of humanity.</string>
+    <string name="local30_address" />
+
+    <string name="local31_title">Digital Port</string>
+    <string name="local31_description">Central of operations of the Digital Port, technological park formed by local companies and multinationals in technology.</string>
+    <string name="local31_address">R. 210, Cais do Apolo, 222 - Recife, PE</string>
+
+    <string name="local32_title">Dome of the House of Culture</string>
+    <string name="local32_description">Old House of Detention of Recife. It functioned as a prison from 1850 to 1976, when  was turned off and turned into a handicraft center.</string>
+    <string name="local32_address">R. Floriano Peixoto, 141 - Santo Antônio, Recife - PE, 50020-060</string>
+
+    <string name="local33_title">Hospital Pedro II</string>
+    <string name="local33_description">Inaugurated in 1861 in the district of the Rabbits, being a great reference until the first half of the 20th century. It has been restored and is part of the IMIP complex.</string>
+    <string name="local33_address"> R. dos Coelhos, 300 - Boa Vista, Recife - PE, 50070-550</string>
+
+    <string name="local34_title">Hotel Central do Recife</string>
+    <string name="local34_description">Of eclectic characteristics, the Central Hotel was the first construction of the large size in Pernambuco. In its heyday the hotel received illustrious guests as the former President of the Republic Getúlio Vargas, the American filmmaker Orson Welles and the singer and actress Carmen Miranda.</string>
+    <string name="local34_address"> Av. Manoel Borba, 209 - Boa Vista, Recife - PE, 50070-000</string>
+
+    <string name="local35_title">View Forum Posts</string>
+    <string name="local35_description">Rodolfo Aureliano Forum - Opened in 1999 to centralize TJPE services,makes references to classical architecture in its composition.</string>
+    <string name="local35_address"> Av. Desembargador Guerra Barreto, s / n - Ilha Joana Bezerra, Recife - PE, 50080-900</string>
+
+    <string name="local36_title">Sport Stadium</string>
+    <string name="local36_description">Inaugurated in 1937, the Adelmar da Costa Carvalho Stadium is the Sport Clube do Recife.</string>
+    <string name="local36_address"> Rua Sport Club do Recife - Retiro Island, Recife - PE, 50750-560</string>
+
+    <string name="local37_title">Reefs</string>
+    <string name="local37_description">Barrier of natural reefs existing in all the rim recifense, from which the name of the city.</string>
+    <string name="local37_address" />
+
+    <string name="local38_title">Yacht Club Pernambuco</string>
+    <string name="local38_description">Sailing, yachting and water sports club, located in the Molhe  of Recife.</string>
+    <string name="local38_address">Wall of Rocks of the Port of Recife, s / n - Brasília Teimosa, PE, 50030-230</string>
+
+    <string name="local39_title">Business JCPM</string>
+    <string name="local39_description">The modern JCPM Trade Center building, with its architectural design, promotes technical specifications, security systems and high technology, providing its occupants with differentiated comfort and low operating cost.</string>
+    <string name="local39_address">Av. Antônio de Goes, 60 - Pina, Recife - PE, 51010-000</string>
+
+    <string name="local40_title">Bairro do Pina</string>
+    <string name="local40_description">Pina is a neighborhood in the city of Recife and is north of Boa Viagem. It contains one of the two beaches of the capital of Pernambuco, Praia do Pina, also known as Praia do Sport, which is the continuation of Boa Viagem Beach.</string>
+    <string name="local40_address" />
+
+    <string name="local41_title">Neighborhood of Boa Viagem</string>
+    <string name="local41_description">Boa Viagem is an extensive and populous noble neighborhood of the South Zone of Recife. One of its main features is its position along the Atlantic Ocean. The Boa Viagem avenue,  which cuts the neighborhood completely, is by the sea.</string>
+    <string name="local41_address" />
+
+    <string name="local42_title">Catamaran Club</string>
+    <string name="local42_description">Tourist club specialized in catamaran tours, with headquarters located near the strong of the five points, it also counts on complex that unites education, gastronomy, fun, culture, business and leisure,     </string>
+    <string name="local42_address">s / n, Santa Rita Pier - São José, Recife - PE, 50020-360</string>
+
+    <string name="address_not_set">N/A</string>
+    <string name="area_title">Shopping Riomar Lookout</string>
+    <string name="area2_tittle">Terrace of Paço Alfândega</string>
+    <string name="area3_title">Catamaran Lookout</string>
+
+</resources>
